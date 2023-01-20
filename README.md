@@ -1,1 +1,1 @@
-# myvishyapeet
+# myvidhyapith
