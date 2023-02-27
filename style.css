@@ -5,11 +5,6 @@
         background-repeat: no-repeat;
     }
     
-    .kamlesh {
-        color: rgb(8, 2, 37);
-        text-align: right;
-    }
-    
     .vin {
         display: block;
         margin: auto;
@@ -61,9 +56,9 @@
     .circular--square {
         border-radius: 50%;
         position: relative;
-        top: -16px;
         width: 80px;
         height: 80px;
+        text-align: right;
         overflow: hidden;
         margin: 0 auto;
     }
