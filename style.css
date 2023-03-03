@@ -4,15 +4,15 @@
 
 body {
     background-position: center;
-    background-color: hsl(0, 83%, 98%);
+    background-color: hsl(212, 65%, 95%);
     background-size: 250px;
     opacity: 90.5;
-    border: 20px solid hsl(0, 83%, 98%);
+    border: 20px;
     background-repeat: no-repeat;
 }
 
 header {
-    background-color: #FFD700;
+    background-color: #74b8df;
     color: #fff;
     padding: 16px;
 }
