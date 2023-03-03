@@ -171,10 +171,12 @@
     
     .previous-button {
         order: 1;
+        color: blue;
         /* change order of buttons */
     }
     
     .next-button {
         order: 2;
+        color: blue;
         /* change order of buttons */
     }
