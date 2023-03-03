@@ -1,9 +1,16 @@
     body {
         background-position: center;
-background-color:#FFFFF;
+        background-color: hsl(0, 83%, 98%);
         background-size: 250px;
         opacity: 90.5;
+        border: 20px solid hsl(0, 83%, 98%);
         background-repeat: no-repeat;
+    }
+    
+    header {
+        background-color: hwb(259 57% 11%);
+        color: #fff;
+        padding: 16px;
     }
     
     .vin {
@@ -127,4 +134,47 @@ background-color:#FFFFF;
         height: 40px;
         width: 40px;
         background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        /* adjust as needed */
+        margin: 0 auto;
+        /* center the container */
+    }
+    
+    .previous-button,
+    .next-button {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.2s;
+    }
+    
+    .previous-button:hover,
+    .next-button:hover {
+        background-color: #f2f2f2;
+    }
+    
+    .previous-button:disabled,
+    .next-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+    .previous-button {
+        order: 1;
+        /* change order of buttons */
+    }
+    
+    .next-button {
+        order: 2;
+        /* change order of buttons */
     }
