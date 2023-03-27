@@ -3,85 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>myvidhyapith</title>
+    <style>
+        p,
+        li {
+            color: rgb(8, 8, 22);
+        }
+    </style>
+    <script src="Script.js">
+    </script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutau</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
+<header>
+    <h1>myvidhyapith </h1>
+    <img class="circular--square" src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true" style="float:right;" />
+</header>
+
 <body>
-    <main>
-        <h2>Welcome to the World of Computer Science!</h2>
-        <p>As a fresher in Computer Science, you're embarking on an exciting and challenging journey. The world of computing is constantly evolving, and you'll need to keep pace with the latest developments in order to succeed.</p>
+    <div class="header">
+        <div id="sidebar">
 
-        <h2>Tips for Success</h2>
-        <p>Here are some tips that can help you succeed as a CS student:</p>
-        <ul>
-            <li>Attend all your classes and take detailed notes.</li>
-            <li>Participate in study groups and discussions with your classmates.</li>
-            <li>Complete all your assignments on time.</li>
-            <li>Take advantage of your professor's office hours if you have any questions or need additional help.</li>
-            <li>Get involved in extracurricular activities related to computer science to develop your skills and network with others in the field.</li>
-        </ul>
 
-        <h2>Tools You'll Need</h2>
-        <p>As a CS student, you'll need access to the following tools:</p>
-        <ul>
-            <li>A reliable computer with a good amount of memory and storage.</li>
-            <li>A high-speed internet connection.</li>
-            <li>Development tools, such as an Integrated Development Environment (IDE), a code editor, and a compiler or interpreter.</li>
-            <li>Cloud-based tools, such as GitHub, for version control and collaboration.</li>
-            <li>Textbooks and online resources to help you learn and reinforce concepts.</li>
-        </ul>
+            <div class="toggle-btn" onclick="toggleS()">
+                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
+            </div>
+            <ul>
+                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
+                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
+                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i class="fas fa-phone-square"> Contact us</i></a></li>
+                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here" target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow Us</i></a></li>
+            </ul>
+        </div>
+    </div>
 
-        <h2>Challenges You May Face</h2>
-        <p>As a CS student, you may face some challenges along the way. Here are a few of the most common:</p>
-        <ul>
-            <li>Difficulty understanding complex concepts and programming languages.</li>
-            <li>Trouble keeping up with the fast pace of technological advances.</li>
-            <li>Competition for internships and job opportunities in the field.</li>
-            <li>Long hours spent sitting in front of a computer, which can be physically and mentally exhausting.</li>
-        </ul>
 
-        <h2>Conclusion</h2>
-        <p>Computer science is a fascinating and rewarding field, but it can also be challenging. With the right tools, attitude, and support, you can succeed as a CS student and build a rewarding career in this exciting industry.</p>
-    </main>
-    <footer class=" footer ">
-        <div class="container ">
-            <div class="row ">
-                <div class="footer-col ">
-                    <h4>company</h4>
-                    <ul>
-                        <li>
-                            <a href="index.html">HOME</a></li>
-                        <li><a href="aboutus.html" target="_blank ">about us</a></li>
-                        <li><a href="mountain.html " target="_blank ">mountain blog</a></li>
-                        <li><a href="privacy.html" target="_blank ">privacy policy</a></li>
 
-                    </ul>
-                </div>
-                <div class="footer-col ">
-                    <h4>get help</h4>
-                    <ul>
-                        <li>
-                            <a href="Fqa.html">FAQ</a></li>
+    <body>
+        <main>
+            <h2>Welcome to the World of Computer Science!</h2>
+            <p>As a fresher in Computer Science, you're embarking on an exciting and challenging journey. The world of computing is constantly evolving, and you'll need to keep pace with the latest developments in order to succeed.</p>
 
-                    </ul>
-                </div>
-                <div class=" footer-col ">
-                    <h4>follow us</h4>
-                    <div class="social-links ">
-                        <a href="# "><i class="fab fa-facebook-f "></i></a>
-                        <a href="# "><i class="fab fa-twitter "></i></a>
-                        <a href="# "><i class="fab fa-instagram "></i></a>
-                        <a href="# "><i class="fab fa-linkedin-in "></i></a>
+            <h2>Tips for Success</h2>
+            <p>Here are some tips that can help you succeed as a CS student:</p>
+            <ul>
+                <li>Attend all your classes and take detailed notes.</li>
+                <li>Participate in study groups and discussions with your classmates.</li>
+                <li>Complete all your assignments on time.</li>
+                <li>Take advantage of your professor's office hours if you have any questions or need additional help.</li>
+                <li>Get involved in extracurricular activities related to computer science to develop your skills and network with others in the field.</li>
+            </ul>
+
+            <h2>Tools You'll Need</h2>
+            <p>As a CS student, you'll need access to the following tools:</p>
+            <ul>
+                <li>A reliable computer with a good amount of memory and storage.</li>
+                <li>A high-speed internet connection.</li>
+                <li>Development tools, such as an Integrated Development Environment (IDE), a code editor, and a compiler or interpreter.</li>
+                <li>Cloud-based tools, such as GitHub, for version control and collaboration.</li>
+                <li>Textbooks and online resources to help you learn and reinforce concepts.</li>
+            </ul>
+
+            <h2>Challenges You May Face</h2>
+            <p>As a CS student, you may face some challenges along the way. Here are a few of the most common:</p>
+            <ul>
+                <li>Difficulty understanding complex concepts and programming languages.</li>
+                <li>Trouble keeping up with the fast pace of technological advances.</li>
+                <li>Competition for internships and job opportunities in the field.</li>
+                <li>Long hours spent sitting in front of a computer, which can be physically and mentally exhausting.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Computer science is a fascinating and rewarding field, but it can also be challenging. With the right tools, attitude, and support, you can succeed as a CS student and build a rewarding career in this exciting industry.</p>
+        </main>
+        <footer class=" footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="footer-col ">
+                        <h4>company</h4>
+                        <ul>
+                            <li>
+                                <a href="index.html">HOME</a></li>
+                            <li><a href="aboutus.html" target="_blank ">about us</a></li>
+                            <li><a href="mountain.html " target="_blank ">mountain blog</a></li>
+                            <li><a href="privacy.html" target="_blank ">privacy policy</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>get help</h4>
+                        <ul>
+                            <li>
+                                <a href="Fqa.html">FAQ</a></li>
+
+                        </ul>
+                    </div>
+                    <div class=" footer-col ">
+                        <h4>follow us</h4>
+                        <div class="social-links ">
+                            <a href="# "><i class="fab fa-facebook-f "></i></a>
+                            <a href="# "><i class="fab fa-twitter "></i></a>
+                            <a href="# "><i class="fab fa-instagram "></i></a>
+                            <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-</body>
+    </body>
 
 </html>
