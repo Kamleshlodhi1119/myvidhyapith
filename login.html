@@ -70,15 +70,28 @@
             background: #2ecc71;
         }
     </style>
+    <script>
+        function validateEmail(emailId) {
+            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if (emailId.value.match(mailformat)) {
+                emailId.focus();
+                return true;
+            } else {
+                alert("Invalid email address.");
+                emailId.focus();
+                return false;
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <form class="box" action="https://kamleshlodhi1119.github.io/myvidhyapith/" method="post">
+    <form class="box" name="form1" action="index.html " method="post ">
         <h1>login</h1>
         <hr>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <input type="submit" name="" value="Login">
+        <input type="text" name='email' placeholder="Username " />
+        <input type="password" name='text' placeholder="Password" />
+        <input type="submit" name="submit" value="submit" onclick="return validateEmail(document.form1.email)" />
         <hr>
         < </body>
 
