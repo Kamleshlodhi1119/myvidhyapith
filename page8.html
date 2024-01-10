@@ -1,0 +1,2943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>myvidhyapith</title>
+    <style>
+        pre,
+        li {
+            color: rgb(51, 51, 90);
+        }
+    </style>
+    <script src="Script.js">
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+    <h1 class="top-name">Myvidhyapith</h1>
+    <img class="image-profile"
+        src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true"
+        style="float:right;" />
+</header>
+
+<body>
+    <div class="header">
+        <div id="sidebar">
+
+
+            <div class="toggle-btn" onclick="toggleS()">
+                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
+            </div>
+            <ul>
+                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
+                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
+                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i
+                            class="fas fa-phone-square"> Contact us</i></a></li>
+                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here"
+                        target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow
+                            Us</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container12">
+
+        <section>
+
+
+         
+<h2>JDBC AND SERVLETS</h2><br>
+
+<p><b> to Servlets: </b></p>
+
+<p>Servlets are server side components that provide a powerful mechanism for
+    developing server side
+    programs. Servlets provide component-based, platform-independent methods
+    for
+    building Web-based
+    applications. Using Servlets web developers can create fast and
+    efficient
+    server side application which
+    can run on any Servlet enabled web server. Servlets can access the
+    entire
+    family of Java APIs, including
+    the JDBC API to access enterprise databases. Servlets can also access a
+    library of HTTP-specific calls;
+    receive all the benefits of the mature java language including
+    portability,
+    performance, reusability,
+    and crash protection. Today Servlets are the popular choice for building
+    interactive web applications.
+    Servlet containers are usually the components of web and application
+    servers, such as BEA Weblogic
+    Application Server, IBM Web Sphere, Sun Java System Web Server, Sun Java
+    System Application Server and
+    others. Servlets are not designed for a specific protocol. It is
+    different
+    thing that they are most
+    commonly used with the HTTP protocols Servlets uses the classes in the
+    java
+    packages javax.servlet and
+    javax.servlet.http. Servlets provides a way of creating the
+    sophisticated
+    server side extensions in a
+    server as they follow the standard framework and use the highly portable
+    java language. </p>
+
+<p>HTTP Servlets Typically Used To: </p>
+
+<p>Provide dynamic content like getting the results of a database query and
+    returning to the client. </p>
+
+<p>Process and/or store the data submitted by the HTML. </p>
+
+<p>Manage information about the state of a stateless HTTP. e.g. an online
+    shopping car manages request for
+    multiple concurrent customers. </p>
+
+<p>Methods of Servlets: </p>
+
+<p>A Generic Servlet contains the following five methods: </p>
+
+<p>init():<strong> </strong><br></p>
+
+<p>public void init(ServletConfig config) throws ServletException </p>
+
+<p>The init () method is called only once by the servlet container
+    throughout
+    the life of a Servlet. By this
+    init () method the Servlet get to know that it has been placed into
+    service.
+</p>
+
+<p>The Servlet cannot be put into the service if<strong> </strong><br></p>
+
+<p>The init () method does not return within a fix time set by the web
+    server.
+</p>
+
+<p>It throws a ServletException </p>
+
+<p>Parameters - The init () method takes a ServletConfig object that
+    contains
+    the initialization parameters
+    and Servlet's configuration and throws a ServletException if an
+    exception
+    has occurred. </p>
+
+<p>service(): </p>
+
+<p>public void service(ServletRequest req, ServletResponse res) throws
+    ServletException, </p>
+
+<p>IOException </p>
+
+<p>Once the Servlet starts getting the requests, the service() method is
+    called
+    by the Servlet container to
+    respond. The Servlet services the client's request with the help of two
+    objects. These two objects are
+    javax.servlet.ServletRequest and javax.servlet. Servlet Response are
+    passed
+    by the Servlet container.
+    The status code of the response always should be set for a Servlet that
+    throws or sends an error.
+    Parameters - The service () method takes the ServletRequest object that
+    contains the client's request
+    and the object ServletResponse contains the Servlet's response. The
+    service() method throws
+    ServletException and IOException exception.  getServletConfig(): </p>
+
+<p>public ServletConfig getServletConfig() </p>
+
+<p>This method contains parameters for initialization and startup of the
+    Servlet
+    and returns a ServletConfig
+    object. This object is then passed to the init method. When this
+    interface
+    is implemented then it stores
+    the ServletConfig object in order to return it. It is done by the
+    generic
+    class which implements this
+    interface. Returns - the ServletConfig object  getServletInfo(): </p>
+
+<p>public String getServletInfo () </p>
+
+<p>The information about the Servlet is returned by this method like
+    version,
+    author etc. This method
+    returns a string which should be in the form of plain text and not any
+    kind
+    of markup. </p>
+
+<p>Returns - a string that contains the information about the Servlet </p>
+
+<p> destroy(): </p>
+
+<p>public void destroy() </p>
+
+<p>This method is called when we need to close the Servlet. That is before
+    removing a </p>
+
+<p>Servlet instance from service, the Servlet container calls the destroy()
+    method. Once the Servlet
+    container calls the destroy() method, no service methods will be then
+    called
+    . That is after the exit of
+    all the threads running in the Servlet, the destroy() method is called.
+    Hence, the Servlet gets a chance
+    to clean up all the resources like memory, threads etc which are being
+    held.
+</p>
+
+<p>Life cycle of Servlet: </p>
+
+<p>The life cycle of a Servlet can be categorized into four parts: </p>
+
+<p><strong>Loading and Instantiation: </strong><br> The Servlet container
+    loads
+    the Servlet during startup or
+    when the first request is made. The loading of the Servlet depends on
+    the
+    attribute
+    &lt;loadon-startup&gt; of web.xml file. If the attribute
+    &lt;load-on-startup&gt; has a positive value
+    then the Servlet is load with loading of the container otherwise it load
+    when the first request comes
+    for service. After loading of the Servlet, the container creates the
+    instances of the Servlet. </p>
+
+<p><strong>Initialization: </strong><br> After creating the instances, the
+    Servlet container calls the init()
+    method and passes the Servlet initialization parameters to the init()
+    method. The init() must be called
+    by the Servlet container before the Servlet can service any request. The
+    initialization parameters
+    persist until the Servlet is destroyed. The init() method is called only
+    once throughout the life cycle
+    of the Servlet. The Servlet will be available for service if it is
+    loaded
+    successfully otherwise the
+    Servlet container unloads the Servlet. </p>
+
+<p><strong>Servicing the Request: </strong><br> After successfully
+    completing
+    the initialization process, the
+    Servlet will be available for service. Servlet creates separate threads
+    for
+    each request. The Servlet
+    container calls the service() method for servicing any request. The
+    service() method determines the kind
+    of request and calls the appropriate method (doGet () or doPost ()) for
+    handling the request and sends
+    response to the client using the methods of the response object. </p>
+
+<p><strong>Destroying the Servlet: </strong><br> If the Servlet is no longer
+    needed for servicing any request,
+    the Servlet container calls the destroy() method . Like the init()
+    method
+    this method is also called
+    only once throughout the life cycle of the Servlet. Calling the
+    destroy()
+    method indicates to the
+    Servlet container not to sent the any request for service and the
+    Servlet
+    releases all the resources
+    associated with it. Java Virtual Machine claims for the memory
+    associated
+    with the resources for garbage
+    collection. </p>
+
+<div><img src="#"></div>
+
+<p>The Advantages of Servlets: </p>
+
+<p>Portability </p>
+
+<p>Powerful </p>
+
+<p>Efficiency </p>
+
+<p>Safety </p>
+
+<p>Integration </p>
+
+<p>Extensibilty </p>
+
+<p>Inexpensive </p>
+
+<p>Each of the points is defined below: </p>
+
+<p><strong>Portability: </strong><br> As we know that the Servlets are
+    written
+    in java and follow well known
+    standardized APIs so they are highly portable across operating systems
+    and
+    server implementations. We
+    can develop a Servlet on Windows machine running the tomcat server or
+    any
+    other server and later we can
+    deploy that Servlet effortlessly on any other operating system like UNIX
+    server running on the
+    iPlanet/Netscape Application server. So Servlets are Write Once, Run
+    Anywhere (WORA) program. </p>
+
+<p><strong>Powerful: </strong><br>We can do several things with the Servlets
+    which were difficult or even
+    impossible to do with CGI, for example the Servlets can talk directly to
+    the
+    web server while the CGI
+    programs can't do. Servlets can share data among each other, they even
+    make
+    the database connection
+    pools easy to implement. They can maintain the session by using the
+    session
+    tracking mechanism which
+    helps them to maintain information from request to request. It can do
+    many
+    other things which are
+    difficult to implement in the CGI programs. </p>
+
+<p><strong>Efficiency: </strong><br>As compared to CGI the Servlets
+    invocation
+    is highly efficient. When the
+    Servlet get loaded in the server, it remains in the server's memory as a
+    single object instance. However
+    with Servlets there are N threads but only a single copy of the Servlet
+    class. Multiple concurrent
+    requests are handled by separate threads so we can say that the Servlets
+    are
+    highly scalable. <strong>
+    </strong><br></p>
+
+<p><strong>Safety: </strong><br>As Servlets are written in java, Servlets
+    inherit the strong type safety of java
+    language. Java's automatic garbage collection and a lack of pointers
+    mean
+    that Servlets are generally
+    safe from memory management problems. In Servlets we can easily handle
+    the
+    errors due to Java's
+    exception handling mechanism. If any exception occurs then it will throw
+    an
+    exception. </p>
+
+<p><strong>Integration: </strong><br>Servlets are tightly integrated with
+    the
+    server. Servlet can use the server
+    to translate the file paths, perform logging, check authorization, and
+    MIME
+    type mapping etc. </p>
+
+<p><strong>Extensibility: </strong><br>The Servlet API is designed in such a
+    way
+    that it can be easily
+    extensible. As it stands today, the Servlet API support Http Servlets,
+    but
+    in later date it can be
+    extended for another type of Servlets. </p>
+
+<p><strong>Inexpensive: </strong><br>There are number of free web servers
+    available for personal use or for
+    commercial purpose. Web servers are relatively expensive. So by using
+    the
+    free available web servers you
+    can add Servlet support to it. </p>
+
+<p>DEPLOYING A SERVLET ON WEB SERVER: </p>
+
+<p><strong>Step 1: </strong><br> First of all you need to install the Apache
+    Tomcat Server and JDK. </p>
+
+<p>As mentioned earlier, Apache's Tomcat Server is free software available
+    for
+    download @ www.apache.org.
+    You have to download the Tomcat Server 6.0. This Server supports Java
+    Servlets 2.5 and Java Server Pages
+    (JSPs) 2.1 specifications. Important software required for running this
+    server is Sun's JDK (Java
+    Development Kit) and JRE (Java Runtime Environment). The current version
+    of
+    JDK is 1.8. Like Tomcat, JDK
+    is also free and is available for download at www.java.sun.com. </p>
+
+<p><strong>Step 2: </strong><br>Next configure the Tomcat server and JDK by
+    setting up the environment variables
+    for JAVA_HOME variable - You have to set this variable which points to
+    the
+    base installation directory
+    of JDK installation. (e.g. C:\Program Files\Java\jdk1.8.xx\bin). And
+    CATALINA_HOME variable – you have
+    to set this variable which points to the base installation directory of
+    Tomcat installation. (e.g.
+    C:\Program Files\Apache Software Foundation\Tomcatx.x\bin\.<strong>
+    </strong><br></p>
+
+<p><strong>Step 3:Write Your Servlet: </strong><br></p>
+
+<p>Here is simple servlet program which can be written in Notepad or
+    EditPlus
+    and saved using .java
+    extension. </p>
+
+<p><strong>PROGRAM: </strong><br></p>
+
+<p>import javax.servlet.*; import javax.servlet.http.*; import java.io.*;
+    public
+    class LifeCycle extends
+    GenericServlet </p>
+
+<p>{ </p>
+
+<p>&nbsp; &nbsp;public void init(ServletConfig config)throws
+    ServletException
+</p>
+
+<p>&nbsp; &nbsp;{ </p>
+
+<p>&nbsp; &nbsp; &nbsp;System.out.println("init"); </p>
+
+<p>&nbsp; &nbsp;} </p>
+
+<p> &nbsp;public void service(ServletRequest req,ServletResponse res)throws
+    ServletException,IOException
+</p>
+
+<p>&nbsp; &nbsp;{ </p>
+
+<p> &nbsp; &nbsp;System.out.println("from service"); &nbsp;
+    &nbsp;PrintWriter
+    out=res.getWriter(); &nbsp;
+    &nbsp;out.println("LifeCycle\n"); </p>
+
+<p>&nbsp; &nbsp; &nbsp;out.println("III CSE Students"); </p>
+
+<p>&nbsp; &nbsp;} </p>
+
+<p>&nbsp; &nbsp;public void destroy() </p>
+
+<p>&nbsp; &nbsp;{ </p>
+
+<p>&nbsp; &nbsp; &nbsp;System.out.println("destroy"); </p>
+
+<p>&nbsp; &nbsp;} </p>
+
+<p>} </p>
+
+<p><strong>Step 4: </strong><br>Then set the classpath of the
+    servlet-api.jar
+    file in the variable CLASSPATH
+    inside &nbsp;the &nbsp;environment &nbsp;variable &nbsp;as
+    &nbsp;"C:\Program
+    &nbsp;Files\Apache
+    &nbsp;Tomcat Foundation\Tomcat x.x\lib\servlet-api.jar". Then compile
+    your
+    servlet by using
+    <strong>javac </strong><br><strong> LifeCycle.java. </strong><br>
+</p>
+
+<p><strong>Step 5: </strong><br>The next step is to create your web
+    application
+    folder. The name of the folder
+    can be any valid and logical name that represents your application (e.g.
+    bank_apps,
+    airline_tickets_booking, shopping_cart,etc). But the most important
+    criterion is that this folder should
+    be created under webapps folder. The path would be similar or close to
+    this
+    - C:\Program Files\Apache
+    Software Foundation\Tomcat 6.0\webapps. For demo purpose, let us create
+    a
+    folder called example programs
+    under the webapps folder. <strong> </strong><br></p>
+
+<p><strong>Step 6: </strong><br>Next create the WEB-INF folder in C:\Program
+    Files\Apache Software
+    Foundation\Tomcat 6.0\webapps\Example Programs folder. </p>
+
+<p><strong>Step 7: </strong><br>Then create the web.xml file and the classes
+    folder. Ensure that the web.xml and
+    classes folder are created under the WEB-INF folder. The web.xml file
+    contains the following
+    information. </p>
+
+<p>The servlet information </p>
+
+<p>The mapping information from the server to our web application. </p>
+
+<p><strong>Step 8: </strong><br>Then copy the Servlet class file to the
+    classes
+    folder in order to run the
+    Servlet that we created. All you need to do is copy the Servlet class
+    file
+    (the file we obtained from
+    Step 4) to this folder. </p>
+
+<p><strong>Step 9: </strong><br>Edit web.xml to include Servlet's name and
+    URL
+    pattern. This step involves two
+    actions viz. including the Servlet's name and then mentioning the url-
+    pattern. Let us first see as how
+    to include the Servlet's name in the web.xml file.<strong> </strong><br>
+</p>
+
+<p>&lt;web-app&gt; </p>
+
+<p>&nbsp; &nbsp;&lt;servlet&gt; </p>
+
+<p>&nbsp; &nbsp; &nbsp;&lt;servlet-name&gt;MyServ&lt;/servlet-name&gt; </p>
+
+<p>&nbsp; &nbsp; &nbsp;&lt;servlet-class&gt;LifeCycle&lt;/servlet-class&gt;
+</p>
+
+<p>&nbsp; &nbsp;&lt;/servlet&gt; </p>
+
+<p>&nbsp; &nbsp;&lt;servlet-mapping&gt; </p>
+
+<p>&nbsp; &nbsp; &nbsp;&lt;servlet-name&gt;MyServ&lt;/servlet-name&gt; </p>
+
+<p>&nbsp; &nbsp; &nbsp;&lt;url-pattern&gt;/lc&lt;/url-pattern&gt; </p>
+
+<p>&nbsp; &nbsp;&lt;/servlet-mapping&gt; </p>
+
+<p>&lt;/web-app&gt; </p>
+
+<p><strong>Note – </strong><br> The Servlet-name need not be the same as
+    that of
+    the class name. You can give a
+    different name (or alias) to the actual Servlet. This is one of the main
+    reasons as why this tag is used
+    for. Next, include the url pattern using the &lt;servlet-mapping&gt;
+    &lt;/servletmapping&gt; tag. The
+    url pattern defines as how a user can access the Servlet from the
+    browser.
+</p>
+
+<p> <strong>Step 10: </strong><br>Run Tomcat server and then execute your
+    Servlet by opening any one of your
+    web browser and enter the URL as specified in the web.xml file. The
+    complete
+    URL that needs to be
+    entered in the browser is: http://localhost:8080/scce/lc </p>
+
+<p>Invoking Servlet using HTML:<strong> </strong><br></p>
+
+<p>It is a common practice to invoke servlet using HTML form. This will be
+    achieved by the action attribute
+    of the form tag in HTML. To understand this, we have to create a web
+    page
+    which will invoke above
+    created servlet. In the above method, we have seen that the servlet is
+    invoked from the URL, but here in
+    this example the same servlet will be invoked by clicking the button in
+    the
+    web page. </p>
+
+<p><strong>HTML Program: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt;&lt;title&gt; Life Cycle of Servlet &lt;/title&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" action="lc"&gt; </p>
+
+<p>&lt;b&gt; My Life Class&lt;/b&gt; </p>
+
+<p>&lt;input type="submit" value="Go to My Life Cycle"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>For getting the output: </p>
+
+<p>Compile the servlet program using javac compiler. </p>
+
+<p>Copy the generated class file into your web application's classes folder.
+</p>
+
+<p>Enter the http://localhost:8080/Example%20Programs/mylifecycle.html </p>
+
+<p>The Servlet API: </p>
+
+<p>Two packages contain the classes and interfaces that are required to
+    build
+    servlets. These are
+    javax.servlet and javax.servlet.http. They constitute the Servlet API.
+    These
+    packages are not part of
+    the java core packages. Instead, they are standard extensions provided
+    by
+    the Tomcat. </p>
+
+<p><strong>The </strong><br><strong>javax.servlet </strong><br><strong>
+        Package:
+    </strong><br></p>
+
+<p>The <strong>javax.servlet </strong><br> package contains a number of
+    interfaces and classes that establish the
+    framework in which servlets operate. The following table summarizes the
+    core
+    interfaces that are
+    provided in this package. The most significant of these is
+    <strong>Servlet.
+    </strong><br> All servlets must
+    implement this interface or extend a class that implements the
+    interface.
+    The
+    <strong>ServletRequest </strong><br> and <strong>ServletResponse
+    </strong><br><strong> </strong><br>interfaces are
+    also very important.
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Interface </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Servlet </p>
+            </td>
+            <td>
+                <p>Declares life cycle methods for a servlet. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletConfig </p>
+            </td>
+            <td>
+                <p>Allows servlets to get initialization parameters. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletContext </p>
+            </td>
+            <td>
+                <p>Enables servlets to log events and access info about
+                    their
+                    environment. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletRequest </p>
+            </td>
+            <td>
+                <p>Used to read data from a client request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletResponse </p>
+            </td>
+            <td>
+                <p>Used to write data to a client response. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p>The following table summarizes the core classes that are provided in the
+    javax.servlet package: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Class </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>GenericServlet </p>
+            </td>
+            <td>
+                <p>Implements the <strong>Servlet </strong><br> and
+                    <strong>ServletConfig </strong><br> interfaces.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletInputStream </p>
+            </td>
+            <td>
+                <p>Provides an input stream for reading requests from a
+                    client.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletOutputStream </p>
+            </td>
+            <td>
+                <p>Provides an output stream for writing responses to a
+                    client.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletException </p>
+            </td>
+            <td>
+                <p>Indicates a servlet error occurred. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>UnavailableException </p>
+            </td>
+            <td>
+                <p>Indicates a servlet is unavailable. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong> </strong><br></p>
+
+<p><strong>The Servlet Interface: </strong><br></p>
+
+<p>All servlets must implement the <strong>Servlet </strong><br> interface.
+    It
+    declares the
+    <strong>init </strong><br><strong>(), service(),
+    </strong><br>and<strong>
+        destroy() </strong><br> methods that are
+    called by the server during the life cycle of a servlet. A method is
+    also
+    provided that allows a servlet
+    to obtain any initialization parameters. The methods defined by
+    <strong>Servlet </strong><br>are shown in
+    the following table.
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void destroy() </p>
+            </td>
+            <td>
+                <p>Called when the servlet is unloaded. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletConfig getServletConfig() </p>
+            </td>
+            <td>
+                <p>Returns a <strong>ServletConfig </strong><br><strong>
+                    </strong><br>object that contains any
+                    initialization parameters. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getServletInfo() </p>
+            </td>
+            <td>
+                <p>Returns a string describing the servlet. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void init(ServletConfig sc) throws ServletException </p>
+            </td>
+            <td>
+                <p>Called when the servlet is initialized. Initialization
+                    parameters for the servlet can be
+                    obtained from sc. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void &nbsp;service(ServletRequest &nbsp;req,
+                    ServletResponse)
+                    &nbsp;throws </p>
+
+                <p>IOException, </p>
+
+                <p>ServletException </p>
+            </td>
+            <td>
+                <p>Called to process a request from a client. The request
+                    from
+                    the client can be read from
+                    req. The response to the client can be written to res.
+                    An
+                    exception is generated if a
+                    servlet or IO problem occurs. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong> </strong><br></p>
+
+<p><strong>The </strong><br><strong>ServletConfig </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The <strong>ServletConfig </strong><br> interface is implemented by the
+    servlet container. It allows a servlet
+    to obtain configuration data when it is loaded. The methods declared by
+    this
+    interface are shown here:
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletContext getServletContext() </p>
+            </td>
+            <td>
+                <p>Returns the context for this servlet. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getInitParmeter(String param) </p>
+
+                <p> </p>
+            </td>
+            <td>
+                <p>Returns the value of the initialization parameter named
+                    param. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>getInitParameterNames() </p>
+            </td>
+            <td>
+                <p>Returns an enumeration of all initialization parameter
+                    names.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getServletName() </p>
+            </td>
+            <td>
+                <p>Returns the name of the invoking servlet. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p><strong>The </strong><br><strong>ServeltContext </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The <strong>ServletContext </strong><br><strong> </strong><br>interface
+    is
+    implemented by the servlet container.
+    It enables servlets to obtain information about the environment. The
+    methods
+    of this interface are
+    summarized below: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Object getAttribute(String attr) </p>
+            </td>
+            <td>
+                <p>Returns the values of the server attribute named attr.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getServerInfo() </p>
+            </td>
+            <td>
+                <p>Returns the information about the server. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setAttributes(String attr, Object val) </p>
+            </td>
+            <td>
+                <p>Sets the attribute specified by attr to the value passed
+                    in
+                    val. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void log(String s) </p>
+            </td>
+            <td>
+                <p>Writes s to the servlet log. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p><strong>The </strong><br><strong>ServletRequest </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The<strong> </strong><br><strong>ServletRequest </strong><br><strong>
+    </strong><br>interface is implemented by the
+    servlet container. It enables a servlet to obtain information about a
+    client
+    request. Some of its
+    methods are shown in the following table: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getParameter(String pname) </p>
+            </td>
+            <td>
+                <p>Returns the value of the parameter named pname. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Enumeration getParameterNames() </p>
+            </td>
+            <td>
+                <p>Returns an enumeration of the parameter names for this
+                    request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String[] getParameterValues(String pname) </p>
+            </td>
+            <td>
+                <p>Returns an array containing values associated with the
+                    parameter specified by pname. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getProtocol() </p>
+            </td>
+            <td>
+                <p>Returns a description of the protocol. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getContentType() </p>
+            </td>
+            <td>
+                <p>Returns the type of the request. A <strong>null
+                    </strong><br>value is returned if the type
+                    cannot be determined. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>BufferedReader getReader() throws IOException </p>
+            </td>
+            <td>
+                <p>Returns a buffered reader that can be used to read text
+                    from
+                    the request. An
+                    <strong>IllegalStateException </strong><br><strong>
+                    </strong><br>is thrown if
+                    <strong>getInputStrream </strong><br><strong>()
+                    </strong><br>has already been invoked for this
+                    request.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>int getServerPort </p>
+            </td>
+            <td>
+                <p>Returns the port number. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getRemoteHost() </p>
+            </td>
+            <td>
+                <p>Returns the client's host name. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong> </strong><br></p>
+
+<p><strong>The </strong><br><strong>ServletResponse </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The<strong> </strong><br><strong>ServletResponse </strong><br> interface
+    is
+    implemented by the servlet container.
+    It enables a servlet to formulate a response for a client. Its methods
+    are
+    summarized below: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>PrintWriter getWriter() throws IOException </p>
+            </td>
+            <td>
+                <p>Returns a <strong>PrintWriter </strong><br><strong>
+                    </strong><br>that can be used to write
+                    character data to the response. An
+                    <strong>IllegalStateException </strong><br> is thrown if
+                    <strong>getOutputStream </strong><br><strong>()
+                    </strong><br> has already been invoked for this
+                    request.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>ServletOutputStream getOutputStream() throws IOException
+                </p>
+            </td>
+            <td>
+                <p>Returns a <strong>ServletOutputStream </strong><br> that
+                    can
+                    be used to write binary data to
+                    the response. An <strong>IllegalStateException
+                    </strong><br>
+                    is thrown if
+                    <strong>getWriter </strong><br><strong>() </strong><br>
+                    has
+                    already been invoked for this request.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setContentSize(int size) </p>
+            </td>
+            <td>
+                <p>Sets the content length for the response to size. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setContentType(String type) </p>
+            </td>
+            <td>
+                <p>Sets the content type for the response to type. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p>The following are the classes of the javax.servlet package: </p>
+
+<p><strong>The </strong><br><strong>GenericServlet </strong><br><strong>
+        Class:
+    </strong><br></p>
+
+<p> The <strong>GenericServlet </strong><br><strong> </strong><br>class
+    provides
+    implementations of the basic life
+    cycle methods for a servlet. <strong>GenericServlet
+    </strong><br><strong>
+    </strong><br>implements the
+    <strong>Servlet </strong><br>and <strong>ServletConfig </strong><br>
+    interfaces. In addition, a method to append
+    a string to the server log file is available. The signatures of this
+    method
+    are shown below:
+</p>
+
+<p>void log(String s) void log(String s, throwable e) </p>
+
+<p>Here, s is the string to be appended to the log, and e is an exception
+    that
+    occurred. </p>
+
+<p><strong>The </strong><br><strong>ServletInputStream </strong><br><strong>
+        Class: </strong><br></p>
+
+<p>The<strong> </strong><br><strong>ServletInputStream </strong><br><strong>
+    </strong><br>class extends
+    <strong>InputStream </strong><br>. It is implemented by the servlet
+    container and provides an input stream
+    that a servlet developer can use to read the data from a client request.
+    It
+    defines the default
+    constructor. In addition, a method is provided to read bytes from the
+    stream. Its signature is shown
+    here:
+</p>
+
+<p>int readLine(byte[] <em>buffer</em>, int <em>offset</em>, int
+    <em>size</em>)
+    throws IOException </p>
+
+<p>Here, <em>buffer</em> is the array into which <em>size</em> bytes are
+    placed
+    starting at <em>offset</em>.
+    The method returns the actual number of bytes read or -1 if an
+    end-if-stream
+    condition is encountered.
+</p>
+
+<p><strong>The </strong><br><strong>ServletOutputStream
+    </strong><br><strong>
+        Class: </strong><br></p>
+
+<p>The ServletOutputStream class extends OutputStream. It is implemented by
+    the
+    servlet container and
+    provides an output stream that a servlet developer can use to write data
+    to
+    a client response. a default
+    constructor is defined. It also defines the <strong>print()
+    </strong><br>
+    and
+    <strong>println </strong><br><strong>() </strong><br>methods, which
+    output
+    data to the stream.
+</p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>The Servlet Exception Classes: </strong><br></p>
+
+<p><strong>javax.servlet </strong><br><strong> </strong><br>defines two
+    exceptions. The first is
+    <strong>ServeltException </strong><br>, which indicates that a servlet
+    problem has occurred. The second is
+    <strong>UnavailableException </strong><br><strong>, </strong><br> which
+    extends
+</p>
+
+<p><strong>ServletException </strong><br><strong>. </strong><br>It indicates
+    that a servlet is unavailable. </p>
+
+<p><strong>The </strong><br><strong>javax.servlet.http </strong><br><strong>
+        Package: </strong><br></p>
+
+<p>The <strong>javax.servlet.http </strong><br> package contains a number of
+    interfaces and classes that are
+    commonly used by the servlet developers. Its functionality makes it easy
+    to
+    build servlets that work
+    with HTTP requests and responses. The following table summarizes the
+    core
+    interfaces that are available
+    in this package: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Interface </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpServletRequest </p>
+            </td>
+            <td>
+                <p>Enables servlets to read data from an HTTP request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpServletResponse </p>
+            </td>
+            <td>
+                <p>Enables servlets to write data to an HTTP response. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpSession </p>
+            </td>
+            <td>
+                <p>Allows session data to be read and written. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpSessionBindingListener </p>
+            </td>
+            <td>
+                <p>Informs an object that it is bound to or unbound from a
+                    session. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p>The following table summarizes the core classes that are provided in this
+    package. The most important of
+    these is <strong>HttpServlet </strong><br>. Servlet developers typically
+    extend this class in order to
+    process HTTP requests. </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Class </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cookie </p>
+            </td>
+            <td>
+                <p>Allows state information to be stored on a client
+                    machine.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpServlet </p>
+            </td>
+            <td>
+                <p>Provides methods to handle HTTP requests and responses.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpSessionEvent </p>
+            </td>
+            <td>
+                <p>Encapsulates a session-changed event. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>HttpSessionBindingEvent </p>
+            </td>
+            <td>
+                <p>Indicates when a listener is bound to or unbound from a
+                    session value, or that a session
+                    attribute changed. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p><strong>The </strong><br><strong>HttpServletRequest </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The <strong>HttpServletRequest </strong><br> interface is implemented by
+    the
+    servlet container. It enables a
+    servlet to obtain information about a client request. The following
+    table
+    summarizes the methods
+    implemented by this interface. </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Cookie[] getCookies() </p>
+            </td>
+            <td>
+                <p>Returns an array of the cookies in this request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getMethod() </p>
+            </td>
+            <td>
+                <p>Returns the HTTP method for this request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getQueryString() </p>
+            </td>
+            <td>
+                <p>Returns any query string in the URL. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getRemoteUser() </p>
+            </td>
+            <td>
+                <p>Returns the name of the user who issued this request.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getRequestedSeesionId() </p>
+            </td>
+            <td>
+                <p>Returns the ID of the session. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String gerServletPath() </p>
+            </td>
+            <td>
+                <p>Returns the part of the URL that indicates the servlet.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>The </strong><br><strong>HttpServeltResponse
+    </strong><br><strong>
+        Interface: </strong><br></p>
+
+<p>The <strong>HttpServletResponse </strong><br> interface is implemented
+    the
+    servlet container. It enables a
+    servlet to formulate an HTTP response to a client. Servlet constants are
+    defined. These correspond to
+    the different status codes that can be assigned to an HTTP response.
+    Several
+    important methods of this
+    interface are summarized in the following table: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void addCookie() </p>
+            </td>
+            <td>
+                <p>Adds cookie to the HttpResponse. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void sendError(int c) throws IOException </p>
+            </td>
+            <td>
+                <p>Sends the error code c to the client. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void sendError(int c, String s) throws IOException </p>
+            </td>
+            <td>
+                <p>Sends the error code c and message s to the client. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void sendRedirect(String url) throws IOException </p>
+            </td>
+            <td>
+                <p>Redirects the client to the given URL. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setStatus(int code) </p>
+            </td>
+            <td>
+                <p>Sets the status code for this response to code. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setHeader(String field, String mesg) </p>
+            </td>
+            <td>
+                <p>Adds field to the header with value equal to mesg. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>The </strong><br><strong>HttpSession </strong><br><strong>
+        Interface:
+    </strong><br></p>
+
+<p>The <strong>HttpSession </strong><br><strong> </strong><br>interface is
+    implemented by the servlet container. It
+    enables a servlet to read and write the state information that is
+    associated
+    with an HTTP session. The
+    following table summarizes the several methods of this class. All of
+    these
+    methods throw an </p>
+
+<p><strong>IllegalStateException </strong><br><strong> </strong><br>if the
+    session has already been invalidated. </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Descrption </strong><br><strong> </strong><br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Object getAttribute(String attr) </p>
+            </td>
+            <td>
+                <p>Returns the value associated with the name passed in
+                    <em>attr</em>. Returns
+                    <strong>null </strong><br> if <em>attr</em><em> </em>is
+                    not
+                    found.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>long getCreationTime() </p>
+            </td>
+            <td>
+                <p>Returns the time (in milliseconds since midnight, January
+                    1,
+                    1970, GMT) when this session
+                    was created. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getId() </p>
+            </td>
+            <td>
+                <p>Returns the session ID. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void invalidate() </p>
+            </td>
+            <td>
+                <p>Invalidates this session and removes it from the context.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void setAttribute(String s, Object val) </p>
+            </td>
+            <td>
+                <p>Associates the value passed in <em>val</em> with the
+                    attribute name passed in
+                    <em>attr</em><em>. </em>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>The Cookie Class: </strong><br></p>
+
+<p>The <strong>Cookie </strong><br> class encapsulates a cookie. A
+    <em>cookie</em> is stored on a client and
+    contains state information. Cookies are valuable for tracking user
+    activities. For example, assumes that
+    a user visits an online store. A cookie can save the user's name,
+    address,
+    and other information. The
+    user does not need to enter this data each time he or she visits the
+    store.
+    A servlet can write a cookie
+    to a user's machine via the addCookie() method of the
+    HttpServletResponse
+    interface. The names and
+    values of cookies are stored on the user's machine. Some of the
+    information
+    that is saved for each
+    cookie includes the following:
+</p>
+
+<p>The name of the cookie </p>
+
+<p>The value of the cookie </p>
+
+<p>The expiration date of the cookie </p>
+
+<p>The domain and the path of the cookie. </p>
+
+<p>The following table summarizes the several important methods of the
+    <strong>Cookie </strong><br> class:
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p>String getComment() </p>
+            </td>
+            <td>
+                <p>Returns the comment </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getDomain() </p>
+            </td>
+            <td>
+                <p>Returns the domain </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Int getMaxAge() </p>
+            </td>
+            <td>
+                <p>Returns the age </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getName() </p>
+            </td>
+            <td>
+                <p>Returns the name </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>String getPath() </p>
+            </td>
+            <td>
+                <p>Returns the path </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Boolean getSecure() </p>
+            </td>
+            <td>
+                <p>Returns true if the cookie is secure </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Int getVersion() </p>
+            </td>
+            <td>
+                <p>Returns the version </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Void setComment(String c) </p>
+            </td>
+            <td>
+                <p>Sets the comment to c </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Void setDomain(String d) </p>
+            </td>
+            <td>
+                <p>Sets the domain to d </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Void setPath(String p) </p>
+            </td>
+            <td>
+                <p>Sets the path to p </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Void setSecure(boolean secure) </p>
+            </td>
+            <td>
+                <p>Sets the security flag to secure </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>The </strong><br><strong>HttpServlet </strong><br><strong> Class:
+    </strong><br></p>
+
+<p>The HttpServlet class extends GenericServlet. It is commonly used when
+    developing servlets that receive
+    and process HTTP requests. Following are the methods used by
+    <strong>HttpServlet </strong><br> class:
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void doDelete(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Handles an HTTP DELETE. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void doGet(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Handles an HTTP GET. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void doPost(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Handles an HTTP POST. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void doPut(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Handles an HTTP PUT. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void doTrace(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Handles an HTTP TRACE. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>void service(HttpServletRequest req, </p>
+
+                <p>HttpServletResponse res) throws </p>
+
+                <p>IOException, ServletExcpetion </p>
+            </td>
+            <td>
+                <p>Called by the server when an HTTP request for this
+                    servlet.
+                    The arguments provide access
+                    to the HTTP request and response, respectively. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Reading Parameters: </p>
+
+<p>The parameters for the servlets can be read in one of the two ways. They
+    are:
+</p>
+
+<p>Initialized Parameters </p>
+
+<p>Servlet Parameters </p>
+
+<p><strong>Reading Initialized Parameters: </strong><br></p>
+
+<p>The initialized parameters are the parameters which are initialized in
+    the
+    web.xml file and they are not
+    changeable in the entire servlet. These parameters are first written
+    into
+    the web.xml file by using
+    &lt;init-param&gt; tag. This tag contains two more sub tags: first,
+    &lt;param-name&gt;, which indicates
+    the name of the parameter. Second tag is &lt;param-value&gt;, which
+    contains
+    the value for the name
+    given. The following example shows how the initialized parameters can be
+    set
+    and get through servlets.
+</p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>web.xml: </strong><br>&lt;web-app&gt; </p>
+
+<p> &nbsp;&lt;servlet&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-name&gt;InitParam&lt;/servlet-name&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-class&gt; InitParamDemo&lt;/servlet-class&gt;
+</p>
+
+<p> &nbsp; &nbsp;&lt;init-param&gt; </p>
+
+<p> &nbsp; &nbsp; &nbsp;&lt;param-name&gt;name&lt;/param-name&gt; </p>
+
+<p> &nbsp; &nbsp; &nbsp;&lt;param-value&gt;Ravi&lt;/param-value&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;/init-param&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;init-param&gt; </p>
+
+<p> &nbsp; &nbsp; &nbsp;&lt;param-name&gt;class&lt;/param-name&gt; </p>
+
+<p> &nbsp; &nbsp;
+    &nbsp;&lt;param-value&gt;ParamReadingDemo&lt;/param-value&gt;
+</p>
+
+<p> &nbsp; &nbsp;&lt;/init-param&gt; </p>
+
+<p> &nbsp;&lt;/servlet&gt; </p>
+
+<p> &nbsp;&lt;servlet-mapping&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-name&gt; InitParam&lt;/servlet-name&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;url-pattern&gt;/&lt;/url-pattern&gt; </p>
+
+<p> &nbsp;&lt;/servlet-mapping&gt; &lt;/web-app&gt; </p>
+
+<p><strong>InitParamDemo.java: </strong><br>import java.io.*; import
+    javax.servlet.*; import
+    javax.servlet.http.*; </p>
+
+<p>public class InitParamDemo extends HttpServlet </p>
+
+<p>{ </p>
+
+<p>public &nbsp;void &nbsp;service(HttpServletRequest &nbsp;req,
+    &nbsp;HttpServletResponse &nbsp;res)
+    &nbsp;throws IOException, ServletException </p>
+
+<p>{ </p>
+
+<p>ServletConfig sc=getServletConfig(); res.setContentType("text/html");
+    PrintWriter out=res.getWriter();
+    out.println("Name: "+sc.getInitParameter("name")+"\n");
+    out.println("Class:
+    "+sc.getInitParameter("class")); </p>
+
+<p>} </p>
+
+<p>} </p>
+
+<p><strong>Ouput </strong><br><strong>: </strong><br></p>
+
+<div><img src="#"></div>
+
+<strong> </strong><br>
+<p><strong>Reading Servlet Parameters: </strong><br></p>
+
+<p>The <strong>ServletRequest </strong><br> interface includes methods that
+    allow us to read the names and values
+    of the parameters that are included in a client request. These requests
+    are
+    usually come from a HTML
+    page. The following example illustrates the usage of servlet parameters.
+    The
+    example contains two files.
+    One is a web page, which sends the data to the server. And other one is
+    a
+    servlet which is defined for
+    handling of the parameters sent by the client. </p>
+
+<p><strong>LoginPage.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;Login Form&lt;/title&gt; </p>
+
+<p>&lt;style type="text/css"&gt; </p>
+
+<p>body { </p>
+
+<p>text-align:center; </p>
+
+<p>} </p>
+
+<p>&lt;/style&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" action="LoginServlet" method="get"&gt; </p>
+
+<p>&lt;h1&gt;Login Form&lt;/h1&gt; </p>
+
+<p>&lt;table&gt; </p>
+
+<p>&lt;tr&gt; </p>
+
+<p>&lt;td&gt;User Name:&lt;/td&gt; </p>
+
+<p>&lt;td&gt;&lt;input type="text" name="uname"&gt; </p>
+
+<p>&lt;/td&gt; </p>
+
+<p>&lt;/tr&gt; </p>
+
+<p>&lt;tr&gt; </p>
+
+<p>&lt;td&gt;Password:&lt;/td&gt; </p>
+
+<p>&lt;td&gt;&lt;input type="password" name="pwd"&gt; </p>
+
+<p>&lt;/td&gt; </p>
+
+<p>&lt;/tr&gt; </p>
+
+<p>&lt;tr&gt; </p>
+
+<p>&lt;td&gt;&lt;input type="submit" value="Login"&gt;&lt;/td&gt; </p>
+
+<p>&lt;td&gt;&lt;input type="reset" value="Clear"&gt;&lt;/td&gt; </p>
+
+<p>&lt;/tr&gt; </p>
+
+<p>&lt;/table&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>LoginServlet.java: </strong><br> import java.io.*; import
+    javax.servlet.*; import
+    javax.servlet.http.*; </p>
+
+<p>public class LoginServlet extends HttpServlet </p>
+
+<p>{ public void doGet(HttpServletRequest req,HttpServletResponse res)
+    throws
+    IOException, ServletException
+</p>
+
+<p> &nbsp;{ </p>
+
+<p> &nbsp; &nbsp;String name=req.getParameter("uname");   &nbsp;String
+    pwd=req.getParameter("pwd"); &nbsp;
+    &nbsp;res.setContentType("text/html"); &nbsp; &nbsp;PrintWriter
+    out=res.getWriter(); </p>
+
+<p> &nbsp; &nbsp;if(name.equals("Chythu")&amp;&amp;pwd.equals("chythu536"))
+</p>
+
+<p> &nbsp; &nbsp;{ &nbsp; </p>
+
+<p> &nbsp; &nbsp; &nbsp;out.println("Login Successfully Completed"); </p>
+
+<p> &nbsp; &nbsp; &nbsp;out.println("&lt;b&gt;&lt;br&gt;"); &nbsp; &nbsp;
+    &nbsp;out.println("Welcome Mr.
+    "+name); &nbsp; &nbsp; &nbsp;out.println("&lt;/b&gt;"); </p>
+
+<p> &nbsp; &nbsp;} </p>
+
+<p> &nbsp; &nbsp;else </p>
+
+<p> &nbsp; &nbsp; &nbsp;out.println("Login Failed"); </p>
+
+<p> &nbsp; &nbsp;out.close(); </p>
+
+<p> &nbsp;} </p>
+
+<p>} </p>
+
+<p><strong>web.xml: </strong><br>&lt;web-app&gt; </p>
+
+<p> &nbsp;&lt;servlet&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-name&gt;LoginServ&lt;/servlet-name&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-class&gt;LoginServlet&lt;/servlet-class&gt;
+</p>
+
+<p> &nbsp;&lt;/servlet&gt; </p>
+
+<p> &nbsp;&lt;servlet-mapping&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;servlet-name&gt; LoginServ &lt;/servlet-name&gt; </p>
+
+<p> &nbsp; &nbsp;&lt;url-pattern&gt;/LoginServlet&lt;/url-pattern&gt; </p>
+
+<p> &nbsp;&lt;/servlet-mapping&gt; &lt;/web-app&gt; </p>
+
+<p>Handling HTTP Requests and Responses: </p>
+
+<p>The <strong>HttpServlet </strong><br> class provides specialized methods
+    that
+    handle the various types of HTTP
+    requests. A servlet developer typically overrides one of these methods.
+    These methods are
+    <strong>doDelete </strong><br><strong>( ), </strong><br><strong>doGet
+    </strong><br><strong>( ),
+    </strong><br><strong>doHead </strong><br><strong>( ),
+    </strong><br><strong>doOptions </strong><br><strong>( ),
+    </strong><br><strong>doPost </strong><br><strong>( ),
+    </strong><br><strong>doPut </strong><br><strong>( ),
+    </strong><br>and<strong> </strong><br><strong>doTrace
+    </strong><br><strong>(
+        ). </strong><br>
+</p>
+
+<p><strong>Handling HTTP GET Request: </strong><br></p>
+
+<p>The <strong>GET </strong><br> requests from the form submitted by the
+    user
+    are handled by the servlet with the
+    help of <strong>doGet </strong><br><strong>() </strong><br> method which
+    is
+    provided by the
+    <strong>HttpServlet </strong><br> class. Here we will develop a servlet
+    that
+    handles an HTTP GET request. The
+    servlet is invoked when a form on a web page is submitted. The example
+    contains two files. A web page is
+    defined in <strong>GetFruit.html </strong><br>, and a servlet is defined
+    in
+    <strong>FruitServlet.java.
+    </strong><br>The HTML page defines a form that contains a select element
+    and
+    a submit button.
+</p>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>GetFruit.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt; Do Get Demo&lt;/title&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" action="Myserv1" method="get"&gt; </p>
+
+<p>&lt;b&gt; Fruit&lt;/b&gt; </p>
+
+<p>&lt;select name="fruit" &gt; </p>
+
+<p>&lt;option value="banana"&gt; Banana&lt;/option&gt; </p>
+
+<p>&lt;option value="mango"&gt; Mango&lt;/option&gt; </p>
+
+<p>&lt;option value="orange"&gt; Orange&lt;/option&gt; </p>
+
+<p>&lt;option value="apple"&gt; Apple&lt;/option&gt; </p>
+
+<p>&lt;/select&gt; </p>
+
+<p>&lt;input type="submit" value="submit"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>The source code for <strong>FruitServlet.java </strong><br> is shown
+    below.
+    The doGet() method is overridden
+    to process any HTTP GET requests that are sent to this servlet. It uses
+    the
+    getParameter() method of
+    HttpServletRequest to obtain the selection that was made by the user.
+</p>
+
+<p>A response is then formulated. </p>
+
+<p><strong>FruitServlet.java: </strong><br>import java.io.*; import
+    javax.servlet.*; import
+    javax.servlet.http.*; </p>
+
+<p>public class FruitServlet extends HttpServlet </p>
+
+<p>{ </p>
+
+<p> public void doGet(HttpServletRequest req,HttpServletResponse res) throws
+    IOException, ServletException
+</p>
+
+<p> &nbsp;{ </p>
+
+<p> &nbsp; &nbsp;String Fruit=req.getParameter("fruit"); &nbsp;
+    &nbsp;res.setContentType("text/html");
+    &nbsp; &nbsp;PrintWriter out=res.getWriter(); &nbsp;
+    &nbsp;out.println("you
+    have selected fruit :"
+    +Fruit); </p>
+
+<p> &nbsp; &nbsp;out.close(); </p>
+
+<p> &nbsp;} </p>
+
+<p>} </p>
+
+<p>Compile the servlet. Next, copy the .class file the web application's
+    classes
+    folder and update the
+    web.xml file. Then perform these steps to run this servlet. </p>
+
+<p>Start Tomcat, if it is not already running. </p>
+
+<p>Display the web page in a browser. </p>
+
+<p>Select a fruit. </p>
+
+<p>Submit the web page. </p>
+
+<div><img src="#"></div>
+
+<p><strong>Handling HTTP POST Requests: </strong><br> </p>
+
+<p>The <strong>POST </strong><br> requests from the form submitted by the
+    user
+    are handled by the servlet with
+    the help of <strong>doPost </strong><br><strong>() </strong><br> method
+    which is provided by the
+    <strong>HttpServlet </strong><br> class. Here we will develop a servlet
+    that
+    handles an HTTP POST request.
+    The servlet is invoked when a form on a web page is submitted. The
+    example
+    contains two files. A web
+    page is defined in <strong>PostFruit.html </strong><br>, and a servlet
+    is
+    defined in
+    <strong>FruitServlet.java. </strong><br>The HTML page defines a form
+    that
+    contains a select element and a
+    submit button.
+</p>
+
+<p><strong>PostFruit.html: </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt; Do Post Demo&lt;/title&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" action="Myserv1" method="post"&gt; </p>
+
+<p>&lt;b&gt; Fruit&lt;/b&gt; </p>
+
+<p>&lt;select name="fruit" &gt; </p>
+
+<p>&lt;option value="banana"&gt; Banana&lt;/option&gt; </p>
+
+<p>&lt;option value="mango"&gt; Mango&lt;/option&gt; </p>
+
+<p>&lt;option value="orange"&gt; Orange&lt;/option&gt; </p>
+
+<p>&lt;option value="apple"&gt; Apple&lt;/option&gt; </p>
+
+<p>&lt;/select&gt; </p>
+
+<p>&lt;input type="submit" value="submit"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>The source code for <strong>FruitServlet.java </strong><br> is shown
+    below.
+    The doPost() method is overridden
+    to process any HTTP POST requests that are sent to this servlet. It uses
+    the
+    getParameter() method of
+    HttpServletRequest to obtain the selection that was made by the user.
+</p>
+
+<p>A response is then formulated. </p>
+
+<p><strong>FruitServlet.java: </strong><br>import java.io.*; import
+    javax.servlet.*; import
+    javax.servlet.http.*; </p>
+
+<p>public class FruitServlet extends HttpServlet </p>
+
+<p>{ </p>
+
+<p> &nbsp;public &nbsp;void &nbsp;doPost(HttpServletRequest
+    &nbsp;req,HttpServletResponse &nbsp;res)
+    &nbsp;throws IOException, ServletException </p>
+
+<p> &nbsp;{ </p>
+
+<p> &nbsp; &nbsp;String Fruit=req.getParameter("fruit"); &nbsp;
+    &nbsp;res.setContentType("text/html");
+    &nbsp; &nbsp;PrintWriter out=res.getWriter(); &nbsp;
+    &nbsp;out.println("you
+    have selected fruit :"
+    +Fruit); </p>
+
+<p> &nbsp; &nbsp;out.close(); </p>
+
+<p> &nbsp;} </p>
+
+<p>} </p>
+
+<p>Compile the servlet. Next, copy the .class file the web application's
+    classes
+    folder and update the
+    web.xml file. Then perform these steps to run this servlet. </p>
+
+<p>Start Tomcat, if it is not already running. </p>
+
+<p>Display the web page in a browser. </p>
+
+<p>Select a fruit. </p>
+
+<p>Submit the web page. </p>
+
+<div><img src="#"></div>
+
+<p>Using Cookies: </p>
+
+<p>A <em>cookie</em> is small amount information stored on a client machine
+    and
+    contains state information.
+    Cookies are valuable for tracking user activities. This example contains
+    two
+    files as below: </p>
+
+<p>CookieDemo.html Allows a user to specify a value for the cookie named
+    MyCookie. CookieDemo.java
+    Processes the submission of the CookieDemo.html. </p>
+
+<p><strong>CookieDemo.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" method="post" action="CookieDemo"&gt; </p>
+
+<p>&lt;b&gt;Enter the value for cookie&lt;/b&gt; </p>
+
+<p>&lt;input type=text name="txt_data" size=30 value=""&gt; </p>
+
+<p>&lt;input type=submit value="Add Cookie"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>CookieDemo.java: </strong><br>import java.io.*; import
+    javax.servlet.*; import javax.servlet.http.*;
+</p>
+
+<p>public class CookieDemo extends HttpServlet </p>
+
+<p>{ </p>
+
+<p> public void doPost(HttpServletRequest req,HttpServletResponse res)throws
+    ServletException, IOException
+</p>
+
+<p> &nbsp;{ </p>
+
+<p> String data=req.getParameter("txt_data"); Cookie cookie=new
+    Cookie("Mycookie",data); </p>
+
+<p> &nbsp; &nbsp;res.addCookie(cookie); &nbsp;
+    &nbsp;res.setContentType("text/html"); &nbsp;
+    &nbsp;PrintWriter out=res.getWriter(); </p>
+
+<p> &nbsp; &nbsp;out.println("my cookie has been set to: "); </p>
+
+<p> &nbsp; &nbsp;out.println(data); </p>
+
+<p> &nbsp; &nbsp;out.println("&lt;br&gt;"); </p>
+
+<p> &nbsp; &nbsp;out.println("this page shows that cookie has been added");
+</p>
+
+<p> &nbsp; &nbsp;out.close(); </p>
+
+<p> &nbsp;} </p>
+
+<p>} </p>
+
+<p>Compile the servlet. Next, copy the .class file the web application's
+    classes
+    folder and update the
+    web.xml file. Then perform these steps to run this servlet. </p>
+
+<p>Start Tomcat, if it is not already running. </p>
+
+<p>Display the <strong>CookieDemo.html </strong><br> in a browser. </p>
+
+<p>Enter a value for MyCookie. </p>
+
+<p>Submit the web page. </p>
+
+<div><img src="#"></div>
+
+<p> </p>
+
+<div><img src="#"></div>
+
+<p>Session Tracking: </p>
+
+<p>HTTP is a stateless protocol. Each request is independent of the previous
+    one. However, in some
+    applications it is necessary to save state information so that
+    information
+    can be collected from several
+    interactions between a browser and a server. Sessions provide such a
+    mechanism. A session can be created
+    via the <strong>getSession </strong><br><strong>( ) </strong><br> method
+    of
+    the
+    <strong>HttpServletRequest </strong><br>. An <strong>HttpSession
+    </strong><br> object is returned. This object can
+    store a set of bindings that associate names with objects.
+</p>
+
+<p>The <strong>setAttribute </strong><br><strong>( ),
+    </strong><br><strong>getAttribute </strong><br><strong>( ).
+    </strong><br><strong>getAttributeNames </strong><br><strong>( ),
+    </strong><br>and
+    <strong>removeAttribute </strong><br><strong>( ) </strong><br>methods of
+    <strong>HttpSession </strong><br> manage
+    these bindings. The following example illustrates how to use session
+    state.
+    The
+    <strong>getSession </strong><br><strong>( ) </strong><br> method gets
+    the
+    current session. A new session is
+    created if one does not already exist. The getAttribute( ) method is
+    called
+    to obtain the object that is
+    bound to the name "cnt".
+</p>
+
+<p><strong>Sessions.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;Session Demo&lt;/title&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form name="form1" action="serv3" &gt; </p>
+
+<p>&lt;b&gt; Session Demo&lt;/b&gt;&lt;br&gt; </p>
+
+<p>&lt;input type="submit" value="Go to My Session Demo"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>SessionDemo.java: </strong><br> import java.io.*; import
+    javax.servlet.*; import java.util.*; import
+    javax.servlet.http.*; </p>
+
+<p>public class SessionDemo extends HttpServlet { </p>
+
+<p> &nbsp;public &nbsp;void &nbsp;doGet(HttpServletRequest &nbsp;req,
+    &nbsp;HttpServletResponse
+    &nbsp;res)throws IOException,ServletException </p>
+
+<p> &nbsp;{ </p>
+
+<p> &nbsp; &nbsp;res.setContentType("text/html"); &nbsp; &nbsp;HttpSession
+    session=req.getSession(); </p>
+
+<p> &nbsp; &nbsp;String heading; </p>
+
+<p> &nbsp; &nbsp;Integer cnt=(Integer)session.getAttribute("cnt"); </p>
+
+<p> &nbsp; &nbsp;if(cnt==null) </p>
+
+<p> &nbsp; &nbsp;{ </p>
+
+<p> &nbsp; &nbsp; &nbsp;cnt=new Integer(0); </p>
+
+<p> &nbsp; &nbsp; &nbsp;heading="Welcome for the first time"; </p>
+
+<p> &nbsp; &nbsp;} </p>
+
+<p> &nbsp; &nbsp;else </p>
+
+<p> &nbsp; &nbsp;{ </p>
+
+<p> &nbsp; &nbsp; &nbsp;heading="Welcome once again"; </p>
+
+<p> &nbsp; &nbsp; &nbsp;cnt=new Integer(cnt.intValue()+1); </p>
+
+<p> &nbsp; &nbsp;} </p>
+
+<p> &nbsp; &nbsp;session.setAttribute("cnt",cnt); &nbsp;  PrintWriter
+    out=res.getWriter(); &nbsp;
+    &nbsp;out.println("&lt;html&gt;"); </p>
+
+<p>out.println("&lt;body&gt;"); </p>
+
+<p>out.println("&lt;h1&gt;"+heading); </p>
+
+<p>out.println("The number of previous accesses: "+cnt);
+    out.println("&lt;/body&gt;"); </p>
+
+<p>out.println("&lt;/html&gt;"); </p>
+
+<p> &nbsp;} </p>
+
+<p>} </p>
+
+<p> </p>
+
+<p> </p>
+
+<p>Connecting to the Database using JDBC: </p>
+
+<p>JDBC stands for <strong>J </strong><br>ava <strong>D
+    </strong><br>ata<strong>b </strong><br>ase
+    <strong>C </strong><br>onnectivity, which is a standard Java API for
+    database independent connectivity
+    between the Java programming language, and a wide range of databases.
+    The
+    JDBC library includes APIs for
+    each of the tasks mentioned below that are commonly associated with
+    database
+    usage.
+</p>
+
+<p>Making a connection to a database. </p>
+
+<p>Creating SQL or MySQL statements. </p>
+
+<p>Executing SQL or MySQL queries in the database. </p>
+
+<p>Viewing &amp; Modifying the resulting records. </p>
+
+<p>Fundamentally, JDBC is a specification that provides a complete set of
+    interfaces that allows for
+    portable access to an underlying database. Java can be used to write
+    different types of executables,
+    such as: </p>
+
+<p>Java Applications </p>
+
+<p>Java Applets </p>
+
+<p>Java Servlets </p>
+
+<p>Java ServerPages (JSPs) </p>
+
+<p>Enterprise JavaBeans (EJBs). </p>
+
+<p>All of these different executables are able to use a JDBC driver to
+    access a
+    database, and take advantage
+    of the stored data. JDBC provides the same capabilities as ODBC,
+    allowing
+    Java programs to contain
+    database-independent code. </p>
+
+<p><strong>JDBC Architecture: </strong><br></p>
+
+<p>The JDBC API supports both two-tier and three-tier processing models for
+    database access but in general,
+    JDBC Architecture consists of two layers: </p>
+
+<p><strong>JDBC API: </strong><br>This provides the application-to-JDBC
+    Manager
+    connection. </p>
+
+<p><strong>JDBC Driver API: </strong><br>This supports the JDBC
+    Manager-to-Driver Connection. </p>
+
+<div><img src="#"></div>
+
+<strong> </strong><br>
+<p>Above figure is the architectural diagram, which shows the location of
+    the
+    driver manager with respect to
+    the JDBC drivers and the Java application: </p>
+
+<p>The JDBC API uses a driver manager and database-specific drivers to
+    provide
+    transparent connectivity to
+    heterogeneous databases. The JDBC driver manager ensures that the
+    correct
+    driver is used to access each
+    data source. The driver manager is capable of supporting multiple
+    concurrent
+    drivers connected to
+    multiple heterogeneous databases. </p>
+
+<p><strong>What is JDBC Driver? </strong><br></p>
+
+<p>The JDBC drivers implement the defined interfaces in the JDBC API, for
+    interacting with your database
+    server. For example, using JDBC drivers enable you to open database
+    connections and to interact with it
+    by sending SQL or database commands then receiving results with Java.
+    The
+    <em>java.sql</em><em>
+    </em>package that ships with JDK contains various classes with their
+    behavior defined and their actual
+    implementations are done in third-party drivers. Third party vendors
+    implement the
+    <em>java.sql.Driver</em><em> </em>interface in their database driver.
+</p>
+
+<p><strong>JDBC Drivers Types: </strong><br></p>
+
+<p>The JDBC driver implementations vary because of the wide variety of
+    operating
+    systems and hardware
+    platforms in which Java operates. Sun has divided the implementation
+    types
+    into four categories, Types
+    1, 2, 3, and 4, which are listed below: </p>
+
+<p>Type-1: JDBC-ODBC Bridge Driver </p>
+
+<p>Type-2: JDBC Native API </p>
+
+<p>Type-3: JDBC-Net Pure Java </p>
+
+<p>Type-4: 100% Pure Java </p>
+
+<p><strong>Type-1: JDBC-ODBC Bridge Driver: </strong><br></p>
+
+<p>In a Type 1 driver, a JDBC bridge is used to access ODBC drivers
+    installed on
+    each client machine. Using
+    ODBC requires configuring on your system a Data Source Name (DSN) that
+    represents the target database.
+</p>
+
+<p>When Java first came out, this was a useful driver because most databases
+    only supported ODBC access but
+    now this type of driver is recommended only for experimental use or when
+    no
+    other alternative is
+    available. </p>
+
+<p><strong>Type-2: JDBC Native API: </strong><br></p>
+
+<p>In a Type 2 driver, JDBC API calls are converted into native C/C++ API
+    calls,
+    which are unique to the
+    database. These drivers are typically provided by the database vendors
+    and
+    used in the same manner as
+    the JDBC-ODBC Bridge. The vendor-specific driver must be installed on
+    each
+    client machine. </p>
+
+<p>If we change the Database, we have to change the native API, as it is
+    specific to a database and they are
+    mostly obsolete now, but you may realize some speed increase with a Type
+    2
+    driver, because it eliminates
+    ODBC's overhead. </p>
+
+<p><strong>Type-3: JDBC-Net Pure Java: </strong><br></p>
+
+<p>In a Type 3 driver, a three-tier approach is used to access databases.
+    The
+    JDBC clients use standard
+    network sockets to communicate with a middleware application server. The
+    socket information is then
+    translated by the middleware application server into the call format
+    required by the DBMS, and forwarded
+    to the database server. </p>
+
+<p>This kind of driver is extremely flexible, since it requires no code
+    installed on the client and a single
+    driver can actually provide access to multiple databases. </p>
+
+<p><strong>Type-4: 100%Pure Java: </strong><br></p>
+
+<p>In a Type 4 driver, a pure Java-based driver communicates directly with
+    the
+    vendor's database through
+    socket connection. This is the highest performance driver available for
+    the
+    database and is usually
+    provided by the vendor itself. </p>
+
+<p>This kind of driver is extremely flexible, you don't need to install
+    special
+    software on the client or
+    server. Further, these drivers can be downloaded dynamically. </p>
+
+<p><strong>Which Driver should be used? </strong><br></p>
+
+<p>If you are accessing one type of database, such as Oracle, Sybase, or
+    IBM,
+    the preferred driver type is
+    4. </p>
+
+<p>If your Java application is accessing multiple types of databases at the
+    same
+    time, type 3 is the
+    preferred driver. </p>
+
+<p>Type 2 drivers are useful in situations, where a type 3 or type 4 driver
+    is
+    not available yet for your
+    database. </p>
+
+<p>The type 1 driver is not considered a deployment-level driver, and is
+    typically used for development and
+    testing purposes only. </p>
+
+<p><strong>Common JDBC Components: </strong><br></p>
+
+<p>The JDBC API provides the following interfaces and classes: </p>
+
+<p><strong>DriverManager </strong><br><strong>: </strong><br>This class
+    manages
+    a list of database drivers. Matches
+    connection requests from the java application with the proper database
+    driver using communication sub
+    protocol. The first driver that recognizes a certain sub protocol under
+    JDBC
+    will be used to establish a
+    database Connection. </p>
+
+<p><strong>Driver: </strong><br>This interface handles the communications
+    with
+    the database server. You will
+    interact directly with Driver objects very rarely. Instead, you use
+    DriverManager objects, which manage
+    objects of this type. It also abstracts the details associated with
+    working
+    with Driver objects. </p>
+
+<p><strong>Connection: </strong><br>This interface with all methods for
+    contacting a database. The connection
+    object represents communication context, i.e., all communication with
+    database is through connection
+    object only. </p>
+
+<p><strong>Statement: </strong><br>You use objects created from this
+    interface
+    to submit the SQL statements to
+    the database. Some derived interfaces accept parameters in addition to
+    executing stored procedures. </p>
+
+<p><strong>ResultSet </strong><br><strong>: </strong><br>These objects hold
+    data
+    retrieved from a database after you
+    execute an SQL query using Statement objects. It acts as an iterator to
+    allow you to move through its
+    data.  <strong>SQLException </strong><br><strong>: </strong><br> This
+    class
+    handles any errors that occur in a
+    database application. </p>
+
+<p><strong>The Basic Steps to Connect to a Database Using Servlet:
+    </strong><br>
+</p>
+
+<p>There are 5 basic steps to be followed to connect to a database using
+    servlets. They are as follows: </p>
+
+<p>Establish a <strong>Connection </strong><br> </p>
+
+<p>Create JDBC <strong>Statements </strong><br> </p>
+
+<p>Execute <strong>SQL </strong><br> Statements </p>
+
+<p>GET <strong>ResultSet </strong><br> </p>
+
+<p><strong>Close </strong><br> connections </p>
+
+<p><strong> </strong><br><strong>&nbsp; </strong><br> </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p><strong>Login.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;Login Form&lt;/title&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;center&gt; </p>
+
+<p> &lt;h1&gt;Login Form&lt;/h1&gt; </p>
+
+<p> &lt;form action="login" method="post"&gt; </p>
+
+<p> &lt;table&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;User name:&lt;/td&gt; </p>
+
+<p> &lt;td&gt;&lt;input type="text" name="uname"/&gt;&lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;Password:&lt;/td&gt; </p>
+
+<p> &lt;td&gt;&lt;input type="password" name="pwd"/&gt;&lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;&lt;input type="submit" value="Login"&gt;&lt;/td&gt; </p>
+
+<p> &lt;td&gt;&lt;input type="reset" value="Clear"/&gt;&lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;/table&gt; </p>
+
+<p> &lt;/form&gt; </p>
+
+<p> &lt;/center&gt; </p>
+
+<p> &lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>LoginSrv.java: </strong><br>import java.io.*; import java.util.*;
+    import javax.servlet.*; import
+    javax.servlet.http.*; import java.sql.*; </p>
+
+<p>public class LoginSrv extends HttpServlet </p>
+
+<p>{ </p>
+
+<p>public void doPost(HttpServletRequest request, HttpServletResponse
+    response)
+    throws ServletException,
+    IOException </p>
+
+<p>{ try { response.setContentType("text/html"); PrintWriter
+    out=response.getWriter(); </p>
+
+<p>String un=request.getParameter("uname"); String
+    pwd=request.getParameter("pwd");
+    out.println("&lt;head&gt;&lt;title&gt;SCCE&lt;/title&gt;&lt;/head&gt;");
+    Class.forName("com.mysql.jdbc.Driver"); </p>
+
+<p>Connection
+    con=DriverManager.getConnection("jdbc:mysql://localhost:3306/scce",
+    "root",
+    ""); Statement
+    stmt=con.createStatement(); </p>
+
+<p>ResultSet &nbsp;rs=stmt.executeQuery("select &nbsp;* &nbsp;from
+    &nbsp;Login
+    &nbsp;where
+    &nbsp;uname='"+un+"' &nbsp;and pwd='"+pwd+"'"); </p>
+
+<p>if(rs.next()) </p>
+
+<p>out.println("&lt;h1&gt;Welcome "+rs.getString(1)+", You are logged in
+    successfully&lt;/h1&gt;"); else
+</p>
+
+<p>out.println("&lt;h1&gt;Login Failed&lt;/h1&gt;"); </p>
+
+<p>} </p>
+
+<p>catch(Exception se) </p>
+
+<p>{ </p>
+
+<p>se.printStackTrace(); </p>
+
+<p>} </p>
+
+<p>} </p>
+
+<p><strong>web.xml: </strong><br>&lt;web-app&gt; </p>
+
+<p>&lt;servlet&gt; </p>
+
+<p>&lt;servlet-name&gt;LoginSrv&lt;/servlet-name&gt; </p>
+
+<p>&lt;servlet-class&gt;LoginSrv&lt;/servlet-class&gt; </p>
+
+<p>&lt;/servlet&gt; </p>
+
+<p>&lt;servlet-mapping&gt; </p>
+
+<p>&lt;servlet-name&gt;LoginSrv&lt;/servlet-name&gt; </p>
+
+<p>&lt;url-pattern&gt;/login&lt;/url-pattern&gt; </p>
+
+<p>&lt;/servlet-mapping&gt; &lt;/web-app&gt; </p>
+
+        </section> <pre>
+
+
+</pre>
+                    <div class="button-container">
+                        <a href="page7.html" class="previous-button">&laquo; Previous</a>
+                        <a href="page9.html" class="next-button ">Next &raquo;</a>
+                    </div>
+
+                    <pre>
+
+
+
+</pre>
+                    <!--footer on my code-->
+                    <footer class=" footer ">
+                        <div class="container ">
+                            <div class="row ">
+                                <div class="footer-col ">
+                                    <h4>company</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html ">HOME</a>
+                                        </li>
+                                        <li><a href="aboutus.html " target="_blank ">About us</a></li>
+                                        <li><a href="# " target="_blank ">Blog</a></li>
+                                        <li><a href="privacy.html " target="_blank ">Privacy policy</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-col ">
+                                    <h4>get help</h4>
+                                    <ul>
+                                        <li><a href="Fqa.html ">FAQ</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-col ">
+                                    <h4>follow us</h4>
+                                    <div class="social-links ">
+                                        <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                        <a href="# "><i class="fab fa-twitter "></i></a>
+                                        <a href="# "><i class="fab fa-instagram "></i></a>
+                                        <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+</body>
+
+</html>

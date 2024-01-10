@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>myvidhyapith</title>
+    <style>
+        pre,
+        li {
+            color: rgb(51, 51, 90);
+        }
+    </style>
+    <script src="Script.js">
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+    <h1 class="top-name">Myvidhyapith</h1>
+    <img class="image-profile"
+        src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true"
+        style="float:right;" />
+</header>
+
+<body>
+    <div class="header">
+        <div id="sidebar">
+
+
+            <div class="toggle-btn" onclick="toggleS()">
+                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
+            </div>
+            <ul>
+                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
+                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
+                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i
+                            class="fas fa-phone-square"> Contact us</i></a></li>
+                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here"
+                        target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow
+                            Us</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container12">
+
+        <section>
+
+
+         
+<h2>AJAX AND ANGULAR JS </h2>
+
+<p><b>INTRODUCTION TO AJAX: </b></p>
+
+<p>AJAX stands for <strong>A </strong><br>synchronous <strong>Ja
+    </strong><br>vaScript and <strong>X </strong><br>ML. AJAX
+    is a new technique for creating better, faster, and more interactive web
+    applications with the help of
+    XML, HTML, CSS, and Java Script. </p>
+
+<p>Ajax uses XHTML for content, CSS for presentation, along with Document
+    Object
+    Model and JavaScript for
+    dynamic content display. </p>
+
+<p>Conventional web applications transmit information to and from the sever
+    using synchronous requests. It
+    means you fill out a form, hit submit, and get directed to a new page
+    with
+    new information from the
+    server. </p>
+
+<p>With AJAX, when you hit submit, JavaScript will make a request to the
+    server,
+    interpret the results, and
+    update the current screen. In the purest sense, the user would never
+    know
+    that anything was even
+    transmitted to the server. </p>
+
+<p>XML is commonly used as the format for receiving server data, although
+    any
+    format, including plain text,
+    can be used. </p>
+
+<p>AJAX is a web browser technology independent of web server software. </p>
+
+<p>A user can continue to use the application while the client program
+    requests
+    information from the server
+    in the background. </p>
+
+<p>Intuitive and natural user interaction. Clicking is not required, mouse
+    movement is a sufficient event
+    trigger. </p>
+
+<p>Data-driven as opposed to page-driven. </p>
+
+<p>AJAX is based on the following open standards − </p>
+
+<p>Browser-based presentation using HTML and Cascading Style Sheets (CSS).
+</p>
+
+<p>Data is stored in XML format and fetched from the server. </p>
+
+<p>Behind-the-scenes data fetches using XMLHttpRequest objects in the
+    browser. 
+    &nbsp;JavaScript to make
+    everything happen. </p>
+
+<p>AJAX cannot work independently. It is used in combination with other
+    technologies to create interactive
+    webpages. </p>
+
+<p><strong>JavaScript: </strong><br></p>
+
+<p>Loosely typed scripting language. </p>
+
+<p>JavaScript function is called when an event occurs in a page. 
+    &nbsp;Glue
+    for the whole AJAX operation.
+</p>
+
+<p><strong>DOM: </strong><br></p>
+
+<p>API for accessing and manipulating structured documents. 
+    &nbsp;Represents
+    the structure of XML and HTML
+    documents. </p>
+
+<p><strong>CSS: </strong><br></p>
+
+<p>Allows for a clear separation of the presentation style from the content
+    and
+    may be changed
+    programmatically by JavaScript <strong>XMLHttpRequest
+    </strong><br><strong>:
+    </strong><br></p>
+
+<p>JavaScript object that performs asynchronous interaction with the server.
+</p>
+
+<p> </p>
+
+<p>AJAX Browser Support: </p>
+
+<p>All the available browsers cannot support AJAX. Here is a list of major
+    browsers that support AJAX. </p>
+
+<p>Mozilla Firefox 1.0 and above. </p>
+
+<p>Netscape version 7.1 and above. </p>
+
+<p>Apple Safari 1.2 and above. </p>
+
+<p>Microsoft Internet Explorer 5 and above. </p>
+
+<p>Konqueror. </p>
+
+<p>Opera 7.6 and above. </p>
+
+<p>When you write your next application, do consider the browsers that do
+    not
+    support AJAX. </p>
+
+<p><strong>NOTE </strong><br> − When we say that a browser does not support
+    AJAX, it simply means that the
+    browser does not support the creation of Javascript object –
+    XMLHttpRequest
+    object. </p>
+
+<p><strong>Writing Browser Specific Code: </strong><br></p>
+
+<p>The simplest way to make your source code compatible with a browser is to
+    use
+    <em>try…catch</em> blocks
+    in your JavaScript.
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;script language = "javascript" type = "text/javascript"&gt; </p>
+
+<p> &lt;!– </p>
+
+<p> //Browser Support Code function ajaxFunction() { var ajaxRequest; // The
+    variable that makes Ajax
+    possible! </p>
+
+<p> </p>
+
+<p> Try { </p>
+
+<p> // Opera 8.0+, Firefox, Safari </p>
+
+<p> ajaxRequest = new XMLHttpRequest(); </p>
+
+<p> } catch (e) { </p>
+
+<p> </p>
+
+<p> // Internet Explorer Browsers try { </p>
+
+<p> ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+
+<p> } catch (e) { </p>
+
+<p> try { </p>
+
+<p> ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+
+<p> } catch (e) { </p>
+
+<p> </p>
+
+<p> // Something went wrong alert("Your browser broke!"); </p>
+
+<p> return false; </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> </p>
+
+<p> &lt;form name = „myForm‟&gt; </p>
+
+<p> Name: &lt;input type = „text‟ name = „username‟ /&gt; &lt;br /&gt; </p>
+
+<p> Time: &lt;input type = „text‟ name = „time‟ /&gt; </p>
+
+<p> &lt;/form&gt; </p>
+
+<p> </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>In the above JavaScript code, we try three times to make our
+    XMLHttpRequest
+    object. Our first attempt –
+</p>
+
+<p>ajaxRequest = new XMLHttpRequest(); </p>
+
+<p>It is for Opera 8.0+, Firefox, and Safari browsers. If it fails, we try
+    two
+    more times to make the
+    correct object for an Internet Explorer browser with – </p>
+
+<p>ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+
+<p>ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+
+<p>If it doesn‟t work, then we can use a very outdated browser that doesn‟t
+    support XMLHttpRequest, which
+    also means it doesn‟t support AJAX. </p>
+
+<p>Most likely though, our variable ajaxRequest will now be set to whatever
+    <em>XMLHttpRequest</em> standard
+    the browser uses and we can start sending data to the server.
+</p>
+
+<p><strong>AJAX Working Flow: </strong><br></p>
+
+<p>The following steps are included when you run an AJAX Program: </p>
+
+<p><strong>Step-1: </strong><br>A client event occurs. </p>
+
+<p><strong>Step-2: </strong><br> An XMLHttpRequest object is created. </p>
+
+<p><strong>Step-3: </strong><br> The XMLHttpRequest object is configured.
+</p>
+
+<p><strong>Step-4: </strong><br>The XMLHttpRequest object makes an
+    asynchronous
+    request to the Webserver. </p>
+
+<p><strong>Step-5: </strong><br>The Webserver returns the result containing
+    XML
+    document. </p>
+
+<p><strong>Step-6: </strong><br>The XMLHttpRequest object calls the
+    callback()
+    function and processes the
+    result. <strong>Step-7: </strong><br> The HTML DOM is updated. </p>
+
+<div><img src="#"></div>
+
+<p>Let us look at these steps one by one. </p>
+
+<p><strong>Step-1: A Client Event Occurs </strong><br></p>
+
+<p>A JavaScript function is called as the result of an event. </p>
+
+<p>Example − <em>validateUserId</em><em>()</em> JavaScript function is
+    mapped as
+    an event handler to an
+    <em>onkeyup</em> event on input form field whose id is set to
+    <em>"</em><em>userid</em><em>"</em>
+</p>
+
+<p>&lt;input type = "text" size = "20" id = "userid" name = "id" onkeyup =
+</p>
+
+<p>"validateUserId();"&gt;. </p>
+
+<p><strong>Step-2: The </strong><br><strong>XMLHttpRequest
+    </strong><br><strong>
+        Object is Created </strong><br>var
+    ajaxRequest; // The variable that makes Ajax possible! function
+    ajaxFunction() { </p>
+
+<p> try { </p>
+
+<p> // Opera 8.0+, Firefox, Safari </p>
+
+<p> ajaxRequest = new XMLHttpRequest(); </p>
+
+<p> } catch (e) { </p>
+
+<p> </p>
+
+<p> // Internet Explorer Browsers try { </p>
+
+<p> ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+
+<p> } catch (e) { try { </p>
+
+<p> ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+
+<p> } catch (e) { </p>
+
+<p> // Something went wrong alert("Your browser broke!"); </p>
+
+<p> return false; </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> } } </p>
+
+<p><strong>Configuration of the </strong><br><strong>XMLHttpRequest
+    </strong><br><strong> Object: </strong><br></p>
+
+<p>In this step, we will write a function that will be triggered by the
+    client
+    event and a callback function
+    processRequest() will be registered. function validateUserId() {
+    ajaxFunction(); </p>
+
+<p> // Here processRequest() is the callback function.
+    ajaxRequest.onreadystatechange = processRequest; if
+    (!target) target = document.getElementById("userid"); var url =
+    "validate?id=" + escape(target.value);
+    ajaxRequest.open("GET", url, true); ajaxRequest.send(null); } </p>
+
+<p><strong>Making Asynchronous Request to the Webserver: </strong><br></p>
+
+<p>Source code is available in the above piece of code. Code written in bold
+    typeface is responsible to make
+    a request to the webserver. This is all being done using the
+    XMLHttpRequest
+    object <em>ajaxRequest</em>.
+</p>
+
+<p>function validateUserId() { ajaxFunction(); </p>
+
+<p> // Here processRequest() is the callback function.
+    ajaxRequest.onreadystatechange = processRequest;
+    <strong>if (!target) target =
+    </strong><br><strong>document.getElementById </strong><br><strong>("
+    </strong><br><strong>userid </strong><br><strong>");
+        var </strong><br><strong>url </strong><br><strong> = "
+    </strong><br><strong>validate?id </strong><br><strong> = " +
+        escape( </strong><br><strong>target.value </strong><br><strong>);
+    </strong><br>
+</p>
+
+<p><strong> </strong><br><strong>ajaxRequest.open
+    </strong><br><strong>("GET",
+    </strong><br><strong>url </strong><br><strong>,
+        true); </strong><br><strong>ajaxRequest.send
+    </strong><br><strong>(null); </strong><br> } </p>
+
+<p>Assume you enter Zara in the userid box, then in the above request, the
+    URL
+    is set to "validate?id =
+    Zara". </p>
+
+<p><strong>Webserver Returns the Result Containing XML Document:
+    </strong><br>
+</p>
+
+<p>You can implement your server-side script in any language; however its
+    logic
+    should be as follows. </p>
+
+<p>Get a request from the client. </p>
+
+<p>Parse the input from the client. </p>
+
+<p>Do required processing. </p>
+
+<p>Send the output to the client. </p>
+
+<p>If we assume that you are going to write a servlet, then here is the
+    piece of
+    code. public void
+    doGet(HttpServletRequest request, </p>
+
+<p> HttpServletResponse response) throws IOException, ServletException {
+    String
+    targetId =
+    request.getParameter("id"); </p>
+
+<p> if ((targetId != null) &amp;&amp;
+    !accounts.containsKey(targetId.trim())) {
+    response.setContentType("text/xml"); response.setHeader("Cache-Control",
+    "no-cache");
+    response.getWriter().write("&lt;valid&gt;true&lt;/valid&gt;"); </p>
+
+<p> } else { </p>
+
+<p> response.setContentType("text/xml"); response.setHeader("Cache-Control",
+    "no-cache");
+    response.getWriter().write("&lt;valid&gt;false&lt;/valid&gt;"); </p>
+
+<p> } } </p>
+
+<p><strong>Callback Function </strong><br><strong>processRequest
+    </strong><br><strong>() is Called: </strong><br></p>
+
+<p>The XMLHttpRequest object was configured to call the processRequest()
+    function when there is a state
+    change to the <em>readyState</em> of the <em>XMLHttpRequest</em> object.
+    Now
+    this function will receive
+    the result from the server and will do the required processing. As in
+    the
+    following example, it sets a
+    variable message on true or false based on the returned value from the
+    Webserver. </p>
+
+<p> function processRequest() { if (req.readyState == 4) { if (req.status ==
+    200) { var message = ...; </p>
+
+<p>... </p>
+
+<p>} </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Updating the HTML DOM: </strong><br></p>
+
+<p>This is the final step and in this step, your HTML page will be updated.
+    It
+    happens in the following way
+    − </p>
+
+<p>JavaScript gets a reference to any element in a page using DOM API. </p>
+
+<p>The recommended way to gain a reference to an element is to call.
+    document.getElementById("userIdMessage"), // where "userIdMessage" is
+    the ID
+    attribute </p>
+
+<p>// of an element appearing in the HTML document </p>
+
+<p>JavaScript may now be used to modify the element's attributes; modify the
+    element's style properties; or
+    add, remove, or modify the child elements. Here is an example −
+    &lt;script
+    type = "text/javascript"&gt;
+</p>
+
+<p> &lt;!-- </p>
+
+<p> function setMessageUsingDOM(message) { </p>
+
+<p> var userMessageElement = document.getElementById("userIdMessage"); var
+    messageText; if (message ==
+    "false") { userMessageElement.style.color = "red"; messageText =
+    "Invalid
+    User Id"; </p>
+
+<p> } else { </p>
+
+<p> userMessageElement.style.color = "green"; messageText = "Valid User Id";
+</p>
+
+<p> } </p>
+
+<p> var messageBody = document.createTextNode(messageText); </p>
+
+<p> // if the messageBody element has been created simple // replace it
+    otherwise append the new element if
+    (userMessageElement.childNodes[0]) { </p>
+
+<p> userMessageElement.replaceChild(messageBody,
+    userMessageElement.childNodes[0]); </p>
+
+<p> } else { </p>
+
+<p> userMessageElement.appendChild(messageBody); </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> --&gt; </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p> &lt;div id = "userIdMessage"&gt;&lt;div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>If you have understood the above-mentioned seven steps, then you are
+    almost
+    done with AJAX. </p>
+
+<p><strong>Creating an </strong><br><strong>XMLHttpRequest
+    </strong><br><strong>
+        Object: </strong><br></p>
+
+<p>The XMLHttpRequest object is the key to AJAX. It has been available ever
+    since Internet Explorer 5.5 was
+    released in July 2000, but was not fully discovered until AJAX and Web
+    2.0
+    in 2005 became popular. </p>
+
+<p>XMLHttpRequest (XHR) is an API that can be used by JavaScript, JScript,
+    VBScript, and other web browser
+    scripting languages to transfer and manipulate XML data to and from a
+    webserver using HTTP, establishing
+    an independent connection channel between a webpage's Client-Side and
+    Server-Side. </p>
+
+<p>The data returned from XMLHttpRequest calls will often be provided by
+    back-end databases. Besides XML,
+    XMLHttpRequest can be used to fetch data in other formats, e.g. JSON or
+    even
+    plain text. </p>
+
+<p>You already have seen a couple of examples on how to create an
+    XMLHttpRequest
+    object. Listed below are
+    some of the methods and properties that you have to get familiar with.
+</p>
+
+<p><strong>XMLHttpRequest </strong><br><strong> Methods </strong><br></p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method Name </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>abort( ) </p>
+            </td>
+            <td>
+                <p>Cancels the current request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>getAllResponseHeaders() </p>
+            </td>
+            <td>
+                <p>Returns the complete set of HTTP headers as a string.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>getResponseHeader( headerName ) </p>
+            </td>
+            <td>
+                <p>Returns the value of the specified HTTP header. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>open( method, URL ) open( method, URL, async ) open(
+                    method,
+                    URL, async, userName ) open(
+                    method, URL, async, userName, password ) </p>
+            </td>
+            <td>
+                <p>Specifies the method, URL, and other optional attributes
+                    of a
+                    request. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong> </strong><br></p>
+
+<p>The method parameter can have a value of "GET", "POST", or "HEAD". Other
+    HTTP
+    methods such as "PUT" and
+    "DELETE" (primarily used in REST applications) may be possible. </p>
+
+<p>The "async" parameter specifies whether the request should be handled
+    asynchronously or not. "true" means
+    that the script processing carries on after the send() method without
+    waiting for a response, and
+    "false" means that the script waits for a response before continuing
+    script
+    processing. </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method Name </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>send(content) </p>
+            </td>
+            <td>
+                <p>Sends the request. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>setRequestHeader( label, value ) </p>
+            </td>
+            <td>
+                <p>Adds a label/value pair to the HTTP header to be sent.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>XMLHttpRequest </strong><br><strong> Properties: </strong><br>
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Property Name </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>onreadystatechange </p>
+            </td>
+            <td>
+                <p>An event handler for an event that fires at every state
+                    change. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>readyState </p>
+            </td>
+            <td>
+                <p>The readyState property defines the current state of the
+                    XMLHttpRequest object. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>responseText </p>
+            </td>
+            <td>
+                <p>Returns the response as a string. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>responseXML </p>
+            </td>
+            <td>
+                <p>Returns the response as XML. This property returns an XML
+                    document object, which can be
+                    examined and parsed using the W3C </p>
+
+                <p>DOM node tree methods and properties. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>status </p>
+            </td>
+            <td>
+                <p>Returns the status as a number (e.g., 404 for "Not Found"
+                    and
+                    200 for "OK"). </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>statusText </p>
+            </td>
+            <td>
+                <p>Returns the status as a string (e.g., "Not Found" or
+                    "OK").
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p>The following table provides a list of the possible values for the
+    readyState
+    property − </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>State </strong><br></p>
+            </td>
+            <td></td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>0 </p>
+            </td>
+            <td>
+                <p>The request is not initialized. </p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>1 </p>
+            </td>
+            <td>
+                <p>The request has been set up. </p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>2 </p>
+            </td>
+            <td>
+                <p>The request has been sent. </p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>3 </p>
+            </td>
+            <td>
+                <p>The request is in process. </p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p>4 </p>
+            </td>
+            <td>
+                <p>The request is completed. </p>
+            </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>readyState </strong><br><strong> = 0: </strong><br> After you
+    have
+    created the XMLHttpRequest object, but
+    before you have called the open() method. </p>
+
+<p><strong>readyState </strong><br><strong> = 1: </strong><br> After you
+    have
+    called the open() method, but before you
+    have called send(). </p>
+
+<p><strong>readyState </strong><br><strong> = 2: </strong><br> After you
+    have
+    called send(). </p>
+
+<p><strong>readyState </strong><br><strong> = 3: </strong><br> After the
+    browser
+    has established a communication with
+    the server, but before the server has completed the response. </p>
+
+<p><strong>readyState </strong><br><strong> = 4: </strong><br> After the
+    request
+    has been completed, and the response
+    data has been completely received from the server. </p>
+
+<p><strong>Handling XML Data with AJAX: </strong><br></p>
+
+<p>The following example shows how we handle the XML data with the help of
+    the
+    AJAX. </p>
+
+<p>AJAXHtml.HTML: </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;Handling XML Data with AJAX&lt;/title&gt; </p>
+
+<p>&lt;style&gt; table,th,td { </p>
+
+<p> &nbsp; &nbsp;border : 1px solid black; </p>
+
+<p> &nbsp; &nbsp;border-collapse: collapse; </p>
+
+<p>} </p>
+
+<p>th,td { </p>
+
+<p> &nbsp; &nbsp;padding: 5px; </p>
+
+<p>} </p>
+
+<p>&lt;/style&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;h1&gt;The XMLHttpRequest Object&lt;/h1&gt; </p>
+
+<p>&lt;button type="button" onclick="loadDoc()"&gt;Get my CD
+    collection&lt;/button&gt; </p>
+
+<p>&lt;br&gt;&lt;br&gt; </p>
+
+<p>&lt;table&gt; </p>
+
+<p>&lt;/table&gt; </p>
+
+<p>&lt;script&gt; function loadDoc() { </p>
+
+<p> var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function()
+    { if
+    (this.readyState == 4
+    &amp;&amp; this.status == 200) { myFunction(this); </p>
+
+<p> } </p>
+
+<p> }; </p>
+
+<p> xhttp.open("GET", "cd_catalog.xml", true); xhttp.send(); </p>
+
+<p>} </p>
+
+<p>function myFunction(xml) { </p>
+
+<p> var i; </p>
+
+<p> var xmlDoc = xml.responseXML; var
+    table="&lt;tr&gt;&lt;th&gt;Artist&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;";
+    var x =
+    xmlDoc.getElementsByTagName("CD"); </p>
+
+<p> for (i = 0; i &lt;x.length; i++) { table += "&lt;tr&gt;&lt;td&gt;" +
+</p>
+
+<p> x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + </p>
+
+<p> "&lt;/td&gt;&lt;td&gt;" + </p>
+
+<p> x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + </p>
+
+<p> "&lt;/td&gt;&lt;/tr&gt;"; </p>
+
+<p> } </p>
+
+<p> document.getElementById("demo").innerHTML = table; } </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; cd_catalog.xml: </p>
+
+<p>&lt;CATALOG&gt; </p>
+
+<p>&lt;CD&gt; </p>
+
+<p>&lt;TITLE&gt;EMPIRE BURLESQUE&lt;/TITLE&gt; </p>
+
+<p>&lt;ARTIST&gt;BOB DYLAN&lt;/ARTIST&gt; </p>
+
+<p>&lt;COUNTRY&gt;USA&lt;/COUNTRY&gt; </p>
+
+<p>&lt;COMPANY&gt;COLUMBIA&lt;/COMPANY&gt; </p>
+
+<p>&lt;PRICE&gt;10.90&lt;/PRICE&gt; </p>
+
+<p>&lt;YEAR&gt;1985&lt;/YEAR&gt; </p>
+
+<p>&lt;/CD&gt; </p>
+
+<p>&lt;CD&gt; </p>
+
+<p>&lt;TITLE&gt;HIDE YOUR HEART&lt;/TITLE&gt; </p>
+
+<p>&lt;ARTIST&gt;BONNIE TYLER&lt;/ARTIST&gt; </p>
+
+<p>&lt;COUNTRY&gt;UK&lt;/COUNTRY&gt; </p>
+
+<p>&lt;COMPANY&gt;CBS RECORDS&lt;/COMPANY&gt; </p>
+
+<p>&lt;PRICE&gt;9.90&lt;/PRICE&gt; </p>
+
+<p>&lt;YEAR&gt;1988&lt;/YEAR&gt; </p>
+
+<p>&lt;/CD&gt; </p>
+
+<p>&lt;CD&gt; </p>
+
+<p>&lt;TITLE&gt;GREATEST HITS&lt;/TITLE&gt; </p>
+
+<p>&lt;ARTIST&gt;DOLLY PARTON&lt;/ARTIST&gt; </p>
+
+<p>&lt;COUNTRY&gt;USA&lt;/COUNTRY&gt; </p>
+
+<p>&lt;COMPANY&gt;RCA&lt;/COMPANY&gt; </p>
+
+<p>&lt;PRICE&gt;9.90&lt;/PRICE&gt; </p>
+
+<p>&lt;YEAR&gt;1982&lt;/YEAR&gt; </p>
+
+<p>&lt;/CD&gt; </p>
+
+<p>&lt;CD&gt; </p>
+
+<p>&lt;TITLE&gt;STILL GOT THE BLUES&lt;/TITLE&gt; </p>
+
+<p>&lt;ARTIST&gt;GARY MOORE&lt;/ARTIST&gt; </p>
+
+<p>&lt;COUNTRY&gt;UK&lt;/COUNTRY&gt; </p>
+
+<p>&lt;COMPANY&gt;VIRGIN RECORDS&lt;/COMPANY&gt; </p>
+
+<p>&lt;PRICE&gt;10.20&lt;/PRICE&gt; </p>
+
+<p>&lt;YEAR&gt;1990&lt;/YEAR&gt; </p>
+
+<p>&lt;/CD&gt; </p>
+
+<p>&lt;/CATALOG&gt; </p>
+
+<p>When a user clicks on the "Get CD info" button above, the loadDoc()
+    function
+    is executed. The loadDoc()
+    function creates an XMLHttpRequest object, adds the function to be
+    executed
+    when the server response is
+    ready, and sends the request off to the server. When the server response
+    is
+    ready, an HTML table is
+    built, nodes (elements) are extracted from the XML file, and it finally
+    updates the element "demo" with
+    the HTML table filled with XML data. </p>
+
+<p><strong>Handling JSON with AJAX: </strong><br></p>
+
+<p>According to the AJAX model, web applications can send and retrieve data
+    from
+    a server asynchronously
+    without interfering with the display and the behavior of the existing
+    page.
+    Many developers use JSON to
+    pass AJAX updates between the client and the server. Websites updating
+    live
+    sports scores can be
+    considered as an example of AJAX. If these scores have to be updated on
+    the
+    website, then they must be
+    stored on the server so that the webpage can retrieve the score when it
+    is
+    required. This is where we
+    can make use of JSON formatted data. </p>
+
+<p>Any data that is updated using AJAX can be stored using the JSON format
+    on
+    the web server. AJAX is used
+    so that javascript can retrieve these JSON files when necessary, parse
+    them,
+    and perform one of the
+    following operations − </p>
+
+<p>Store the parsed values in the variables for further processing before
+    displaying them on the webpage.
+</p>
+
+<p>It directly assigns the data to the DOM elements in the webpage, so that
+    they
+    are displayed on the
+    website. </p>
+
+<p><strong>Example </strong><br></p>
+
+<p>The following code shows JSON with AJAX. Save it as <strong>ajax.html
+    </strong><br> file. Here the loading
+    function loadJSON() is used asynchronously to upload JSON data. </p>
+
+<p><strong>Ajax.html: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;meta content = "text/html; charset = ISO-8859-1" http-equiv =
+    "content-type"&gt; </p>
+
+<p> &lt;script type = "application/javascript"&gt; function loadJSON(){ </p>
+
+<p> var data_file = "http://www.tutorialspoint.com/json/data.json"; var
+    http_request = new XMLHttpRequest();
+    try{ </p>
+
+<p> // Opera 8.0+, Firefox, Chrome, Safari </p>
+
+<p> http_request = new XMLHttpRequest(); </p>
+
+<p> }catch (e){ </p>
+
+<p> // Internet Explorer Browsers try{ </p>
+
+<p> http_request = new ActiveXObject("Msxml2.XMLHTTP"); &nbsp; &nbsp; </p>
+
+<p> }catch (e) { &nbsp; </p>
+
+<p> try{ </p>
+
+<p> http_request = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+
+<p> }catch (e){ </p>
+
+<p> // Something went wrong alert("Your browser broke!"); </p>
+
+<p> return false; </p>
+
+<p> } &nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+<p> } </p>
+
+<p> } </p>
+
+<p> http_request.onreadystatechange = function(){ if
+    (http_request.readyState ==
+    4 ){ </p>
+
+<p> // Javascript function JSON.parse to parse JSON data var jsonObj =
+    JSON.parse(http_request.responseText); // jsonObj variable now contains
+    the
+    data structure and can // be
+    accessed as jsonObj.name and jsonObj.country. </p>
+
+<p> document.getElementById("Name").innerHTML = jsonObj.name;
+    document.getElementById("Country").innerHTML =
+    jsonObj.country; </p>
+
+<p> } </p>
+
+<p> } &nbsp; &nbsp; </p>
+
+<p> http_request.open("GET", data_file, true); </p>
+
+<p> http_request.send(); </p>
+
+<p> } </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &lt;title&gt;tutorialspoint.com JSON&lt;/title&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;h1&gt;Cricketer Details&lt;/h1&gt; </p>
+
+<p> &lt;table class = "src"&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p>&lt;th&gt;Name&lt;/th&gt; </p>
+
+<p>&lt;th&gt;Country&lt;/th&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p>&lt;td&gt; </p>
+
+<p> &lt;div id = "Name"&gt;Sachin&lt;/div&gt; </p>
+
+<p>&lt;/td&gt; </p>
+
+<p> &lt;td&gt; </p>
+
+<p>&lt;div id = "Country"&gt;India&lt;/div&gt; </p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;/table&gt; </p>
+
+<p> &lt;div class = "central"&gt; </p>
+
+<p> &lt;button type = "button" onclick = "loadJSON()"&gt;Update Details
+    &lt;/button&gt; </p>
+
+<p> &lt;/div&gt; &nbsp; </p>
+
+<p> &lt;/body&gt; &nbsp; &nbsp; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>Given below is the input file <strong>data.json </strong><br>, having
+    data in
+    JSON format which will be
+    uploaded asynchronously when we click the <strong>Update Detail
+    </strong><br> button.
+    <strong>data.json </strong><br><strong>: </strong><br>
+</p>
+
+<p>{"name": "Brett", "country": "Australia"} </p>
+
+<p>Introduction to Angular JS: </p>
+
+<p>Angular JS is an open source web application framework. It was originally
+    developed in 2009 by Misko
+    Hevery and Adam Abrons. It is now maintained by Google. Its latest
+    version
+    is 1.4.3. Definition of
+    Angular JS as put by its official documentation is as follows − </p>
+
+<p>Angular JS is a structural framework for dynamic web apps. It lets you
+    use
+    HTML as your template language
+    and lets you extend HTML's syntax to express your application's
+    components
+    clearly and succinctly.
+    Angular's data binding and dependency injection eliminate much of the
+    code
+    you currently have to write.
+    And it all happens within the browser, making it an ideal partner with
+    any
+    server technology. </p>
+
+<p>Angular JS is a powerful JavaScript based development framework to create
+    RICH Internet Application
+    (RIA). </p>
+
+<p>Angular JS provides developers options to write client side application
+    (using JavaScript) in a clean MVC
+    (Model View Controller) way. </p>
+
+<p>Application written in Angular JS is cross-browser compliant. Angular JS
+    automatically handles JavaScript
+    code suitable for each browser. </p>
+
+<p>Angular JS is open source, completely free, and used by thousands of
+    developers around the world. It is
+    licensed under the Apache License version 2.0. </p>
+
+<p>Following are most important core features of Angular JS − </p>
+
+<p><strong>Data-binding </strong><br> − It is the automatic synchronization
+    of
+    data between model and view
+    components. </p>
+
+<p><strong>Scope </strong><br> − These are objects that refer to the model.
+    They
+    act as glue between controller
+    and view. </p>
+
+<p><strong>Controller </strong><br> − These are JavaScript functions that
+    are
+    bound to a particular scope. </p>
+
+<p><strong>Services </strong><br> – Angular JS come with several built-in
+    services for example $https: to make
+    XMLHttpRequests. These are singleton objects which are instantiated only
+    once in app. 
+    <strong>Filters </strong><br> − These select a subset of items from an
+    array
+    and returns a new array.
+</p>
+
+<p><strong>Directives </strong><br> − Directives are markers on DOM elements
+    (such as elements, attributes, CSS,
+    and more). These can be used to create custom HTML tags that serve as
+    new,
+    custom widgets. Angular JS
+    has built-in directives (ngBind, ngModel...) </p>
+
+<p><strong>Templates </strong><br> − These are the rendered view with
+    information from the controller and model.
+    These can be a single file (like index.html) or multiple views in one
+    page
+    using "partials". 
+    <strong>Routing </strong><br> − It is concept of switching views.
+</p>
+
+<p><strong>Model View Whatever </strong><br> − MVC is a design pattern for
+    dividing an application into different
+    parts (called Model, View and Controller), each with distinct
+    responsibilities. AngularJS does not
+    implement MVC in the traditional sense, but rather something closer </p>
+
+<p>to MVVM (Model-View-ViewModel). The Angular JS team refers it humorously
+    as
+    Model View Whatever. </p>
+
+<p><strong>Deep Linking </strong><br> − Deep linking allows you to encode
+    the
+    state of application in the URL so
+    that it can be bookmarked. The application can then be restored from the
+    URL
+    to the same state. </p>
+
+<p><strong>Dependency Injection </strong><br> − AngularJS has a built-in
+    dependency injection subsystem that
+    helps the developer by making the application easier to develop,
+    understand,
+    and test. </p>
+
+<p><strong>Advantages of Angular JS: </strong><br></p>
+
+<p>Angular JS provides capability to create Single Page Application in a
+    very
+    clean and maintainable way.
+</p>
+
+<p>Angular JS provides data binding capability to HTML thus giving user a
+    rich
+    and responsive experience
+</p>
+
+<p>Angular JS code is unit testable. </p>
+
+<p>Angular JS uses dependency injection and make use of separation of
+    concerns.
+</p>
+
+<p>Angular JS provides reusable components. </p>
+
+<p>With Angular JS, developer can write less code and get more
+    functionality.
+</p>
+
+<p>In Angular JS, views are pure html pages, and controllers written in
+    JavaScript do the business
+    processing. </p>
+
+<p>On top of everything, Angular JS applications can run on all major
+    browsers
+    and smart phones including
+    Android and iOS based phones/tablets. </p>
+
+<p><strong>Disadvantages of Angular JS: </strong><br></p>
+
+<p>Though Angular JS comes with lots of plus points but same time we should
+    consider the following points −
+</p>
+
+<p><strong>Not Secure </strong><br> − Being JavaScript only framework,
+    application written in AngularJS are not
+    safe. Server side authentication and authorization is must to keep an
+    application secure.  <strong>Not
+        degradable </strong><br> − If your application user disables
+    JavaScript
+    then user will just see the basic
+    page and nothing more. </p>
+
+<p><strong>The Angular JS Components: </strong><br></p>
+
+<p>The Angular JS framework can be divided into following three major parts
+    − 
+    &nbsp;<strong>ng-app </strong><br> − This directive defines and links an
+    AngularJS application to HTML. </p>
+
+<p><strong>ng-model </strong><br> − This directive binds the values of
+    AngularJS
+    application data to HTML input
+    controls. </p>
+
+<p><strong>ng-bind </strong><br> − This directive binds the AngularJS
+    Application data to HTML tags. </p>
+
+<p><strong>Angular JS Expressions to Bind Data to HTML: </strong><br></p>
+
+<p>Expressions are used to bind application data to html. Expressions are
+    written inside double braces like
+    {{ expression}}. Angular JS application expressions are pure JavaScript
+    expressions and outputs the data
+    where they are used. </p>
+
+<p><strong>Using numbers: </strong><br></p>
+
+<p>&lt;p&gt;Expense on Books : {{cost * quantity}} Rs&lt;/p&gt; </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Using strings: </strong><br></p>
+
+<p>&lt;p&gt;Hello {{student.firstname + " " + student.lastname}}!&lt;/p&gt;
+</p>
+
+<p><strong>Using object: </strong><br></p>
+
+<p>&lt;p&gt;Roll No: {{student.rollno}}&lt;/p&gt; </p>
+
+<p><strong>Using array </strong><br></p>
+
+<p>&lt;p&gt;Marks(Math): {{marks[3]}}&lt;/p&gt; </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>Following example will showcase all the above mentioned expressions.
+    testAngularJS.html<strong> </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;AngularJS Expressions&lt;/title&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;h1&gt;Sample Application&lt;/h1&gt; </p>
+
+<p> &lt;div ng-app = "" ng-init = "quantity = 1;cost = 30; student = </p>
+
+<p>{firstname:'Mahesh',lastname:'Parashar',rollno:101};marks = </p>
+
+<p>[80,90,75,73,60]"&gt; </p>
+
+<p> &lt;p&gt;Hello {{student.firstname + " " + student.lastname}}!&lt;/p&gt;
+</p>
+
+<p> &lt;p&gt;Expense on Books : {{cost * quantity}} Rs&lt;/p&gt; </p>
+
+<p> &lt;p&gt;Roll No: {{student.rollno}}&lt;/p&gt; </p>
+
+<p> &lt;p&gt;Marks(Math): {{marks[3]}}&lt;/p&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;script src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js
+</p>
+
+<p>"&gt;&lt;/script&gt; </p>
+
+<p> &lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Angular JS Directives to Bind Data to HTML: </strong><br></p>
+
+<p>AngularJS directives are used to extend HTML. These are special
+    attributes
+    starting with ng- prefix.
+    We're going to discuss following directives − </p>
+
+<p><strong>ng-app </strong><br> − This directive starts an AngularJS
+    Application. </p>
+
+<p><strong>ng- </strong><br><strong>init </strong><br> − This directive
+    initializes application data. </p>
+
+<p><strong>ng-model </strong><br> − This directive binds the values of
+    AngularJS
+    application data to HTML input
+    controls. </p>
+
+<p><strong>ng-repeat </strong><br> − This directive repeats html elements
+    for
+    each item in a collection. </p>
+
+<p><strong>ng-app directive: </strong><br>ng-app directive starts an
+    AngularJS
+    Application. It defines the root
+    element. It automatically initializes or bootstraps the application when
+    web
+    page containing AngularJS
+    Application is loaded. It is also used to load various AngularJS modules
+    in
+    AngularJS Application. In
+    following example, we've defined a default AngularJS application using
+    ng-app attribute of a div
+    element. </p>
+
+<p>&lt;div ng-app = ""&gt; </p>
+
+<p> ... </p>
+
+<p>&lt;/div&gt; </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>ng- </strong><br><strong>init </strong><br><strong> directive:
+    </strong><br> ng-init directive initializes an
+    AngularJS Application data. It is used to put values to the variables to
+    be
+    used in the application. In
+    following example, we'll initialize an array of countries. We're using
+    JSON
+    syntax to define array of
+    countries. </p>
+
+<p>&lt;div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United
+</p>
+
+<p>States'}, {locale:'en-GB',name:'United Kingdom'},
+    {locale:'enFR',name:'France'}]"&gt; </p>
+
+<p> ... &lt;/div&gt; <strong>ng-model directive: </strong><br> </p>
+
+<p>This directive binds the values of AngularJS application data to HTML
+    input
+    controls. In following
+    example, we've defined a model named "name". </p>
+
+<p>&lt;div ng-app = ""&gt; </p>
+
+<p> ... </p>
+
+<p> &lt;p&gt;Enter your Name: &lt;input type = "text" ng-model =
+    "name"&gt;&lt;/p&gt; </p>
+
+<p>&lt;/div&gt; </p>
+
+<p><strong>ng-repeat directive: </strong><br>ng-repeat directive repeats
+    html
+    elements for each item in a
+    collection. In following example, we've iterated over array of
+    countries.
+</p>
+
+<p>&lt;div ng-app = ""&gt; </p>
+
+<p> ... </p>
+
+<p> &lt;p&gt;List of Countries with locale:&lt;/p&gt; </p>
+
+<p> &lt;ol&gt; </p>
+
+<p> &lt;li ng-repeat = "country in countries"&gt; </p>
+
+<p> {{ 'Country: ' + country.name + ', Locale: ' + country.locale }} </p>
+
+<p> &lt;/li&gt; </p>
+
+<p> &lt;/ol&gt; &lt;/div&gt; </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>Following example will showcase all the above mentioned directives.
+    testAngularJS.html:<strong> </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;AngularJS Directives&lt;/title&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;h1&gt;Sample Application&lt;/h1&gt; </p>
+
+<p> &lt;div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United
+</p>
+
+<p>States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-</p>
+
+<p>FR',name:'France'}]"&gt; </p>
+
+<p> &lt;p&gt;Enter your Name: &lt;input type = "text" ng-model =
+    "name"&gt;&lt;/p&gt; </p>
+
+<p> &lt;p&gt;Hello &lt;span ng-bind = "name"&gt;&lt;/span&gt;!&lt;/p&gt;
+</p>
+
+<p> &lt;p&gt;List of Countries with local: &lt;/p&gt; </p>
+
+<p> &lt;ol&gt; </p>
+
+<p> &lt;li ng-repeat = "country in countries"&gt; </p>
+
+<p> {{ 'Country: ' + country.name + ', Locale: ' + country.locale }} </p>
+
+<p> &lt;/li&gt; </p>
+
+<p> &lt;/ol&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p>&lt;script src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
+    &gt;&lt;/script&gt; </p>
+
+<p> &lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Angular JS Controllers: </strong><br></p>
+
+<p>AngularJS application mainly relies on controllers to control the flow of
+    data in the application. A
+    controller is defined using ng-controller directive. A controller is a
+    JavaScript object containing
+    attributes/properties and functions. Each controller accepts $scope as a
+    parameter which refers to the
+    application/module that controller is to control. </p>
+
+<p>&lt;div ng-app = "" ng-controller = "studentController"&gt; </p>
+
+<p> ... </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>Here we've declared a controller <strong>studentController </strong><br>
+    using ng-controller directive. As a
+    next step we'll define the studentController as follows − </p>
+
+<p>&lt;script&gt; </p>
+
+<p> function studentController($scope) { </p>
+
+<p> $scope.student = { firstName: "Mahesh", lastName: "Parashar", fullName:
+    function() { var studentObject;
+    studentObject = $scope.student; </p>
+
+<p> return studentObject.firstName + " " + studentObject.lastName; </p>
+
+<p> } </p>
+
+<p> }; </p>
+
+<p> } </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>studentController defined as a JavaScript object with $scope as argument.
+</p>
+
+<p>$scope refers to application which is to use the studentController
+    object.
+</p>
+
+<p>$scope.student is property of studentController object. </p>
+
+<p>firstName and lastName are two properties of $scope.student object. We've
+    passed the default values to
+    them. </p>
+
+<p>fullName is the function of $scope.student object whose task is to return
+    the
+    combined name. </p>
+
+<p>In fullName function we're getting the student object and then return the
+    combined name. </p>
+
+<p>As a note, we can also define the controller object in separate JS file
+    and
+    refer that file in the html
+    page. </p>
+
+<p>Now we can use studentController's student property using ng-model or
+    using
+    expressions as follows. </p>
+
+<p>Enter first name: &lt;input type = "text" ng-model =
+    "student.firstName"&gt;&lt;br&gt; Enter last name:
+    &lt;input type = "text" ng-model = "student.lastName"&gt;&lt;br&gt; </p>
+
+<p>&lt;br&gt; </p>
+
+<p>You are entering: {{student.fullName()}} </p>
+
+<p>We've bounded student.firstName and student.lastname to two input boxes.
+</p>
+
+<p>We've bounded student.fullName() to HTML. </p>
+
+<p>Now whenever you type anything in first name and last name input boxes,
+    you
+    can see the full name getting
+    updated automatically. <strong>Example: </strong><br></p>
+
+<p>Following example will showcase use of controller.
+    testAngularJS.html:<strong> </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p> </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;Angular JS Controller&lt;/title&gt; </p>
+
+<p> &lt;script src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/scr
+    ipt&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;h2&gt;AngularJS Sample Application&lt;/h2&gt; </p>
+
+<p> </p>
+
+<p> &lt;div ng-app = "mainApp" ng-controller = "studentController"&gt; </p>
+
+<p> Enter first name: &lt;input type = "text" ng-model = </p>
+
+<p>"student.firstName"&gt;&lt;br&gt;&lt;br&gt; </p>
+
+<p> Enter last name: &lt;input type = "text" ng-model = </p>
+
+<p>"student.lastName"&gt;&lt;br&gt; </p>
+
+<p> &lt;br&gt; </p>
+
+<p> </p>
+
+<p> You are entering: {{student.fullName()}} </p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;script&gt; </p>
+
+<p> var mainApp = angular.module("mainApp", []); </p>
+
+<p> </p>
+
+<p> mainApp.controller('studentController', function($scope) { </p>
+
+<p> $scope.student = { firstName: "Mahesh", lastName: "Parashar", </p>
+
+<p> </p>
+
+<p> fullName: function() { var studentObject; studentObject =
+    $scope.student;
+    return studentObject.firstName
+    + " " + studentObject.lastName; </p>
+
+<p> } </p>
+
+<p> }; </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Angular JS Forms: </strong><br></p>
+
+<p>AngularJS enriches form filling and validation. We can use ng-click to
+    handle
+    AngularJS click on button
+    and use $dirty and $invalid flags to do the validations in seemless way.
+    Use
+    novalidate with a form
+    declaration to disable any browser specific validation. Forms controls
+    makes
+    heavy use of Angular
+    events. Let's have a quick look on events first. </p>
+
+<p><strong>Events: </strong><br></p>
+
+<p>AngularJS provides multiple events which can be associated with the HTML
+    controls. For example ng-click
+    is normally associated with button. Following are supported events in
+    Angular JS. </p>
+
+<p>ng-click </p>
+
+<p>ng-dbl-click </p>
+
+<p>ng-mousedown </p>
+
+<p>ng-mouseup </p>
+
+<p>ng-mouseenter </p>
+
+<p>ng-mouseleave </p>
+
+<p>ng-mousemove </p>
+
+<p>ng-mouseover </p>
+
+<p>ng-keydown </p>
+
+<p>ng-keyup </p>
+
+<p>ng-keypress  &nbsp;ng-change </p>
+
+<p><strong>ng-click: </strong><br></p>
+
+<p>Reset data of a form using on-click directive of a button.<strong>
+    </strong><br></p>
+
+<p>&lt;input name = "firstname" type = "text" ng-model = "firstName"
+    required&gt; </p>
+
+<p>&lt;input name = "lastname" type = "text" ng-model = "lastName"
+    required&gt;
+</p>
+
+<p>&lt;input name = "email" type = "email" ng-model = "email" required&gt;
+</p>
+
+<p>&lt;button ng-click = "reset()"&gt;Reset&lt;/button&gt; </p>
+
+<p>&lt;script&gt; </p>
+
+<p> function studentController($scope) { </p>
+
+<p> $scope.reset = function(){ </p>
+
+<p> $scope.firstName = "Mahesh"; </p>
+
+<p> $scope.lastName = "Parashar"; </p>
+
+<p> $scope.email = "MaheshParashar@tutorialspoint.com"; </p>
+
+<p> } </p>
+
+<p> $scope.reset(); </p>
+
+<p> } </p>
+
+<p>&lt;/script&gt; </p>
+
+<p><strong>Validate data: </strong><br></p>
+
+<p>Following can be used to track error. </p>
+
+<p><strong>$dirty </strong><br> − states that value has been changed. </p>
+
+<p><strong>$invalid </strong><br> − states that value entered is invalid. 
+    &nbsp;<strong>$error </strong><br> −
+    states the exact error. <strong>Example: </strong><br></p>
+
+<p>Following example will showcase all the above mentioned directives.
+    testAngularJS.html:<strong> </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;Angular JS Forms&lt;/title&gt; </p>
+
+<p> &lt;script src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/scr
+    ipt&gt; &lt;style&gt;
+    table, th , td { </p>
+
+<p> border: 1px solid grey; border-collapse: collapse; padding: 5px; </p>
+
+<p> } </p>
+
+<p> table tr:nth-child(odd) { background-color: #f2f2f2; </p>
+
+<p> } </p>
+
+<p> table tr:nth-child(even) { background-color: #ffffff; </p>
+
+<p> } </p>
+
+<p> &lt;/style&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;h2&gt;AngularJS Sample Application&lt;/h2&gt; </p>
+
+<p> &nbsp;&lt;div ng-app = "mainApp" ng-controller = "studentController"&gt;
+</p>
+
+<p> &lt;form name = "studentForm" novalidate&gt; </p>
+
+<p> &lt;table border = "0"&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;Enter first name:&lt;/td&gt; </p>
+
+<p>&lt;td&gt;&lt;input name = "firstname" type = "text" ng-model = </p>
+
+<p>"firstName" required&gt; </p>
+
+<p> &lt;span style = "color:red" ng-show = </p>
+
+<p>"studentForm.firstname.$dirty &amp;&amp;
+    studentForm.firstname.$invalid"&gt;
+</p>
+
+<p> &lt;span ng-show = </p>
+
+<p>"studentForm.firstname.$error.required"&gt;First Name is
+    required.&lt;/span&gt; </p>
+
+<p> &lt;/span&gt; </p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;Enter last name: &lt;/td&gt; </p>
+
+<p> &lt;td&gt;&lt;input name = "lastname" type = "text" ng-model = </p>
+
+<p>"lastName" required&gt; </p>
+
+<p> &lt;span style = "color:red" ng-show = </p>
+
+<p>"studentForm.lastname.$dirty &amp;&amp;
+    studentForm.lastname.$invalid"&gt;
+</p>
+
+<p> &lt;span ng-show = </p>
+
+<p>"studentForm.lastname.$error.required"&gt;Last Name is
+    required.&lt;/span&gt;
+</p>
+
+<p> &lt;/span&gt; </p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt;Email: &lt;/td&gt;&lt;td&gt;&lt;input name = "email" type =
+    "email" ng-model = "email" length
+    = "100" required&gt; </p>
+
+<p> &lt;span style = "color:red" ng-show = </p>
+
+<p>"studentForm.email.$dirty &amp;&amp; studentForm.email.$invalid"&gt; </p>
+
+<p> &lt;span ng-show = </p>
+
+<p>"studentForm.email.$error.required"&gt;Email is required.&lt;/span&gt;
+</p>
+
+<p> &lt;span ng-show = </p>
+
+<p>"studentForm.email.$error.email"&gt;Invalid email address.&lt;/span&gt;
+</p>
+
+<p> &lt;/span&gt; </p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> </p>
+
+<p> &lt;tr&gt; </p>
+
+<p> &lt;td&gt; </p>
+
+<p> &lt;button ng-click = "reset()"&gt;Reset&lt;/button&gt; </p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;td&gt; </p>
+
+<p> &lt;button ng-disabled = "studentForm.firstname.$dirty &amp;&amp;
+    studentForm.firstname.$invalid ||
+    studentForm.lastname.$dirty &amp;&amp; </p>
+
+<p> studentForm.lastname.$invalid || studentForm.email.$dirty &amp;&amp;
+</p>
+
+<p> studentForm.email.$invalid" ngclick="submit()"&gt;Submit&lt;/button&gt;
+</p>
+
+<p> &lt;/td&gt; </p>
+
+<p> &lt;/tr&gt; </p>
+
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+
+<p> &lt;/table&gt; </p>
+
+<p> &lt;/form&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;script&gt; </p>
+
+<p> var mainApp = angular.module("mainApp", []); </p>
+
+<p> </p>
+
+<p> mainApp.controller('studentController', function($scope) { </p>
+
+<p> $scope.reset = function(){ </p>
+
+<p> $scope.firstName = "Mahesh"; </p>
+
+<p> $scope.lastName = "Parashar"; </p>
+
+<p> $scope.email = "MaheshParashar@tutorialspoint.com"; </p>
+
+<p> } </p>
+
+<p> </p>
+
+<p> $scope.reset(); </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+</section>
+<pre>
+
+
+</pre>
+                    <div class="button-container">
+                        <a href="page6.html" class="previous-button">&laquo; Previous</a>
+                        <a href="page8.html" class="next-button ">Next &raquo;</a>
+                    </div>
+
+                    <pre>
+
+
+
+</pre>
+                    <!--footer on my code-->
+                    <footer class=" footer ">
+                        <div class="container ">
+                            <div class="row ">
+                                <div class="footer-col ">
+                                    <h4>company</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html ">HOME</a>
+                                        </li>
+                                        <li><a href="aboutus.html " target="_blank ">About us</a></li>
+                                        <li><a href="# " target="_blank ">Blog</a></li>
+                                        <li><a href="privacy.html " target="_blank ">Privacy policy</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-col ">
+                                    <h4>get help</h4>
+                                    <ul>
+                                        <li><a href="Fqa.html ">FAQ</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-col ">
+                                    <h4>follow us</h4>
+                                    <div class="social-links ">
+                                        <a href="# "><i class="fab fa-facebook-f "></i></a>
+                                        <a href="# "><i class="fab fa-twitter "></i></a>
+                                        <a href="# "><i class="fab fa-instagram "></i></a>
+                                        <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+</body>
+
+</html>

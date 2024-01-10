@@ -1,0 +1,3333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>myvidhyapith</title>
+    <style>
+        pre,
+        li {
+            color: rgb(51, 51, 90);
+        }
+    </style>
+    <script src="Script.js">
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+    <h1 class="top-name">Myvidhyapith</h1>
+    <img class="image-profile"
+        src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true"
+        style="float:right;" />
+</header>
+
+<body>
+    <div class="header">
+        <div id="sidebar">
+
+
+            <div class="toggle-btn" onclick="toggleS()">
+                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
+            </div>
+            <ul>
+                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
+                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
+                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i
+                            class="fas fa-phone-square"> Contact us</i></a></li>
+                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here"
+                        target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
+                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow
+                            Us</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container12">
+
+        <section>
+
+
+         
+<h2>JAVASCRIPT OBJECTS INTRODUCTION: </h2>
+
+<p>JavaScript is an Object Oriented Programming (OOP) language. An OOP
+    language
+    allows you to define your
+    own objects and make your own variable types. </p>
+
+<p><strong>OBJECT ORIENTED PROGRAMMING: </strong><br></p>
+
+<p>JavaScript is an Object Oriented Programming (OOP) language. An OOP
+    language
+    allows you to define your
+    own objects and make your own variable types. However, creating your own
+    objects will be explained
+    later, in the Advanced JavaScript section. We will start by looking at
+    the
+    built-in JavaScript objects,
+    and how they are used. The next pages will explain each built-in
+    JavaScript
+    object in detail. Note that
+    an object is just a special kind of data. An object has properties and
+    methods. </p>
+
+<p><strong>Properties: </strong><br></p>
+
+<p>Properties are the values associated with an object. In the following
+    example
+    we are using the length
+    property of the String object to return the number of characters in a
+    string: </p>
+
+<p>&lt;script type="text/javascript"&gt; var txt="Hello World!";
+    document.write(txt.length); &lt;/script&gt;
+</p>
+
+<p><strong>The output of the code above will be: </strong><br> 12
+    <strong>Methods: </strong><br>
+</p>
+
+<p>Methods are the actions that can be performed on objects. In the
+    following
+    example we are using the
+    toUpperCase() method of the String object to display a text in uppercase
+    letters: </p>
+
+<p>&lt;script type="text/javascript"&gt; var str="Hello world!"; </p>
+
+<p>document.write(str.toUpperCase()); &lt;/script&gt; </p>
+
+<p><strong>The output of the code above will be: </strong><br>HELLO
+    WORLD!<strong> </strong><br></p>
+
+<p><strong>STRING OBJECT: </strong><br></p>
+
+<p>The String object is used to manipulate a stored piece of text. </p>
+
+<p><strong>Examples of use: </strong><br> </p>
+
+<p>The following example uses the length property of the String object to
+    find
+    the length of a string: var
+    txt="Hello world!"; document.write(txt.length); </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>The code above will result in the following output:
+    </strong><br>12
+</p>
+
+<p>The following example uses the toUpperCase() method of the String object
+    to
+    convert a string to uppercase
+    letters: var txt="Hello world!"; document.write(txt.toUpperCase()); </p>
+
+<p><strong>The code above will result in the following output:
+    </strong><br>HELLO WORLD! </p>
+
+<p><strong>String Object Examples: </strong><br></p>
+
+<p><strong>Return The Length of </strong><br><strong>A </strong><br><strong>
+        String </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var txt = "Hello World!";
+    document.write(txt.length); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br>12 </p>
+
+<p><strong>Style Strings </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var txt = "Hello World!";
+    document.write("&lt;p&gt;Big: " +
+    txt.big() + "&lt;/p&gt;"); document.write("&lt;p&gt;Small: " +
+    txt.small() +
+    "&lt;/p&gt;");
+    document.write("&lt;p&gt;Bold: " + txt.bold() + "&lt;/p&gt;");
+    document.write("&lt;p&gt;Italic: " +
+    txt.italics() + "&lt;/p&gt;"); document.write("&lt;p&gt;Fixed: " +
+    txt.fixed() + "&lt;/p&gt;");
+    document.write("&lt;p&gt;Strike: " + txt.strike() + "&lt;/p&gt;");
+    document.write("&lt;p&gt;Fontcolor: "
+    + txt.fontcolor("green") + "&lt;/p&gt;");
+    document.write("&lt;p&gt;Fontsize:
+    " + txt.fontsize(6) +
+    "&lt;/p&gt;"); document.write("&lt;p&gt;Subscript: " + txt.sub() +
+    "&lt;/p&gt;");
+    document.write("&lt;p&gt;Superscript: " + txt.sup() + "&lt;/p&gt;");
+</p>
+
+<p>document.write("&lt;p&gt;Link: " + txt.link("http://www.w3schools.com") +
+    "&lt;/p&gt;");
+    document.write("&lt;p&gt;Blink: " + txt.blink() + " (does not work in
+    IE,
+    Chrome, or
+    Safari)&lt;/p&gt;"); </p>
+
+<p>&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br></p>
+
+<p>Big: Hello World! </p>
+
+<p>Small: Hello World! </p>
+
+<p>Bold: <strong>Hello World! </strong><br> </p>
+
+<p>Italic: <em>Hello World!</em> </p>
+
+<p>Fixed: Hello World! Strike: Hello World! </p>
+
+<p>Fontcolor: Hello World! </p>
+
+<p>Fontsize: Hello World! </p>
+
+<p>Subscript: <sub>Hello World!</sub> </p>
+
+<p>Superscript: <sup>Hello World!</sup> </p>
+
+<p>Link: Hello World! </p>
+
+<p>Blink: Hello World! (does not work in IE, Chrome, or Safari) </p>
+
+<p><strong>3. </strong><br> <strong>Return the Position of the First
+        Occurrence
+        of
+    </strong><br><strong>A </strong><br><strong> Text in A String -
+    </strong><br><strong>indexof </strong><br><strong>(): </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var str="Hello world!";
+    document.write(str.indexOf("d") + "&lt;br
+    /&gt;"); document.write(str.indexOf("WORLD") + "&lt;br /&gt;");
+    document.write(str.indexOf("world"));
+</p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>&nbsp;<strong>Output: </strong><br>10 &nbsp;-1 &nbsp;6 </p>
+
+<p><strong>4. </strong><br> <strong>Search for A Text in A String and Return
+        the
+        Text If Found -
+        Match(): </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var str="Hello world!";
+    document.write(str.match("world") + "&lt;br
+    /&gt;"); document.write(str.match("World") + "&lt;br /&gt;");
+    document.write(str.match("worlld") +
+    "&lt;br /&gt;"); document.write(str.match("world!")); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br>world null null world! </p>
+
+<p><strong>Replace Characters in A String - Replace() </strong><br> : </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var str="Visit Microsoft!"; </p>
+
+<p>document.write(str.replace("Microsoft","W3Schools")); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br>Visit W3Schools! </p>
+
+<p><strong>Convert a String to Lowercase Letters: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var str="Hello World!"; </p>
+
+<p>document.write(str.toLowerCase()); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p> &lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br>hello world! </p>
+
+<p><strong>JAVASCRIPT DATE OBJECT </strong><br></p>
+
+<p> </p>
+
+<p>The Date object is used to work with dates and times. </p>
+
+<p> <strong>Create a Date Object </strong><br></p>
+
+<p>The Date object is used to work with dates and times. Date objects are
+    created with the Date()
+    constructor. There are four ways of instantiating a date: </p>
+
+<p>New Date() // current date and time </p>
+
+<p>new Date(milliseconds) //milliseconds since 1970/01/01 new
+    Date(dateString)
+</p>
+
+<p>new Date(year, month, day, hours, minutes, seconds, milliseconds) </p>
+
+<p>Most parameters above are optional. Not specifying causes 0 to be passed
+    in.
+    Once a Date object is
+    created, a number of methods allow you to operate on it. Most methods
+    allow
+    you to get and set the year,
+    month, day, hour, minute, second, and milliseconds of the object, using
+    either local time or UTC
+    (universal, or GMT) time. All dates are calculated in milliseconds from
+    01
+    January, 1970 00:00:00
+    Universal Time (UTC) with a day containing 86,400,000 milliseconds. Some
+    examples of instantiating a
+    date: </p>
+
+<p>today = new Date() </p>
+
+<p>d1 = new Date("October 13, 1975 11:13:00") d2 = new Date(79,5,24) d3 =
+    new
+    Date(79,5,24,11,33,0) </p>
+
+<p><strong>Set Dates </strong><br></p>
+
+<p>We can easily manipulate the date by using the methods available for the
+    Date
+    object. In the example
+    below we set a Date object to a specific date (14th January 2010): </p>
+
+<p>var myDate=new Date(); myDate.setFullYear(2010,0,14); </p>
+
+<p>And in the following example we set a Date object to be 5 days into the
+    future: </p>
+
+<p>var myDate=new Date(); myDate.setDate(myDate.getDate()+5); </p>
+
+<p><strong>Note: </strong><br> If adding five days to a date shifts the
+    month or
+    year, the changes are handled
+    automatically by the Date object itself! </p>
+
+<p><strong>Compare Two Dates </strong><br></p>
+
+<p>The Date object is also used to compare two dates. The following example
+    compares today's date with the
+    14th January 2010: </p>
+
+<p>var myDate=new Date(); myDate.setFullYear(2010,0,14); var today = new
+    Date();
+</p>
+
+<p> </p>
+
+<p>if (myDate&gt;today) </p>
+
+<p> { </p>
+
+<p> alert("Today is before 14th January 2010"); </p>
+
+<p> } else </p>
+
+<p> { </p>
+
+<p> alert("Today is after 14th January 2010"); </p>
+
+<p> } </p>
+
+<p><strong>DATE OBJECT EXAMPLES: </strong><br> </p>
+
+<p><strong>Use Date() to Return Today's Date </strong><br><strong>And
+    </strong><br><strong> Time </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var d=new Date(); document.write(d); &lt;/script&gt; </p>
+
+<p>&nbsp;&lt;/body&gt; &nbsp; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> Wed Jan 12 2011 14:38:08 GMT+0530 (India
+    Standard Time)<strong> </strong><br></p>
+
+<p><strong>Use </strong><br><strong>getTime </strong><br><strong>() to
+        Calculate
+        the Years Since 1970 </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var d=new Date(); </p>
+
+<p>document.write(d.getTime() + " milliseconds since 1970/01/01");
+    &lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> 1294823298285 milliseconds since 1970/01/01
+</p>
+
+<p><strong>Use </strong><br><strong>setFullYear </strong><br><strong>() to
+        Set a
+        Specific Date </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var d = new Date(); </p>
+
+<p>d.setFullYear(1992,10,3); document.write(d); </p>
+
+<p>&lt;/script&gt; &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> Tue Nov 03 1992 14:40:15 GMT+0530 (India
+    Standard Time) </p>
+
+<p><strong>Use </strong><br><strong>toUTCString </strong><br><strong>() to
+        Convert Today's Date (according to UTC) to
+        A String </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var d=new Date();
+    document.write("Original form: ");
+    document.write(d + "&lt;br /&gt;"); </p>
+
+<p>document.write("To string (universal time): "); </p>
+
+<p>document.write(d.toUTCString()); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> </p>
+
+<p><strong>Original form: </strong><br> Wed Jan 12 2011 14:38:17 GMT+0530
+    (India
+    Standard </p>
+
+<p>Time) </p>
+
+<p><strong>To string (universal time): </strong><br> Wed, 12 Jan 2011
+    09:08:17
+    GMT </p>
+
+<p><strong>5. </strong><br> <strong>Use </strong><br><strong>getDay
+    </strong><br><strong>() and An Array to Write a
+        Weekday, and Not Just </strong><br><strong>A </strong><br><strong>
+        Number </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&nbsp;&lt;body&gt; &nbsp; </p>
+
+<p>&lt;script type="text/javascript"&gt; var d=new Date(); var weekday=new
+    Array(7); weekday[0]="Sunday";
+    weekday[1]="Monday"; weekday[2]="Tuesday"; weekday[3]="Wednesday";
+    weekday[4]="Thursday";
+    weekday[5]="Friday"; weekday[6]="Saturday"; </p>
+
+<p>document.write("Today is " + weekday[d.getDay()]); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> Today is Wednesday<strong> </strong><br>
+</p>
+
+<p><strong>6. </strong><br> <strong>Display a Clock </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function startTime() </p>
+
+<p>{ </p>
+
+<p>var today=new Date(); var h=today.getHours(); var m=today.getMinutes();
+    var
+    s=today.getSeconds(); // add
+    a zero in front of numbers&lt;10 </p>
+
+<p>m=checkTime(m); s=checkTime(s); </p>
+
+<p>document.getElementById('txt').innerHTML=h+":"+m+":"+s; </p>
+
+<p>t=setTimeout('startTime()',500); </p>
+
+<p>} </p>
+
+<p>function checkTime(i) </p>
+
+<p>{ if (i&lt;10) { i="0" + i; } return i; } </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body onload="startTime()"&gt; </p>
+
+<p>&lt;div&gt;&lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Output: </strong><br> 14:42:13<strong> </strong><br> </p>
+
+<h2><strong> JAVASCRIPT ARRAY OBJECT</strong><br></h2>
+
+<p>The Array object is used to store multiple values in a single variable.
+    An
+    array is a special variable,
+    which can hold more than one value, at a time. If you have a list of
+    items
+    (a list of car names, for
+    example), storing the cars in single variables could look like this:
+</p>
+
+<p>cars1="Saab"; cars2="Volvo"; cars3="BMW"; </p>
+
+<p>However, what if you want to loop through the cars and find a specific
+    one?
+    And what if you had not 3
+    cars, but 300? </p>
+
+<p>The best solution here is to use an array! An array can hold all your
+    variable values under a single
+    name. And you can access the values by referring to the array name. Each
+    element in the array has its
+    own ID so that it can be easily accessed. </p>
+
+<p> <strong>Create an Array </strong><br></p>
+
+<p>An array can be defined in three ways. The following code creates an
+    Array
+    object called myCars: </p>
+
+<p><strong>1 </strong><br><strong><sup>st</sup> </strong><br><strong>
+        Method:
+    </strong><br></p>
+
+<p>var myCars=new Array(); // regular array (add an optional integer
+    myCars[0]="Saab"; // argument to
+    control array's size) myCars[1]="Volvo"; myCars[2]="BMW";
+    <strong>2 </strong><br><strong><sup>nd</sup> </strong><br><strong>
+        Method:
+    </strong><br>var myCars=new
+    Array("Saab","Volvo","BMW"); // condensed array <strong>3
+    </strong><br><strong><sup>rd</sup> </strong><br><strong>
+        Method: </strong><br> var myCars=["Saab","Volvo","BMW"]; // literal
+    array
+</p>
+
+<p><strong>Note: </strong><br> If you specify numbers or true/false values
+    inside the array then the variable
+    type will be Number or Boolean, instead of String. </p>
+
+<p><strong>Access an Array </strong><br></p>
+
+<p>You can refer to a particular element in an array by referring to the
+    name of
+    the array and the index
+    number. The index number starts at 0. The following code line: </p>
+
+<p>document.write(myCars[0]); </p>
+
+<p>will result in the following output: </p>
+
+<p>Saab </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Modify Values in an Array </strong><br></p>
+
+<p>To modify a value in an existing array, just add a new value to the array
+    with a specified index number:
+    myCars[0]="Opel"; Now, the following code line:
+    document.write(myCars[0]);
+</p>
+
+<p>will result in the following output: Opel </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Array Object Examples: </strong><br></p>
+
+<p><strong>Program for array concatenation </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var parents = ["Jani", "Tove"]; var
+    children = ["Cecilie", "Lone"];
+    var family = parents.concat(children); document.write(family); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array concatenation with multiple arrays.
+    </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var parents = ["Jani", "Tove"];
+</p>
+
+<p>var brothers = ["Stale", "Kai Jim", "Borge"]; var children = ["Cecilie",
+    "Lone"]; var family =
+    parents.concat(brothers, children); </p>
+
+<p>document.write(family); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p> &lt;/html&gt; </p>
+
+<p><strong>Program for array join operation. </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.write(fruits.join() + "&lt;br /&gt;");
+    document.write(fruits.join("+") + "&lt;br /&gt;");
+    document.write(fruits.join(" and ")); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; &lt;/html&gt; </p>
+
+<p><strong>Program for array pop. </strong><br> &lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.write(fruits.pop() + "&lt;br /&gt;");
+    document.write(fruits + "&lt;br /&gt;"); document.write(fruits.pop() +
+    "&lt;br /&gt;");
+    document.write(fruits); </p>
+
+<p>&lt;/script&gt; &lt;/body&gt; </p>
+
+<p> &lt;/html&gt; </p>
+
+<p><strong>Program for array push. </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; var fruits = ["Banana", "Orange",
+    "Apple", "Mango"];
+    document.write(fruits.push("Kiwi") + "&lt;br /&gt;");
+    document.write(fruits.push("Lemon","Pineapple") +
+    "&lt;br /&gt;"); document.write(fruits); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array reverse. </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.write(fruits.reverse()); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array shift. </strong><br> &lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"]; </p>
+
+<p>document.write(fruits.shift() + "&lt;br /&gt;"); document.write(fruits +
+    "&lt;br /&gt;");
+    document.write(fruits.shift() + "&lt;br /&gt;"); document.write(fruits);
+</p>
+
+<p>&lt;/script&gt; &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array slice. </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.write(fruits.slice(0,1) + "&lt;br /&gt;");
+    document.write(fruits.slice(1) + "&lt;br /&gt;");
+    document.write(fruits.slice(-2) + "&lt;br /&gt;");
+    document.write(fruits); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array sort(). </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"]; </p>
+
+<p>document.write(fruits.sort()); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Program for array </strong><br><strong>toString
+    </strong><br><strong>(). </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.write(fruits.toString()); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>JAVASCRIPT MATH OBJECT </p>
+
+<p>The Math object allows you to perform mathematical tasks. The Math object
+    includes several mathematical
+    constants and methods. <strong>Syntax for using properties/methods of
+        Math:
+    </strong><br></p>
+
+<p>var pi_value=Math.PI; var sqrt_value=Math.sqrt(16);<strong> </strong><br>
+</p>
+
+<p><strong>Note: </strong><br> Math is not a constructor. All properties and
+    methods of Math can be called by
+    using Math as an object without creating it. </p>
+
+
+<p><strong>Mathematical Constants: </strong><br></p>
+
+<p>JavaScript provides eight mathematical constants that can be accessed
+    from
+    the Math object. These are: E,
+    PI, square root of 2, square root of 1/2, natural log of 2, natural log
+    of
+    10, base-2 log of E, and
+    base-10 log of E. You may reference these constants from your JavaScript
+    like this: </p>
+
+<p>Math.E </p>
+
+<p>Math.PI </p>
+
+<p>Math.SQRT2 </p>
+
+<p>Math.SQRT1_2 </p>
+
+<p>Math.LN2 </p>
+
+<p>Math.LN10 </p>
+
+<p>Math.LOG2E Math.LOG10E <strong>Mathematical Methods: </strong><br></p>
+
+<p>In addition to the mathematical constants that can be accessed from the
+    Math
+    object there are also
+    several methods available. The following example uses the round() method
+    of
+    the Math object to round a
+    number to the nearest integer: document.write(Math.round(4.7));
+    <strong>Output: </strong><br>5<strong>
+    </strong><br>
+</p>
+
+<p>The following example uses the random() method of the Math object to
+    return a
+    random number between 0 and
+    1: document.write(Math.random()); </p>
+
+<p><strong>Output: </strong><br> 0.9306157949324372 </p>
+
+<p>The following example uses the floor() and random() methods of the Math
+    object to return a random number
+    between 0 and 10: document.write(Math.floor(Math.random()*11)); </p>
+
+<p><strong>Output: </strong><br> 6 </p>
+
+<p><strong>MATH OBJECT EXAMPLES </strong><br></p>
+
+<p><strong>1. </strong><br> <strong>Use round() to Round a Number:
+    </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; document.write(Math.round(0.60) +
+    "&lt;br /&gt;");
+    document.write(Math.round(0.50) + "&lt;br /&gt;");
+    document.write(Math.round(0.49) + "&lt;br /&gt;");
+    document.write(Math.round(-4.40) + "&lt;br /&gt;");
+    document.write(Math.round(-4.60)); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Use random() to Return a Random Number Between 0 and 1
+    </strong><br>:
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>//return a random number between 0 and 1 document.write(Math.random() +
+    "&lt;br /&gt;"); //return a
+    random integer between 0 and 10
+    document.write(Math.floor(Math.random()*11)); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>Use max() to return the Number </strong><br><strong>With
+    </strong><br><strong> the Highest Value of Two
+        Specified Numbers: </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; document.write(Math.max(5,10) +
+    "&lt;br
+    /&gt;");
+    document.write(Math.max(0,150,30,20,38) + "&lt;br /&gt;");
+    document.write(Math.max(-5,10) + "&lt;br
+    /&gt;"); document.write(Math.max(-5,-10) + "&lt;br /&gt;");
+    document.write(Math.max(1.5,2.5)); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt;<strong> </strong><br></p>
+
+<p><strong>4. </strong><br> <strong>Use min() to Return the Number
+    </strong><br><strong>With </strong><br><strong> the
+        Lowest Value of Two Specified Numbers: </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; document.write(Math.min(5,10) +
+    "&lt;br
+    /&gt;");
+    document.write(Math.min(0,150,30,20,38) + "&lt;br /&gt;");
+    document.write(Math.min(-5,10) + "&lt;br
+    /&gt;"); document.write(Math.min(-5,-10) + "&lt;br /&gt;");
+    document.write(Math.min(1.5,2.5)); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt;<strong> </strong><br></p>
+
+<p><strong>5. </strong><br> <strong>Convert Celsius to Fahrenheit:
+    </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function convert(degree) </p>
+
+<p>{ </p>
+
+<p>if (degree=="C") </p>
+
+<p> { </p>
+
+<p> F=document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value=Math.round(F);
+</p>
+
+<p> } </p>
+
+<p>&nbsp;else &nbsp; </p>
+
+<p> { </p>
+
+<p> C=(document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value=Math.round(C);
+</p>
+
+<p> } </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;p&gt;&lt;/p&gt;&lt;b&gt;Insert a number into one of the input fields
+    below:&lt;/b&gt;&lt;/p&gt; </p>
+
+<p>&lt;form&gt; </p>
+
+<p>&nbsp;&lt;input &nbsp;id="c" &nbsp;name="c"
+    &nbsp;onkeyup="convert('C')"&gt;
+    &nbsp;degrees </p>
+
+<p>Celsius&lt;br /&gt; equals&lt;br /&gt; </p>
+
+<p>&nbsp;&lt;input &nbsp;id="f" &nbsp;name="f"
+    &nbsp;onkeyup="convert('F')"&gt;
+    &nbsp;degrees </p>
+
+<p>Fahrenheit </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;p&gt;Note that the &lt;b&gt;Math.round()&lt;/b&gt; method is used, so
+    that the result will be
+    returned as an integer.&lt;/p&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>JAVASCRIPT BOOLEAN OBJECT: </strong><br></p>
+
+<p>The Boolean object is used to convert a non-Boolean value to a Boolean
+    value
+    (true or false). </p>
+
+<p><strong>Boolean Object Methods </strong><br></p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>toString() </p>
+            </td>
+            <td>
+                <p>Converts a Boolean value to a string, and returns the
+                    result
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>valueOf() </p>
+            </td>
+            <td>
+                <p>Returns the primitive value of a Boolean object </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>JAVASCRIPT WINDOW OBJECT: </strong><br></p>
+
+<p>The window object represents an open window in a browser. </p>
+
+<p><strong>Note: </strong><br> There is no public standard that applies to
+    the
+    Window object, but all major
+    browsers support it. </p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Window Object Properties: </strong><br></p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Property </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>closed </p>
+            </td>
+            <td>
+                <p>Returns a Boolean value indicating whether a window has
+                    been
+                    closed or not </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>defaultStatus </p>
+            </td>
+            <td>
+                <p>Sets or returns the default text in the statusbar of a
+                    window
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>document </p>
+            </td>
+            <td>
+                <p>Returns the Document object for the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>frames </p>
+            </td>
+            <td>
+                <p>Returns an array of all the frames (including iframes) in
+                    the
+                    current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>history </p>
+            </td>
+            <td>
+                <p>Returns the History object for the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>innerHeight </p>
+            </td>
+            <td>
+                <p>Sets or returns the the inner height of a window's
+                    content
+                    area </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>innerWidth </p>
+            </td>
+            <td>
+                <p>Sets or returns the the inner width of a window's content
+                    area </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>length </p>
+            </td>
+            <td>
+                <p>Returns the number of frames (including iframes) in a
+                    window
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>location </p>
+            </td>
+            <td>
+                <p>Returns the Location object for the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>name </p>
+            </td>
+            <td>
+                <p>Sets or returns the name of a window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>navigator </p>
+            </td>
+            <td>
+                <p>Returns the Navigator object for the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>opener </p>
+            </td>
+            <td>
+                <p>Returns a reference to the window that created the window
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>outerHeight </p>
+            </td>
+            <td>
+                <p>Sets or returns the outer height of a window, including
+                    toolbars/scrollbars </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>outerWidth </p>
+            </td>
+            <td>
+                <p>Sets or returns the outer width of a window, including
+                    toolbars/scrollbars </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>pageXOffset </p>
+            </td>
+            <td>
+                <p>Returns the pixels the current document has been scrolled
+                    (horizontally) from the upper
+                    left corner of the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>pageYOffset </p>
+            </td>
+            <td>
+                <p>Returns the pixels the current document has been scrolled
+                    (vertically) from the upper
+                    left corner of the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>parent </p>
+            </td>
+            <td>
+                <p>Returns the parent window of the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>screen </p>
+            </td>
+            <td>
+                <p>Returns the Screen object for the window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>screenLeft </p>
+            </td>
+            <td>
+                <p>Returns the x coordinate of the window relative to the
+                    screen
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>screenTop </p>
+            </td>
+            <td>
+                <p>Returns the y coordinate of the window relative to the
+                    screen
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>screenX </p>
+            </td>
+            <td>
+                <p>Returns the x coordinate of the window relative to the
+                    screen
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>screenY </p>
+            </td>
+            <td>
+                <p>Returns the y coordinate of the window relative to the
+                    screen
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>self </p>
+            </td>
+            <td>
+                <p>Returns the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>status </p>
+            </td>
+            <td>
+                <p>Sets the text in the statusbar of a window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>top </p>
+            </td>
+            <td>
+                <p>Returns the topmost browser window </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Window Object Methods: </strong><br></p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Method </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>alert() </p>
+            </td>
+            <td>
+                <p>Displays an alert box with a message and an OK button
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>blur() </p>
+            </td>
+            <td>
+                <p>Removes focus from the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>close() </p>
+            </td>
+            <td>
+                <p>Closes the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>confirm() </p>
+            </td>
+            <td>
+                <p>Displays a dialog box with a message and an OK and a
+                    Cancel
+                    button </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>createPopup() </p>
+            </td>
+            <td>
+                <p>Creates a pop-up window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>focus() </p>
+            </td>
+            <td>
+                <p>Sets focus to the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>open() </p>
+            </td>
+            <td>
+                <p>Opens a new browser window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>print() </p>
+            </td>
+            <td>
+                <p>Prints the content of the current window </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>prompt() </p>
+            </td>
+            <td>
+                <p>Displays a dialog box that prompts the visitor for input
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>resizeBy() </p>
+            </td>
+            <td>
+                <p>Resizes the window by the specified pixels </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>resizeTo() </p>
+            </td>
+            <td>
+                <p>Resizes the window to the specified width and height </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Window Object Examples </strong><br></p>
+
+<p><strong>1. </strong><br> <strong>Display an alert box: </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function show_alert() </p>
+
+<p>{ </p>
+
+<p>alert("Hello! I am an alert box!"); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;input type="button" onclick="show_alert()" value="Show alert box"
+    /&gt;
+</p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>2. </strong><br> <strong>Display a prompt box: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function show_prompt() </p>
+
+<p>{ </p>
+
+<p>var name=prompt("Please enter your name","Harry Potter"); if (name!=null
+    &amp;&amp; name!="") </p>
+
+<p> { </p>
+
+<p> document.write("Hello " + name + "! How are you today?"); </p>
+
+<p> } </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;input type="button" onclick="show_prompt()" value="Show prompt box"
+    /&gt;
+    &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>3. </strong><br> <strong>Display a confirm box, and alert what
+        the
+        visitor clicked: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+
+<p>&lt;script type="text/javascript"&gt; function show_confirm() </p>
+
+<p>{ </p>
+
+<p>var r=confirm("Press a button!"); </p>
+
+<p>if (r==true) </p>
+
+<p> { </p>
+
+<p> alert("You pressed OK!"); </p>
+
+<p> } else </p>
+
+<p> { </p>
+
+<p> alert("You pressed Cancel!"); </p>
+
+<p> } </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;input type="button" onclick="show_confirm()" value="Show a confirm
+    box"
+    /&gt; &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>4. </strong><br> <strong>Create a pop-up window Open a new window
+        when clicking on a button: </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function open_win() </p>
+
+<p>{ </p>
+
+<p>window.open("http://kishor.ucoz.com"); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form&gt; </p>
+
+<p>&lt;input type=button value="Open Window" onclick="open_win()"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>5. </strong><br> <strong>Open a new window and control its
+        appearance: </strong><br> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function open_win() </p>
+
+<p>{ </p>
+
+<p>window.open("http://www.w3schools.com","_blank","toolbar=yes,
+    location=yes,
+    directories=no, status=no,
+    menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400,
+    height=400"); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form&gt; </p>
+
+<p>&lt;input type="button" value="Open Window" onclick="open_win()"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>6. </strong><br> <strong>Open multiple new windows: </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function open_win() </p>
+
+<p>{ </p>
+
+<p>window.open("http://www.microsoft.com/");
+    window.open("http://kishor.ucoz.com"); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form&gt; </p>
+
+<p>&lt;input type=button value="Open Windows" onclick="open_win()"&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>7. </strong><br> <strong>Close the new window: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function openWin() </p>
+
+<p>{ </p>
+
+<p>myWindow=window.open("","","width=200,height=100");
+    myWindow.document.write("&lt;p&gt;This is
+    'myWindow'&lt;/p&gt;"); </p>
+
+<p>} </p>
+
+<p>function closeWin() </p>
+
+<p>{ </p>
+
+<p>myWindow.close(); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; &lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;input type="button" value="Open 'myWindow'" onclick="openWin()" /&gt;
+</p>
+
+<p>&lt;input type="button" value="Close 'myWindow'"
+    onclick="closeWin()"/&gt;
+</p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>8. </strong><br> <strong>Print the current page: </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function printpage() </p>
+
+<p>{ </p>
+
+<p>window.print(); </p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;input type="button" value="Print this page" onclick="printpage()"
+    /&gt;
+</p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; <strong>9. </strong><br> <strong>A simple timing:
+    </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; function timeText() </p>
+
+<p>{ </p>
+
+<p>var t1=setTimeout("document.getElementById('txt').value='2
+    seconds!'",2000);
+</p>
+
+<p>var t2=setTimeout("document.getElementById('txt').value='4
+    seconds!'",4000);
+</p>
+
+<p>var t3=setTimeout("document.getElementById('txt').value='6
+    seconds!'",6000);
+</p>
+
+<p>} </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;form&gt; </p>
+
+<p>&lt;input type="button" value="Display timed text!"
+    onclick="timeText()"/&gt;
+</p>
+
+<p>&lt;input type="text" /&gt; </p>
+
+<p>&lt;/form&gt; </p>
+
+<p>&lt;p&gt;Click the button above. The input field will tell you when two,
+    four, and six seconds have
+    passed…..&lt;/p&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p> &nbsp; </p>
+
+<p>JQUERY INTRODUCTION: jQuery is a fast and concise JavaScript Library
+    created
+    by John Resig in 2006 with a
+    nice motto: <strong>Write less, do more </strong><br>. jQuery simplifies
+    HTML document traversing, event
+    handling, animating, and Ajax interactions for rapid web development.
+    jQuery
+    is a JavaScript toolkit
+    designed to simplify various tasks by writing less code. Here is the
+    list of
+    important core features
+    supported by jQuery: </p>
+
+<p><strong>DOM manipulation: </strong><br>The jQuery made it easy to select
+    DOM
+    elements, negotiate them<strong>
+    </strong><br>and modifying their content by using cross-browser open
+    source
+    selector engine called
+    <strong>Sizzle </strong><br>.
+</p>
+
+<p><strong>Event handling: </strong><br>The jQuery offers an elegant way to
+    capture a wide variety of
+    events,<strong> </strong><br>such as a user clicking on a link, without
+    the
+    need to clutter the HTML code
+    itself with event handlers. </p>
+
+<p><strong>AJAX Support: </strong><br>The jQuery helps you a lot to develop
+    a
+    responsive and
+    feature-rich<strong> </strong><br>site using AJAX technology. </p>
+
+<p><strong>Animations: </strong><br>The jQuery comes with plenty of built-in
+    animation effects which you
+    can<strong> </strong><br>use in your websites. </p>
+
+<p><strong>Lightweight: </strong><br>The jQuery is very lightweight library
+    -
+    about 19KB in size (Minified
+    and<strong> </strong><br>gzipped). </p>
+
+<p><strong>Cross Browser Support: </strong><br>The jQuery has cross-browser
+    support, and works well in<strong>
+    </strong><br>IE </p>
+
+<p>6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+ </p>
+
+<p><strong>Latest Technology: </strong><br>The jQuery supports CSS3
+    selectors
+    and basic XPath syntax. </p>
+
+<p>Installation of jQuery: </p>
+
+<p>There are two ways to use jQuery. </p>
+
+<p><strong>Local Installation − </strong><br>You can download jQuery library
+    on
+    your local machine and<strong>
+    </strong><br>include it in your HTML code. </p>
+
+<p><strong>CDN Based Version − </strong><br>You can include jQuery library
+    into
+    your HTML code directly<strong>
+    </strong><br>from Content Delivery Network (CDN). </p>
+
+<p><strong>Local Installation: </strong><br></p>
+
+<p>Go to the https://jquery.com/download/ to download the latest version
+    available. </p>
+
+<p>Now, insert downloaded jquery-2.1.3.min.js file in a directory of your
+    website, e.g. </p>
+
+<p>C:/your-website-directory/jquery/jquery-2.1.3.min.js. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>Now, you can include jQuery library in your HTML file as follows: </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="/jquery/jquery2.1.3.min.js"&gt;&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>$(document).ready(function()</p>
+
+<p>{ </p>
+
+<p>document.write("Hello, World!"); </p>
+
+<p>}); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;h1&gt;Hello&lt;/h1&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result – </p>
+
+<p>Hello, World! </p>
+
+<p><strong>CDN Based Version: </strong><br></p>
+
+<p>You can include jQuery library into your HTML code directly from Content
+    Delivery Network (CDN). Google
+    and Microsoft provides content deliver for the latest version. We are
+    using
+    Google CDN version of the
+    library. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>Now, you can include jQuery library in your HTML file as follows: </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript" src= </p>
+
+<p>"http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
+</p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript"&gt; </p>
+
+<p>$(document).ready(function({ document.write("Hello, World!"); </p>
+
+<p>}); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;h1&gt;Hello&lt;/h1&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result – </p>
+
+<p>Hello, World! </p>
+
+<p><strong>Calling jQuery Library Functions: </strong><br></p>
+
+<p>If you want to an event work on your page, you should call it inside the
+    $(document).ready() function.
+    Everything inside it will load as soon as the DOM is loaded and before
+    the
+    page contents are loaded.
+</p>
+
+<p>To do this, we register a ready event for the document as follows: </p>
+
+<p>$(document).ready(function() { </p>
+
+<p>//write the stuff when DOM is ready </p>
+
+<p>}); </p>
+
+<p> </p>
+
+<p>To call upon any jQuery library function, use HTML script tags as shown
+    below: </p>
+
+<p> </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript" src="/jquery/jquery </p>
+
+<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
+
+<p>$(document).ready(function({ </p>
+
+<p>$("div").click(function() { Alert("Hello world!"); </p>
+
+<p>}); </p>
+
+<p>}); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;divfont-family: Consolas;">newdiv"&gt; </p>
+
+<p>Click on this to see a dialogue box. </p>
+
+<p> &nbsp;&lt;/div&gt; </p>
+
+<p> &lt;/body&gt; </p>
+
+<p> &lt;/html&gt; </p>
+
+<p><strong>Creating and Executing Custom Scripts: </strong><br></p>
+
+<p>It is better to write our custom code in custom JavaScript file:
+    <strong>custom.js </strong><br>, as follows:
+</p>
+
+<p>/* Filename: custom.js */ </p>
+
+<p>$(document).ready(function() { </p>
+
+<p>$("div").click(function() { alert("Hello world!"); </p>
+
+<p>}); </p>
+
+<p>}); </p>
+
+<p>Now we can include custom.js file in our HTML file as follows: </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript" src="/jquery/jquery-</p>
+
+<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="/jquery/custom.js"&gt;&lt;/script&gt;
+</p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;divfont-family: Consolas;">newdiv"&gt; </p>
+
+<p>Click on this to see a dialogue box. </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>Click on this to see a dialogue box. </p>
+
+<p> </p>
+
+<p> </p>
+
+<p>jQuery Selectors: </p>
+
+<p>The jQuery library binds the power of Cascading Style Sheets (CSS)
+    selectors
+    to let us quickly and easily
+    access elements or groups of elements in the Document Object Model
+    (DOM).
+</p>
+
+<p>A jQuery Selector is a function which makes use of expressions to find
+    out
+    matching elements from a DOM
+    based on the given criteria. </p>
+
+<p><strong>The $() Factory Function: </strong><br></p>
+
+<p>All type of selectors available in jQuery, always start with the dollar
+    sign
+    and parentheses: $(). The
+    factory function $() makes use of the following three building blocks
+    while
+    selecting elements in a
+    given document: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p>Selector </p>
+            </td>
+            <td>
+                <p>Description </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tag Name </p>
+            </td>
+            <td>
+                <p>Represents a tag name available in the DOM. For example
+                    $('p') selects all paragraphs
+                    &lt;p&gt; in the document. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tag ID </p>
+            </td>
+            <td>
+                <p>Represents a tag available with the given ID in the DOM.
+                    For
+                    example $('#some- id')
+                    selects the single element in the document that has an
+                    ID of
+                    some-id. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tag Class </p>
+            </td>
+            <td>
+                <p>Represents a tag available with the given class in the
+                    DOM.
+                    For example $('.some-class')
+                    selects all elements in the document that have a class
+                    of
+                    some- class. </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p>All the above items can be used either on their own or in combination
+    with
+    other selectors. All the
+    jQuery selectors are based on the same principle except some tweaking.
+</p>
+
+<p><strong>NOTE: </strong><br> The factory function $() is a synonym of
+    jQuery()
+    function. So in case you are
+    using any other JavaScript library where $ sign is conflicting with
+    something else then you can replace
+    $ sign by jQuery name and you can use function jQuery() instead of $().
+</p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>Following is a simple example which makes use of Tag Selector. This would
+    select all the elements with a
+    tag name <strong>p </strong><br>. </p>
+
+<p>&lt;html&gt; </p>
+
+<p> </p>
+
+<p>&lt;head&gt; </p>
+
+<p> </p>
+
+<p>&lt;title&gt;the title&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript" src="/jquery/jquery-</p>
+
+<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
+
+<p>$(document).ready(function() { var pars = $("p"); for( i=0;
+    i&lt;pars.length;
+    i++ ){ alert("Found
+    paragraph: " + pars[i].innerHTML); } </p>
+
+<p>}); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;pfont-family: Consolas;">myclass"&gt;This is a paragraph.&lt;/p&gt;
+</p>
+
+<p>&lt;pfont-family: Consolas;">myid"&gt;This is second paragraph.&lt;/p&gt;
+</p>
+
+<p>&lt;p&gt;This is third paragraph.&lt;/p&gt; </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p> </p>
+
+<p><strong>Using of Selectors: </strong><br></p>
+
+<p>The selectors are very useful and would be required at every step while
+    using
+    jQuery. They get the exact
+    element that you want from your HTML document. </p>
+
+<p>Following table lists down few basic selectors and explains them with
+    examples. </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p>Selector </p>
+            </td>
+            <td>
+                <p>Description </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Name </p>
+            </td>
+            <td>
+                <p>Selects all elements which match with the given element
+                    <strong>Name </strong><br>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>#ID </p>
+            </td>
+            <td>
+                <p>Selects a single element which matches with the given
+                    <strong>ID </strong><br>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>.Class </p>
+            </td>
+            <td>
+                <p>Selects all elements which matches with the given
+                    <strong>Class </strong><br>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Universal (*) </p>
+            </td>
+            <td>
+                <p>Selects all elements available in a DOM. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Multiple Elements E, F,G </p>
+            </td>
+            <td>
+                <p>Selects the combined results of all the specified
+                    selectors
+                    <strong>E, F </strong><br> or
+                    <strong>G </strong><br>.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>jQuery – Element Name Selector: </strong><br></p>
+
+<p>The element selector selects all the elements that have a tag name of T.
+</p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>Here is the simple syntax to use this selector − </p>
+
+<p>$('tagname') </p>
+
+<p><strong>Parameters: </strong><br></p>
+
+<p>Here is the description of all the parameters used by this selector –
+</p>
+
+<p><strong>tagname </strong><br> − Any standard HTML tag name like div, p,
+    em,
+    img, li etc. </p>
+
+<p><strong>Returns: </strong><br></p>
+
+<p>Like any other jQuery selector, this selector also returns an array
+    filled
+    with the found elements.
+    <strong>Example: </strong><br>
+</p>
+
+<p>$('p') − Selects all elements with a tag name of p in the document. 
+    $('div') − Selects all elements
+    with a tag name of div in the document. </p>
+
+<p>Following example would select all the divisions and will apply yellow
+    color
+    to their background
+    &lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquer</p>
+
+<p>y.min.js"&gt; </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
+
+<p>$(document).ready(function() { </p>
+
+<p>/* This would select all the divisions */ </p>
+
+<p>$("div").css("background-color", "yellow"); }); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>This is first division of the DOM. </p>
+
+<p> </p>
+
+<p>This is second division of the DOM. </p>
+
+<p> </p>
+
+<p>This is third division of the DOM <strong>jQuery – Element ID Selector:
+    </strong><br></p>
+
+<p><strong>Description: </strong><br></p>
+
+<p>The element ID selector selects a single element with the given id
+    attribute.
+</p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>Here is the simple syntax to use this selector − </p>
+
+<p><strong>Parameters: </strong><br></p>
+
+<p>Here is the description of all the parameters used by this selector –
+</p>
+
+<p>Elementid: This would be an element ID. If the id contains any special
+    characters like periods or colons
+    you have to escape those characters with backslashes. </p>
+
+<p><strong>Returns: </strong><br></p>
+
+<p>Like any other jQuery selector, this selector also returns an array
+    filled
+    with the found element. </p>
+
+<p> </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>$('#myid') − Selects a single element with the given id myid. 
+    $('div#yourid') − Selects a single
+    division with the given id yourid. </p>
+
+<p>Following example would select second division and will apply yellow
+    color to
+    its background as below:
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+</p>
+
+<p>&gt; </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
+
+<p>$(document).ready(function() { </p>
+
+<p>/* This would select second division only*/ </p>
+
+<p>$("#div2").css("background-color", "yellow"); }); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is third division of the DOM.&lt;/p&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>This is first division of the DOM. </p>
+
+<p>This is second division of the DOM. This is third division of the DOM.
+    <strong>jQuery - Element Class
+        Selector: </strong><br>
+</p>
+
+<p><strong>Description: </strong><br></p>
+
+<p>The element class selector selects all the elements which match with the
+    given class of the elements.
+</p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>Here is the simple syntax to use this selector: </p>
+
+<p>$('.classid') </p>
+
+<p><strong>Parameters: </strong><br></p>
+
+<p>Here is the description of all the parameters used by this selector – 
+    classid − This is class ID
+    available in the document. </p>
+
+<p><strong>Returns: </strong><br></p>
+
+<p>Like any other jQuery selector, this selector also returns an array
+    filled
+    with the found elements. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>$('.big') − Selects all the elements with the given class ID big. </p>
+
+<p>$('p.small') − Selects all the paragraphs with the given class ID small.
+    
+    $('.big.small') − Selects all
+    the elements with a class of big and small. </p>
+
+<p>Following example would select all divisions with class .big and will
+    apply
+    yellow color to its
+    background. </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    &gt; </p>
+
+<p>&lt;/script&gt; &lt;script type="text/javascript"
+    language="javascript"&gt;
+</p>
+
+<p>$(document).ready(function() { </p>
+
+<p>/* This would select second division only*/ </p>
+
+<p>$(".big").css("background-color", "yellow"); }); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p> &lt;div&gt; </p>
+
+<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt;
+    &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>This is first division of the DOM. </p>
+
+<p>This is second division of the DOM. This is third division of the DOM
+    <strong>jQuery - Universal
+        Selector: </strong><br>
+</p>
+
+<p><strong>Description: </strong><br></p>
+
+<p>The universal selector selects all the elements available in the
+    document.
+</p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>Here is the simple syntax to use this selector − </p>
+
+<p>$('*') <strong>Parameters: </strong><br></p>
+
+<p>Here is the description of all the parameters used by this selector  * −
+    A
+    symbolic star. </p>
+
+<p><strong>Returns: </strong><br></p>
+
+<p>Like any other jQuery selector, this selector also returns an array
+    filled
+    with the found elements. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p> $('*') selects all the elements available in the document. </p>
+
+<p>Following example would select all the elements and will apply yellow
+    color
+    to their background. Try to
+    understand that this selector will select every element including head,
+    body
+    etc. </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+</p>
+
+<p>&gt; </p>
+
+<p>&lt;/script&gt; &lt;script type="text/javascript"
+    language="javascript"&gt;
+</p>
+
+<p>$(document).ready(function() { </p>
+
+<p>/* This would select all the elements */ </p>
+
+<p>$("*").css("background-color", "yellow"); }); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; </p>
+
+<p>&lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt;
+    &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>This is first division of the DOM. </p>
+
+<p> </p>
+
+<p>This is second division of the DOM. </p>
+
+<p> </p>
+
+<p>This is third division of the DOM </p>
+
+<p> &nbsp; </p>
+
+<p><strong>jQuery – Multiple Elements Selector: </strong><br></p>
+
+<p>Description: </p>
+
+<p>This Multiple Elements selector selects the combined results of all the
+    specified selectors E, F or G.
+    You can specify any number of selectors to combine into a single result.
+    Here order of the DOM elements
+    in the jQuery object aren't necessarily identical. </p>
+
+<p>Syntax: </p>
+
+<p>Here is the simple syntax to use this selector − </p>
+
+<p>$('E, F, G,....') </p>
+
+<p>Parameters: </p>
+
+<p>Here is the description of all the parameters used by this selector –
+</p>
+
+<p>E − Any valid selector </p>
+
+<p>F − Any valid selector </p>
+
+<p>G − Any valid selector </p>
+
+<p>Returns: </p>
+
+<p>Like any other jQuery selector, this selector also returns an array
+    filled
+    with the found elements. </p>
+
+<p>Example: </p>
+
+<p>$('div, p') − selects all the elements matched by div or p. </p>
+
+<p>$('p strong, .myclass') − selects all elements matched by strong that are
+    descendants of an element
+    matched by p as well as all elements that have a class of myclass. </p>
+
+<p>$('p strong, #myid') − selects a single element matched by strong that is
+    descendant of an element
+    matched by p as well as element whose id is myid. </p>
+
+<p>Following example would select elements with class ID big and element
+    with ID
+    div3 and will apply yellow
+    color to its background – </p>
+
+<p>&lt;html&gt; </p>
+
+<p>&lt;head&gt; </p>
+
+<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
+
+<p>&lt;script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    &gt; </p>
+
+<p>&lt;/script&gt; &lt;script type="text/javascript"
+    language="javascript"&gt;
+</p>
+
+<p>$(document).ready(function() { </p>
+
+<p>$(".big, #div3").css("background-color", "yellow"); }); </p>
+
+<p>&lt;/script&gt; </p>
+
+<p>&lt;/head&gt; </p>
+
+<p>&lt;body&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p> &lt;div&gt; </p>
+
+<p>&lt;p&gt;This is second division of the </p>
+
+<p>DOM.&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;div&gt; </p>
+
+<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt; </p>
+
+<p>&lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce the following result: </p>
+
+<p>This is first division of the DOM. </p>
+
+<p>This is second division of the DOM. This is third division of the DOM
+    <strong>jQuery Selector Examples:
+    </strong><br>
+</p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Syntax </strong><br></p>
+            </td>
+            <td>
+                <p><strong>Description </strong><br></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$(this) </p>
+            </td>
+            <td>
+                <p>Selects the current HTML element </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("p.intro") </p>
+            </td>
+            <td>
+                <p>Selects all &lt;p&gt; elements with </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("p:first") </p>
+            </td>
+            <td>
+                <p>Selects the first &lt;p&gt; element </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("ul li:first") </p>
+            </td>
+            <td>
+                <p>Selects the first &lt;li&gt; element of the first
+                    &lt;ul&gt;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("ul li:first-child") </p>
+            </td>
+            <td>
+                <p>Selects the first &lt;li&gt; element of every &lt;ul&gt;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("[href]") </p>
+            </td>
+            <td>
+                <p>Selects all elements with an href attribute </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("a[target='_blank']") </p>
+            </td>
+            <td>
+                <p>Selects all &lt;a&gt; elements with a target attribute
+                    value
+                    equal to "_blank" </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("a[target!='_blank']") </p>
+            </td>
+            <td>
+                <p>Selects all &lt;a&gt; elements with a target attribute
+                    value
+                    NOT equal to "_blank" </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$(":button") </p>
+            </td>
+            <td>
+                <p>Selects all &lt;button&gt; elements and &lt;input&gt;
+                    elements of type="button" </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("tr:even") </p>
+            </td>
+            <td>
+                <p>Selects all even &lt;tr&gt; elements </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>$("tr:odd") </p>
+            </td>
+            <td>
+                <p>Selects all odd &lt;tr&gt; elements </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>jQuery DOM: </strong><br></p>
+
+<p>JQuery provides methods to manipulate DOM in efficient way. You do not
+    need
+    to write big code to modify
+    the value of any element's attribute or to extract HTML code from a
+    paragraph or division. </p>
+
+<p>JQuery provides methods such as .attr(), .html(), and .val() which act as
+    getters, retrieving information
+    from DOM elements for later use. </p>
+
+<p><strong>Content Manipulation: </strong><br></p>
+
+<p>The <strong>html( ) </strong><br> method gets the html contents
+    (innerHTML)
+    of the first matched element. Here
+    is the syntax for the method − <em>selector</em>.html( )
+    <strong>Example:
+    </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
+    "text/javascript" src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
+    &lt;/script&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
+
+<p> $(document).ready(function() { </p>
+
+<p> $("div").click(function () { var content = $(this).html();
+    $("#result").text( content ); </p>
+
+<p> }); </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;style&gt; </p>
+
+<p> #division{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
+    &lt;/style&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &nbsp; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;p&gt;Click on the square below:&lt;/p&gt; </p>
+
+<p> &lt;span id = "result"&gt; &lt;/span&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;div id = "division" style = "background-color:blue;"&gt; </p>
+
+<p> This is Blue Square!! </p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p><strong>text( </strong><br><strong>val </strong><br><strong>):
+    </strong><br>
+</p>
+
+<p>The <strong>text( </strong><br><strong>val </strong><br><strong> )
+    </strong><br> method sets the combined text contents
+    of all matched elements. </p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>selector.text( val ) <strong>Example: </strong><br></p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
+    "text/javascript" src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
+</p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
+
+<p> $(document).ready(function() { </p>
+
+<p> $("div").click(function () { </p>
+
+<p> $(this).text( "&lt;h1&gt;Click another square&lt;/h1&gt;"); </p>
+
+<p> }); </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;style&gt; </p>
+
+<p> .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
+    &lt;/style&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &nbsp; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;p&gt;Click on any square below to see the result:&lt;/p&gt; </p>
+
+<p> &nbsp; &nbsp; </p>
+
+<p> &lt;div class = "div" style = "background-color:blue;"&gt;&lt;/div&gt;
+</p>
+
+<p> &lt;div class = "div" style = "background-color:green;"&gt;&lt;/div&gt;
+</p>
+
+<p> &lt;div class = "div" style = "background-color:red;"&gt;&lt;/div&gt;
+</p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p> </p>
+
+<p><strong>jQuery Events: </strong><br></p>
+
+<p>jQuery is tailor-made to respond to events in an HTML page. All the
+    different
+    visitors' actions that a
+    web page can respond to are called events. An event represents the
+    precise
+    moment when something
+    happens. </p>
+
+<p><strong>Examples: </strong><br></p>
+
+<p>moving a mouse over an element </p>
+
+<p>selecting a radio button </p>
+
+<p>clicking on an element </p>
+
+<p>Here are some common DOM events: </p>
+
+<table>
+    <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>
+                <p><strong>Mouse Events </strong><br> </p>
+            </td>
+            <td>
+                <p><strong>Keyboard Events </strong><br> </p>
+            </td>
+            <td>
+                <p><strong>Form Events </strong><br> </p>
+            </td>
+            <td>
+                <p><strong>Document/Window Events </strong><br> </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Click </p>
+            </td>
+            <td>
+                <p>keypress </p>
+            </td>
+            <td>
+                <p>submit </p>
+            </td>
+            <td>
+                <p>load </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>dblclick </p>
+            </td>
+            <td>
+                <p>keydown </p>
+            </td>
+            <td>
+                <p>change </p>
+            </td>
+            <td>
+                <p>resize </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>mouseenter </p>
+            </td>
+            <td>
+                <p>keyup </p>
+            </td>
+            <td>
+                <p>focus </p>
+            </td>
+            <td>
+                <p>scroll </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>mouseleave </p>
+            </td>
+            <td>
+                <p> </p>
+            </td>
+            <td>
+                <p>blur </p>
+            </td>
+            <td>
+                <p>unload </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong> </strong><br></p>
+
+<p><strong> </strong><br></p>
+
+<p><strong>Syntax: </strong><br></p>
+
+<p>In jQuery, most DOM events have an equivalent jQuery method. To assign a
+    click event to all paragraphs on
+    a page, you can do this: </p>
+
+<p>$(selector).click(); </p>
+
+<p>Sometime you need to define what should happen when the event fires, then
+    you
+    must pass a function to the
+    event: </p>
+
+<p>$(selector).click(function(){ // action goes here!! }); </p>
+
+<p><strong>Commonly used jQuery Events: $(document).ready(): </strong><br>
+</p>
+
+<p>The <sub>$(document).ready()</sub> method allows us to execute a function
+    when the document is fully
+    loaded. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>$(document).ready(function(){ alert("Hello World!"); </p>
+
+<p>}); </p>
+
+<p><strong>click(): </strong><br></p>
+
+<p>The click() method attaches an event handler function to an HTML element.
+    The
+    function is executed when
+    the user clicks on the HTML element. </p>
+
+<p><strong>Example: </strong><br></p>
+
+<p>$("p").click(function(){ </p>
+
+<p> $(this).hide(); </p>
+
+<p>}); </p>
+
+<p><strong>jQuery Attributes: </strong><br></p>
+
+<p>Some of the most basic components we can manipulate when it comes to DOM
+    elements are the properties and
+    attributes assigned to those elements. </p>
+
+<p>Most of these attributes are available through JavaScript as DOM node
+    properties. Some of the more common
+    properties are −  &nbsp;className </p>
+
+<p>tagName </p>
+
+<p>id </p>
+
+<p>href </p>
+
+<p>title </p>
+
+<p>rel </p>
+
+<p>src </p>
+
+<p>Consider the following HTML markup for an image element – </p>
+
+<p>&lt;img id = "imageid" src = "image.gif" alt = "Image" class = "myclass"
+    title = "This is an image"/&gt;
+</p>
+
+<p>In this element's markup, the tag name is img, and the markup for id,
+    src,
+    alt, class, and title
+    represents the element's attributes, each of which consists of a name
+    and a
+    value. jQuery gives us the
+    means to easily manipulate an element's attributes and gives us access
+    to
+    the element so that we can
+    also change its properties. </p>
+
+<p><strong>Get Attribute Value: </strong><br></p>
+
+<p>The <strong>attr </strong><br><strong>() </strong><br> method can be used
+    to
+    either fetch the value of an attribute
+    from the first element in the matched set or set attribute values onto
+    all
+    matched elements.
+    <strong>Example: </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
+    "text/javascript" src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
+</p>
+
+<p> &lt;/script&gt; &nbsp; </p>
+
+<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
+
+<p> $(document).ready(function() { var title = $("em").attr("title"); </p>
+
+<p> $("#divid").text(title); </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &lt;/head&gt; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;div&gt; </p>
+
+<p> &lt;em title = "Bold and Brave"&gt;This is first paragraph.&lt;/em&gt;
+</p>
+
+<p> &lt;p id = "myid"&gt;This is second paragraph.&lt;/p&gt; </p>
+
+<p> &lt;div id = "divid"&gt;&lt;/div&gt; </p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+
+<p>This will produce following result – <em>This is first paragraph.</em>
+</p>
+
+<p>This is second paragraph. Bold and Brave </p>
+
+<p><strong>Set Attribute Value: </strong><br></p>
+
+<p>The <strong>attr </strong><br><strong>(name, value) </strong><br> method
+    can
+    be used to set the named attribute
+    onto all elements in the wrapped set using the passed value.
+    <strong>Example: </strong><br>
+</p>
+
+<p>&lt;html&gt; </p>
+
+<p> &lt;head&gt; </p>
+
+<p> &lt;title&gt;The jQuery Example&lt;/title&gt; </p>
+
+<p> &lt;base href="https://www.tutorialspoint.com" /&gt; </p>
+
+<p> &lt;script type = "text/javascript" src = </p>
+
+<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
+</p>
+
+<p> &lt;/script&gt; &nbsp; </p>
+
+<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
+
+<p> $(document).ready(function() { </p>
+
+<p> $("#myimg").attr("src", "/jquery/images/jquery.jpg"); </p>
+
+<p> }); </p>
+
+<p> &lt;/script&gt; </p>
+
+<p> &lt;/head&gt; &nbsp; </p>
+
+<p> &lt;body&gt; </p>
+
+<p> &lt;div&gt; </p>
+
+<p> &lt;img id = "myimg" src = "/images/jquery.jpg" alt = "Sample image"
+    /&gt;
+</p>
+
+<p> &lt;/div&gt; </p>
+
+<p> &lt;/body&gt; </p>
+
+<p>&lt;/html&gt; </p>
+ 
+</div>
+
+<pre>
+
+
+</pre>
+<div class="button-container">
+<a href="page5.html" class="previous-button">&laquo; Previous</a>
+<a href="page7.html" class="next-button ">Next &raquo;</a>
+</div>
+
+<pre>
+
+
+
+</pre>
+<!--footer on my code-->
+<footer class=" footer ">
+<div class="container ">
+<div class="row ">
+<div class="footer-col ">
+<h4>company</h4>
+<ul>
+<li>
+<a href="index.html ">HOME</a>
+</li>
+<li><a href="aboutus.html " target="_blank ">About us</a></li>
+<li><a href="# " target="_blank ">Blog</a></li>
+<li><a href="privacy.html " target="_blank ">Privacy policy</a>
+</li>
+
+</ul>
+</div>
+<div class="footer-col ">
+<h4>get help</h4>
+<ul>
+<li><a href="Fqa.html ">FAQ</a></li>
+
+</ul>
+</div>
+<div class="footer-col ">
+<h4>follow us</h4>
+<div class="social-links ">
+<a href="# "><i class="fab fa-facebook-f "></i></a>
+<a href="# "><i class="fab fa-twitter "></i></a>
+<a href="# "><i class="fab fa-instagram "></i></a>
+<a href="# "><i class="fab fa-linkedin-in "></i></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+
+</html>
