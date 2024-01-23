@@ -10,14 +10,14 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        
-        .box { padding: 18px;
-         background-color: #f5ebe0;
+        .box {
+            padding: 18px;
+            background-color: #f5ebe0;
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             border: #e8491d 2px solid;
-            
+
         }
 
         .box input[type="text"],
@@ -94,8 +94,11 @@
     <nav id="menu">
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="elements.html">Elements</a></li>
-            <li><a href="generic.html">Generic</a></li>
+            <li><a href="elements.html">Web-Technology</a></li>
+            <li><a href="generic.html">Privacy policy</a></li>
+            <li><a href="AboutUS.html">About Us</a></li>
+            <li><a href="frequentlyASKquestion.html">frequently Ask Question</a></li>
+            <li><a href="login.html">Login/Sign-Up</a></li>
         </ul>
     </nav><!-- Heading -->
     <div id="heading">
@@ -107,84 +110,128 @@
         <div class="inner">
             <div class="content">
 
-               
-                    <div class="box login-form">
-                        <form name="loginForm" action="index.html" method="post">
-                            <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 42%;
+
+                <div class="box login-form">
+                    <form name="loginForm" action="index.html" method="post">
+                        <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 42%;
                             margin-right: 42%;">Login</h1>
-                            <hr>
-                            <strong><input type="text" name="email" placeholder="Username" /></strong>
+                        <hr>
+                        <strong><input type="text" name="email" placeholder="Username" /></strong>
 
-                            <strong><input type="password" name="password" placeholder="Password" /></strong>
+                        <strong><input type="password" name="password" placeholder="Password" /></strong>
 
-                            <input type="submit" name="submit" value="Submit"
-                                onclick="return validateEmail(document.loginForm.email)" />
-                                <hr>
-                           <h3 style="border-bottom: #e8491d 3px solid;  margin-right: 70%;"><b>Don`t have a Account?</b> </h3>
-                          
-                            <button type="button" onclick="toggleForm()">Switch To signup</button>
-                        </form>
-                    </div>
+                        <input type="submit" name="submit" value="Submit"
+                            onclick="return validateEmail(document.loginForm.email)" />
+                        <hr>
+                        <h3 style="border-bottom: #e8491d 3px solid;  margin-right: 70%;"><b>Don`t have a Account?</b>
+                        </h3>
 
-                    <div class="box signup-form">
-                        <form name="signupForm" action="./index.html" method="post">
-                            <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 40%;
+                        <button type="button" onclick="toggleForm()">Switch To signup</button>
+                    </form>
+                </div>
+
+                <div class="box signup-form">
+                    <form name="signupForm" action="./index.html" method="post">
+                        <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 40%;
                             margin-right: 40%;">Sign Up</h1>
-                            <hr>
-                            <input type="text" name="fullname" placeholder="Full Name" />
-                            <input type="text" name="email" placeholder="Email" />
-                            <input type="password" name="password" placeholder="Password" />
-                            <input type="password" name="confirmPassword" placeholder="Confirm Password" />
-                            <input type="submit" name="submit" value="Sign Up" onclick="return validateSignupForm()" />
-                            <hr>
-                            <button type="button" onclick="toggleForm()">Switch To login</button>
-                        </form>
-                    </div>
-                
+                        <hr>
+                        <input type="text" name="fullname" placeholder="Full Name" />
+                        <input type="text" name="email" placeholder="Email" />
+                        <input type="password" name="password" placeholder="Password" />
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" />
+                        <input type="submit" name="submit" value="Sign Up" onclick="return validateSignupForm()" />
+                        <hr>
+                        <button type="button" onclick="toggleForm()">Switch To login</button>
+                    </form>
+                </div>
 
-                <script>
+            </div>
+            <script>
 
-                    function toggleForm() {
-                        var content = document.querySelector('.content');
-                        content.classList.toggle('show-signup');
-                    }
+                function toggleForm() {
+                    var content = document.querySelector('.content');
+                    content.classList.toggle('show-signup');
+                }
 
-                    function validateEmail(emailId) {
-                        var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                        if (emailId.value.match(mailformat)) {
-                            emailId.focus();
-                            return true;
-                        } else {
-                            alert("Invalid email address.");
-                            emailId.focus();
-                            return false;
-                        }
-                    }
-
-                    function validateSignupForm() {
-                        var email = document.signupForm.email.value;
-                        var password = document.signupForm.password.value;
-                        var confirmPassword = document.signupForm.confirmPassword.value;
-
-                        var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                        if (!email.match(mailformat)) {
-                            alert("Invalid email address.");
-                            return false;
-                        }
-
-                        if (password !== confirmPassword) {
-                            alert("Passwords do not match.");
-                            return false;
-                        }
-
-
+                function validateEmail(emailId) {
+                    var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                    if (emailId.value.match(mailformat)) {
+                        emailId.focus();
                         return true;
+                    } else {
+                        alert("Invalid email address.");
+                        emailId.focus();
+                        return false;
                     }
-                </script>
+                }
+
+                function validateSignupForm() {
+                    var email = document.signupForm.email.value;
+                    var password = document.signupForm.password.value;
+                    var confirmPassword = document.signupForm.confirmPassword.value;
+
+                    var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                    if (!email.match(mailformat)) {
+                        alert("Invalid email address.");
+                        return false;
+                    }
+
+                    if (password !== confirmPassword) {
+                        alert("Passwords do not match.");
+                        return false;
+                    }
+
+
+                    return true;
+                }
+            </script>
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+        </div>
     </section>
-    </div>
-    </div>
-    </section>
+    <footer id="footer" style="border-top: #e8491d 4px solid;">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3 style="border-bottom: #e8491d 3px solid;">Hack-With-Smile</h3>
+                    <p> Hack-With-Smile is a platform dedicated to spreading knowledge and passion for technology. We
+                        believe in the power of innovation and creativity to bring positive change to the world. Our
+                        team of
+                        dedicated individuals strives to make technology accessible and enjoyable for everyone.
+                    </p>
+                </section>
+                <section>
+                    <h4 style="border-bottom: #e8491d 3px solid;">Quick links</h4>
+                    <ul class="alt">
+                        <li><a href="page1.html" target="_blank"><button>Web-Technology.</button></a></li>
+                        <li><a href="AboutUS.html" target="_blank">About Us.</a></li>
+                        <li><a href="frequentlyASKquestion.html" target="_blank">frequently-ASK-Question.</a></li>
+                        <li><a href="page6.html" target="_blank">AJAX AND ANGULAR JS.</a></li>
+                        <li><a href="page7.html" target="_blank">JDBC AND SERVLETS.</a></li>
+                        <li><a href="page8.html" target="_blank">JAVA SERVER PAGES AND BEANS.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4 style="border-bottom: #e8491d 3px solid;">Social Media</h4>
+                    <ul class="plain">
+                        <li><button><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237/"><i
+                                        class="icon fa-linkedin">&nbsp;</i>LinkedIn </a></button></li>
+                        <li><button><a href="https://github.com/Kamleshlodhi1119"><i
+                                        class="icon fa-github">&nbsp;</i>Github</a></button></li>
+                        <li><button><a href="https://leetcode.com/Kamleshlodhi/"><i
+                                        class="icon fa-code-fork">&nbsp;</i>LeetCode </a></button></li>
+                        <li><button><a href="https://www.Instagram.com/"><i
+                                        class="icon fa-instagram">&nbsp;</i>Instagram</a></button></li>
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
