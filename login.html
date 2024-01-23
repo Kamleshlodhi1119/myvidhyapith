@@ -1,99 +1,190 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 <head>
-    <title>Page Title</title>
+    <title>Hack-With-Smile</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #9ff1ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
         
-        .box {
-            width: 212px;
-            padding: 40px;
-            position: absolute;
-            margin: 65px;
-            background: #011217;
-            text-align: center;
-            border-radius: 40px;
+        .box { padding: 18px;
+         background-color: #f5ebe0;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border: #e8491d 2px solid;
+            
         }
-        
+
         .box input[type="text"],
         .box input[type="password"] {
-            width: 150px;
+            width: 180px;
             text-align: center;
             display: block;
             margin: 20px auto;
             padding: 10px;
             outline: none;
-            color: white;
-            border: 2px solid #1595eb;
+            color: rgb(12, 12, 219);
+            border: 3px solid #1595eb;
             background: none;
             border-radius: 30px;
             transition: 0.6s;
         }
-        
+
         h1 {
-            color: #ffffff;
+            color: #000000;
             text-transform: uppercase;
             font-weight: 500;
         }
-        
+
         .box input[type="text"]:focus,
         .box input[type="password"]:focus {
             width: 200px;
-            border-color: #2ecc71;
+            border-color: #7cb7c7;
         }
-        
+
         .box input[type="submit"] {
-            width: 95px;
+            width: 100px;
             text-align: center;
             display: block;
-            margin: 20px auto;
-            padding: 10px;
+            margin: 10px auto;
             outline: none;
-            color: white;
-            border: 2px solid #2ecc71;
+            color: rgba(12, 1, 1, 0.949);
+            border: 2px solid #d37a7a;
             background: none;
             border-radius: 30px;
             transition: 0.4s;
         }
-        
+
         .box input[type="submit"]:hover {
-            background: #2ecc71;
+            background: #49e68b;
+        }
+
+
+
+        .box.login-form {
+            display: block;
+        }
+
+        .box.signup-form {
+            display: none;
+        }
+
+        .content.show-signup .login-form {
+            display: none;
+        }
+
+        .content.show-signup .signup-form {
+            display: block;
         }
     </style>
-    <script>
-        function validateEmail(emailId) {
-            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-            if (emailId.value.match(mailformat)) {
-                emailId.focus();
-                return true;
-            } else {
-                alert("Invalid email address.");
-                emailId.focus();
-                return false;
-            }
-        }
-    </script>
 </head>
 
-<body>
-    <form class="box" name="form1" action="index.html " method="post ">
-        <h1>login</h1>
-        <hr>
-        <input type="text" name='email' placeholder="Username " />
-        <input type="password" name='text' placeholder="Password" />
-        <input type="submit" name="submit" value="submit" onclick="return validateEmail(document.form1.email)" />
-        <hr>
-        < </body>
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header"><a class="logo" href="index.html">Hack-With-Smile</a>
+        <nav><a href="#menu">Menu</a>
+        </nav>
+    </header><!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="generic.html">Generic</a></li>
+        </ul>
+    </nav><!-- Heading -->
+    <div id="heading">
+        <h1>Hack-With-Smile</h1>
+    </div>
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="content">
+
+               
+                    <div class="box login-form">
+                        <form name="loginForm" action="index.html" method="post">
+                            <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 42%;
+                            margin-right: 42%;">Login</h1>
+                            <hr>
+                            <strong><input type="text" name="email" placeholder="Username" /></strong>
+
+                            <strong><input type="password" name="password" placeholder="Password" /></strong>
+
+                            <input type="submit" name="submit" value="Submit"
+                                onclick="return validateEmail(document.loginForm.email)" />
+                                <hr>
+                           <h3 style="border-bottom: #e8491d 3px solid;  margin-right: 70%;"><b>Don`t have a Account?</b> </h3>
+                          
+                            <button type="button" onclick="toggleForm()">Switch To signup</button>
+                        </form>
+                    </div>
+
+                    <div class="box signup-form">
+                        <form name="signupForm" action="./index.html" method="post">
+                            <h1 style="display: flex; justify-content: center;border-bottom: #e8491d 5px solid; margin-left: 40%;
+                            margin-right: 40%;">Sign Up</h1>
+                            <hr>
+                            <input type="text" name="fullname" placeholder="Full Name" />
+                            <input type="text" name="email" placeholder="Email" />
+                            <input type="password" name="password" placeholder="Password" />
+                            <input type="password" name="confirmPassword" placeholder="Confirm Password" />
+                            <input type="submit" name="submit" value="Sign Up" onclick="return validateSignupForm()" />
+                            <hr>
+                            <button type="button" onclick="toggleForm()">Switch To login</button>
+                        </form>
+                    </div>
+                
+
+                <script>
+
+                    function toggleForm() {
+                        var content = document.querySelector('.content');
+                        content.classList.toggle('show-signup');
+                    }
+
+                    function validateEmail(emailId) {
+                        var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                        if (emailId.value.match(mailformat)) {
+                            emailId.focus();
+                            return true;
+                        } else {
+                            alert("Invalid email address.");
+                            emailId.focus();
+                            return false;
+                        }
+                    }
+
+                    function validateSignupForm() {
+                        var email = document.signupForm.email.value;
+                        var password = document.signupForm.password.value;
+                        var confirmPassword = document.signupForm.confirmPassword.value;
+
+                        var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                        if (!email.match(mailformat)) {
+                            alert("Invalid email address.");
+                            return false;
+                        }
+
+                        if (password !== confirmPassword) {
+                            alert("Passwords do not match.");
+                            return false;
+                        }
+
+
+                        return true;
+                    }
+                </script>
+    </section>
+    </div>
+    </div>
+    </section>
+</body>
 
 </html>

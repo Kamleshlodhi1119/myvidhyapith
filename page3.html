@@ -1,315 +1,1760 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>myvidhyapith</title>
-    <style>
-        pre,
-        li {
-            color: rgb(51, 51, 90);
-        }
-    </style>
-    <script src="Script.js">
-    </script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hack-With-Smile</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<header>
-    <h1 class="top-name">Myvidhyapith</h1>
-    <img class="image-profile" src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true" style="float:right;" />
-</header>
+<body class="is-preload">
 
-<body>
-    <div class="header">
-        <div id="sidebar">
-
-
-            <div class="toggle-btn" onclick="toggleS()">
-                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
-            </div>
-            <ul>
-                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
-                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
-                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
-                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
-                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i class="fas fa-phone-square"> Contact us</i></a></li>
-                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here" target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
-                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow Us</i></a></li>
-            </ul>
-        </div>
+	<!-- Header -->
+	<header id="header"><a class="logo" href="index.html">Hack-With-Smile</a>
+		<nav><a href="#menu">Menu</a>
+		</nav>
+	</header><!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="elements.html">Elements</a></li>
+			<li><a href="generic.html">Privacy policy</a></li>
+			<li><a href="AboutUS.html">About Us</a></li>
+			<li><a href="frequentlyASKquestion.html">frequently Ask Question</a></li>
+			<li><a href="login.html">Login/Sign-Up</a></li>
+		</ul>
+	</nav><!-- Banner -->
+<!-- Heading -->
+    <div id="heading">
+        <h1>Elements</h1>
     </div>
 
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="content">
+
+                <!-- Elements -->
+                <div class="row">
+                    <div>
+
+                        <strong>FORM attributes </strong><br></p>
+                        <p>action ="[url]"<br>This attribute usually has a link to a web page that contains code which
+                            processes
+                            the
+                            form. In our example above, we use "mailto" to tell the form to send the information as
+                            an email. </p>
+
+                        <p>method <br> =
+                            <em>"get"</em>
+                        </p>
+
+                        <p>="post" </p>
+
+                        <p>This attribute specifies how the information is sent. With the "get" method, all the
+                            information is sent in one long URL string. With the "post" method, all the information
+                            is sent but is "invisible" to the user. </p>
 
 
-    <!--   -->
-    <p>
+                        <p>name When creating complex forms and using scripting, you may need to specify the ="[name of
+                            name of
+                            the
+                            form. The name should be unique - that is, you shouldn't have other form]" forms on the page
+                            with
+                            the
+                            same form name. </p>
+                        <p><strong>INPUT – attributes </strong> <br> </p>
 
-        <body>
-            <h2>4. title Attribute</h2>
-            <p title="I am Kamlesh">This is a paragraph.
+                        <p>type The "type" attribute allows you to specify what type of form element you want
+                            ="<em>text</em>"
+                            to
+                            use. As you can see, the "input" element can have many different forms - see ="password"
+                            above for
+                            examples. </p>
+
+                        <p>="checkbox" </p>
+
+                        <p>="radio" </p>
+
+                        <p>="submit" </p>
+
+                        <p>="reset" </p>
+
+                        <p>="hidden" ="button" </p>
+
+                        <p>checked This attribute does not have any values. When you put this attribute into the tag for
+                            "radio"
+                            or
+                            "checkbox," they will be selected. </p>
+
+                        <p>src Use this attribute when you have an "image" to specify the location of the image.
+                            ="[url]" </p>
+
+                        <p><strong>TEXTAREA - attributes </strong> <br> </p>
+
+                        <p>This form element is the multi-line text box that you often seen for "comments." The opening
+                            and
+                            closing
+                            tag surround the text that will be initially displayed. </p>
+
+                        <p>name This attribute must be set to a unique name so you know how to refer to the form
+                            ="[referring
+                            element. name]" rows This attribute allows you to set the number of rows for the text
+                            area.
+                        </p>
+
+                        <p>="[number]" cols This attribute allows you to set the number of columns for the text area.
+                        </p>
+
+                        <p>="[number]" </p>
+
+                        <p><strong>SELECT - attributes </strong> <br> </p>
+
+                        <p>The SELECT tag allows you to create "select boxes" or "drop down menus." It is the "outer"
+                            element,
+                            used
+                            with the OPTION tag. (See the example link below) </p>
+
+                        <p>name This attribute must be set to a unique name so you know how to refer to the form
+                            ="[referring
+                            element. name]" size This attribute allows you to set how many rows are visible. </p>
+
+                        <p>="[number]" </p>
+
+                        <p>multiple This attribute does not have any "values." When you set this attribute, it allows
+                            the user
+                            to
+                            select more than one option. </p>
+
+                        <p><strong>OPTION - attributes </strong> <br> </p>
+
+                        <p> The OPTION tag is used with the SELECT tag to define the different options in the select box
+                            or
+                            dropdown
+                            menu. The opening and closing tag surround the text that will be displayed. </p>
+
+                        <p>value This attribute must be set to a unique name so you know how to refer to the form
+                            ="[value]"
+                            element. It will probably be an abbreviated version of the text that is displayed. </p>
+
+                        <p>selected This attribute does not have any "values." When you set this attribute, it marks
+                            this option
+                            as
+                            being "preselected." </p>
+
+                        <p>Putting it all together... </p>
+
+                        <p><strong>Here's a sample page using this code below: </strong> <br> </p>
+                        <pre><code>
+&lt;form&gt;
+    Enter your Name: &lt;input type="text" width="20" size="20"&gt;
+
+    Favorite Color:&lt;br&gt;
+    &lt;input type="checkbox" checked value="red" name="colors"&gt; Red&lt;br&gt;
+    &lt;input type="checkbox" value="blue" name="colors"&gt; Blue
+
+    Gender:&lt;br&gt;
+    &lt;input type="radio" checked value="male" name="gender"&gt;Male&lt;br&gt;
+    &lt;input type="radio" value="female" name="gender"&gt;Female
+
+    Address:&lt;br&gt;
+    &lt;textarea rows="5" cols="20"&gt;Please enter your permanent address here.&lt;/textarea&gt;
+
+    Country:&lt;br&gt;
+    &lt;select name="country"&gt;
+        &lt;option value="usa" selected&gt;USA&lt;/option &gt;
+        &lt;option value="uk"&gt;United Kingdom&lt;/option &gt;
+        &lt;option value="canada"&gt;Canada&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;
+                        </code></pre>
 
 
 
-            </P>
-            <P>
-                <sub>if you click the paragraph you got title</sub>
-            </p>
 
-            <h2>5. The lang Attribute</h2>
-            <p>You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
-            <p>The following example specifies English as the language:</p>
-             <div class="code">
-      &lt;!DOCTYPE html&gt;
-      &lt;html lang="en"&gt;
-        &lt;body&gt;
-        ...
-        &lt;/body&gt;
-      &lt;/html&gt;
-     </div>
+                        <h1>CSS</h1>
 
-            <h2>6. The alt Attribute</h2>
-            <p>The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen
-                reader.
-            </p>
-            <img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
-            <P>
-                <h2>Html formatting</h2>
-            </p>
-            <p>Formatting elements were designed to display special types of text:</p>
-            <p>1.&lt;b&gt; Bold text defines bold text, without any extra importance.</p>
-            <p>2. &lt;strong&gt; - Important text defines text with strong importance</p>
-            <p>3. &lt;i&gt; - Italic text defines a part of text in an alternate voice or mood</p>
-            <p>4. &lt;em&gt; - Emphasized text defines emphasized text i.e. verbal stress</p>
-            <p>5. &lt;mark&gt; - Marked text defines text that should be marked or highlighted</p>
-            <p>6. &lt;small&gt; - Smaller text</p>
-            <p>7. &lt;del&gt; - Deleted text defines text that has been deleted from a document. Browsers will usually strike a line through deleted text</p>
-            <p>8. &lt;ins&gt; - Inserted text defines a text that has been inserted into a document. Browsers will usually underline inserted text</p>
-            <p>9. &lt;sub&gt; - Subscript text defines subscript text. Subscript text appears half a character below the normal line. Subscript text can be used for chemical formulas, like H2O
-            </p>
-            <p>10. &lt;sup&gt; - Superscript text defines superscript text. Superscript text appears half a character above the normal line. Superscript text can be used for footnotes, like WWW[1]
-            </p>
-            <p>Example-</p>
-            <p>
-                 <div class="code"><hr>
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;body&gt;
-            &lt;p&gt;This text is normal.&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;This text is bold.&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;strong&gt;This text is important!&lt;/strong&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;i&gt;This text is italic.&lt;/i&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;em&gt;This text is emphasized.&lt;/em&gt;&lt;/p&gt;
-            &lt;p&gt;&lt;small&gt;This is some smaller text.&lt;/small&gt;&lt;/p&gt;
-            &lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
-            &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
-            &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
-            &lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;
-            &lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</p><hr>
-             </div>
-                <h2>HTML Comment Tag</h2>
-                <p>Comments are not displayed by the browser, but they can help document your HTML source code.</p>
-                <p><b>Syntax:</b> </p>
-                <p>&lt;!-- Write your comments here --&gt;</p>
-                <p>There is an exclamation point (!) in the start tag, but not in the end tag.</p>
-                <p>Hide Inline Content- Comments can be used to hide parts in the middle of the HTML code.
-                </p>
-                <h2> Example</h2>
-                <p>
-                     <div class="code"><hr>
-&lt;meta charset="utf-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-&lt;style&gt;
-* {
- box-sizing: border-box;
-}
-body {
- font-family: Arial, Helvetica, sans-serif;
-}
+                        <strong> Introduction to CSS: </strong>
+                        <p>
+                            CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed
+                            on screen,
+                            paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web
+                            pages all
+                            at once. External style sheets are stored in ".css" files. CSS is used to define styles for
+                            your web
+                            pages, including the design, layout, and variations in display for different devices and
+                            screen sizes.
+                        </p>
 
-/* Style the header */
-
-header {
- background-color: #666;
- padding: 30px;
- text-align: center;
- font-size: 35px;
- color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-
-nav {
- float: left;
- width: 30%;
- height: 300px; /* only for demonstration, should be removed */
- background: #ccc;
- padding: 20px;
-}
-
-/* Style the list inside the menu */
-
-nav ul {
- list-style-type: none;
- padding: 0;
-}
-
-article {
- float: left;
- padding: 20px;
- width: 70%;
- background-color: #f1f1f1;
- height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-
-section::after {
- content: "";
- display: table;
- clear: both;
-}
-
-/* Style the footer */
-
-footer {
- background-color: #777;
- padding: 10px;
- text-align: center;
- color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top
- of each other instead of next to 
-each other, on small screens */
-
-@media (max-width: 600px) {
- nav, article {
- width: 100%;
- height: auto;
- }
-}
- 
-&lt;/style&gt;&lt;/head&gt; 
-    &lt;body&gt;
-    &lt;h2&gt;CSS Layout Float&lt;/h2&gt;
-    &lt;p&gt;In this example, we have created a header, two columns/boxes and a footer. 
-    On smaller screens, the columns will stack on top of each other.&lt;/p&gt;
-    &lt;p&gt;Resize the browser window to see the responsive effect 
-    (you will learn more about this in our next chapter - HTML Responsive.)&lt;/p&gt; 
-    &lt;header&gt; &lt;h2&gt;Cities&lt;/h2&gt; &lt;/header&gt; &lt;section&gt; &lt;nav&gt;
-    &lt;ul&gt; 
-         &lt;li&gt;&lt;a href="#"&gt;London&lt;/a&gt;&lt;/li&gt; 
-         &lt;li&gt;&lt;a href="#"&gt;Paris&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href="#"&gt;Tokyo&lt;/a&gt;&lt;/li&gt; 
-    &lt;/ul&gt;
-    &lt;/nav&gt; 
-    &lt;article&gt; 
-    &lt;h1&gt;London&lt;/h1&gt;
-    &lt;p&gt;London is the capital city of England. 
-    It is the most populous city in the United Kingdom,
-     with a metropolitan area of over 13 million inhabitants.&lt;/p&gt; 
-    &lt;p&gt;Standing on the River Thames, London has been a major
-    settlement for two millennia, its history going back to its 
-    founding by the Romans,who named it Londinium.&lt;/p&gt; 
-    &lt;/article&gt; 
-    &lt;/section&gt; 
-    &lt;footer&gt; 
-    &lt;p&gt;Footer&lt;/p&gt; 
-    &lt;/footer&gt; 
-    &lt;/body&gt; 
-    &lt;/html&gt;<hr>
- </div>
-                    <p>HTML Hyperlinks - HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand. The HTML &lt;a&gt; tag defines a hyperlink. It has
-                        the following syntax: &lt;a href="url" &gt;link text&lt;/a&gt; Use the &lt;a&gt; element to define a link Use the href attribute to define the link address Use the target attribute to define where to open the linked document Use
-                        the &lt;img&gt; element (inside &lt;a&gt;) to use an image as a link Use the mailto: scheme inside the href attribute to create a link that opens the user 's email program By default, links will appear as follows in all browsers:
-                        An unvisited link is underlined and blue A visited link is underlined and purple An active link is underlined and red The target Attribute By default, the linked page will be displayed in the current browser window. To change this,
-                        you must specify another target for the link. The target attribute specifies where to open the linked document. The target attribute can have one of the following values:,
+                        <strong>Types of CSS: </strong>
+                        <p>There are three types of CSS available. They are:</p>
                         <ul>
-                            <li>
-                                <strong>_self </strong>- Default. Opens the document in the same window/tab as it was clicked</li>
-                            <li><strong>_blank </strong>- Opens the document in a new window or tab _parent - Opens the document in the parent frame </li>
-                            <li><strong>_top </strong>- Opens the document in the full body of the window</li>
+                            <li>Inline CSS</li>
+                            <li>Internal CSS</li>
+                            <li>External CSS</li>
                         </ul>
-                        <h3> Example :</h3>
-                         <div class="code"> <hr>
-                        &lt;!DOCTYPE html&gt; 
-                        &lt;html&gt; 
-                        &lt;body&gt; 
-                        &lt;h1&gt;HTML Links&lt;/h1&gt; 
-                        &lt;p&gt;                    
-                        &lt;a href="https://www.goolge.com/" &gt;Visit goolge!&lt;/a&gt;
-                        &lt;/p&gt;
-                         &lt;a href="https://www.kamlesh1119.org/" target="_blank"&gt;
-                        &lt;/a&gt; 
-                        &lt;/body&gt; 
-                        &lt;/html&gt; <hr>
-                     </div>
-                        <h3>Use an Image as a Link To use an image as a link, just put the</h3>
-                        &lt;img&gt; tag inside the &lt;a&gt; tag
-                         <div class="code"> <hr>
-                        &lt;!DOCTYPE html&gt; 
-                        &lt;html&gt;
-                        &lt;body&gt; 
-                        &lt;h2&gt;Image as a Link&lt;/h2&gt; 
-                        &lt;p&gt;The image below is a link. Try to click on it.&lt;/p&gt; 
-                        &lt;a href="https://www.rgpv.ac.in/" &gt;
-                        &lt;img src="smiley.gif" 
-                        style="width:42px;height:42px;" &gt;&lt;/a&gt; 
-                        &lt;/body&gt; 
-                        &lt;/html&gt; <hr>
-                         </div>
-                         <pre>
+
+                        <strong>Inline CSS: </strong>
+                        <p>
+                            If the styles are mentioned along with the tag, then this type of CSS is known as inline
+                            CSS.
+                            <strong>Example:</strong>
+                            &lt;p style="text-align: justify; background-color: red"&gt;Hi, this is Inline
+                            CSS.&lt;/p&gt;
+                        </p>
+
+                        <strong>Internal CSS: </strong>
+                        <p>
+                            For internal CSS, we write all the desired "styles" for the "selectors" along with the
+                            properties and
+                            values in the <strong>"head"</strong> section. And in the <strong>body</strong> section then
+                            newly
+                            defined selector tags are used with the actual contents.
+                        </p>
+
+                        <strong>External CSS: </strong>
+                        <p>
+                            Sometimes we need to apply a particular style to more than one web page; in such cases
+                            external CSS can be
+                            used. The main idea in this type of CSS is that the desired styles can be written in one
+                            <strong>".css"</strong> file. And this file can be called in our web pages to apply the
+                            styles.
+                        </p>
+
+                        <strong>CSS Selectors: </strong>
+                        <p>
+                            CSS selectors are used to "find" (or select) HTML elements based on their element name, id,
+                            class,
+                            attribute, and more.
+                        </p>
+
+                        <strong>The element Selector: </strong>
+                        <p>
+                            The element selector selects elements based on the element name. You can select all
+                            &lt;p&gt; elements on
+                            a page like this (in this case, all &lt;p&gt; elements will be center-aligned, with a red
+                            text color):
+                            <strong>Example:</strong>
+                            p { text-align: center; color: red; }
+                        </p>
+
+                        <strong>The id Selector: </strong>
+                        <p>
+                            The id selector uses the id attribute of an HTML element to select a specific element. The
+                            id of an
+                            element should be unique within a page, so the id selector is used to select one unique
+                            element! To
+                            select an element with a specific id, write a hash (#) character, followed by the id of the
+                            element.
+                            The style rule below will be applied to the HTML element with:
+                            <strong>Example:</strong>
+                            #para1 { text-align: center; color: red; }
+                        </p>
+
+                        <!-- Other sections follow... -->
+
+                        <strong>Controlling borders of the HTML elements using CSS: </strong>
+                        <p>
+                            The CSS border properties allow you to specify the style, width, and color of an element's
+                            border. The
+                            <sub>border-style</sub> property specifies what kind of border to display. The following
+                            values are
+                            allowed:
+                        </p>
+
+                        <p.dotted>Example: p.dotted {border-style: dotted;} </p.dotted>
+                        <p.dashed>Example: p.dashed {border-style: dashed;} </p.dashed>
+                        <p.solid>Example: p.solid {border-style: solid;} </p.solid>
+                        <p.double>Example: p.double {border-style: double;} </p.double>
+                        <p.groove>Example: p.groove {border-style: groove;} </p.groove>
+                        <p.ridge>Example: p.ridge {border-style: ridge;} </p.ridge>
+                        <p.inset>Example: p.inset {border-style: inset;} </p.inset>
+                        <p.outset>Example: p.outset {border-style: outset;} </p.outset>
+                        <p.none>Example: p.none {border-style: none;} </p.none>
+                        <p.hidden>Example: p.hidden {border-style: hidden;} </p.hidden>
+                        <p.mix>Example: p.mix {border-style: dotted dashed solid double;} </p.mix>
 
 
-                         </pre>
-                         <div class="button-container">
-                            <a href="page2.html" class="previous-button">&laquo; Previous</a>
-                            <a href="page4.html" class="next-button ">Next &raquo;</a>
-                        </div>
-                        
-                         <pre>
+                        <p>The <sub>border-width</sub> property specifies the width of the four borders. The width can
+                            be set as a
+                            specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values:
+                            thin, medium, or
+                            thick. The <sub>border-width</sub> property can have from one to four values (for the top
+                            border, right
+                            border, bottom border, and the left border). </p>
+
+                        <p><strong>Example </strong> </p>
+
+                        <pre><code>
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}
+
+/* The border-color property is used to set the color of the four borders. */
+/* The color can be set by: */
+/* - name: specify a color name, like "red" */
+/* - Hex: specify a hex value, like "#ff0000" */
+/* - RGB: specify an RGB value, like "rgb(255,0,0)" */
+/* - transparent */
+
+/* Example */
+p.one {
+    border-style: solid;
+    border-color: red;
+}
+
+p.two {
+    border-style: solid;
+    border-color: green;
+}
+
+p.three {
+    border-style: solid;
+    border-color: red green blue yellow;
+}
                     
+                p.one { 
+                    // others
+
+                }
+        
+                     </code></pre>
+
+
+
+
+                        <h1>XML </h1>
+
+                        <p><strong>WHAT IS XML? </strong> <br> </p>
+
+                        <p>XML stands for extensible markup language. XML is a markup language much like HTML. XML was
+                            designed to
+                            carry data, not to display data. XML tags are not predefined. You must define your own tags.
+                            XML is
+                            designed to be self-descriptive. XML is a w3c recommendation. </p>
+
+                        <p><strong>THE DIFFERENCE BETWEEN XML AND HTML: </strong> <br> </p>
+
+                        <p>XML is not a replacement for HTML. XML and HTML were designed with different goals. XML was
+                            designed to
+                            transport and store data, with focus on what data is. HTML was designed to display data,
+                            with focus on
+                            how data looks. HTML is about displaying information, while XML is about carrying
+                            information. </p>
+
+                        <p><strong>XML does not do anything: </strong> <br> May be it is a little hard to understand,
+                            but XML does not
+                            do
+                            anything. XML was created to structure, store, and transport information. The following
+                            example is a
+                            note to chythu, from ravi, stored as XML:,<br>
+                        <pre><code>
+&lt;note&gt;
+&lt;to&gt; chythu &lt;/to&gt;
+&lt;from&gt; ravi &lt;/from&gt;
+&lt;heading&gt;reminder&lt;/heading&gt;
+&lt;body&gt;don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+                    </code></pre>
+
+
+                        <p>The note above is quite self-descriptive. It has sender and receiver information, it also has
+                            a heading
+                            and a message body. But still, this XML document does not do anything. It is just
+                            information wrapped in
+                            tags. Someone must write a piece of software to send, receive or display it. </p>
+
+                        <p><strong>With XML you invent your own tags: </strong> <br> The tags in the example above (like
+                            &lt;to&gt; and
+                            &lt;from&gt;) are not defined in any XML standard. These tags are "invented" by the author
+                            of the XML
+                            document. That is because the XML language has no predefined tags. The tags used in HTML are
+                            predefined.
+                            HTML documents can only use tags defined in the HTML standard (like &lt;p&gt;, &lt;h1&gt;,
+                            etc.). XML
+                            allows the author to define his/her own tags and his/her own document structure. XML is not
+                            a
+                            replacement for HTML; XML is a complement to HTML. It is important to understand that XML is
+                            not a
+                            replacement for HTML. In most web applications, XML is used to transport data, while HTML is
+                            used to
+                            format and display the data. </p>
+
+                        <p><strong>My best description of XML is this: </strong> <br> XML is a software- and
+                            hardware-independent tool
+                            for
+                            carrying information. XML is a W3C recommendation. XML became a W3C recommendation February
+                            10, 1998.
+                            XML is everywhere. XML is now as important for the web as HTML was to the foundation of the
+                            web. XML is
+                            the most common tool for data transmissions between all sorts of applications. </p>
+
+                        <p><strong>XML separates data from HTML: </strong> <br> If you need to display dynamic data in
+                            your HTML
+                            document,
+                            it will take a lot of work to edit the HTML each time the data changes. With XML, data can
+                            be stored in
+                            separate XML files. This way you can concentrate on using HTML for layout and display, and
+                            be sure that
+                            changes in the underlying data will not require any changes to the HTML. With a few lines of
+                            JavaScript
+                            code, you can read an external XML file and update the data content of your web page.
+                            <strong> </strong>
+                            <br>
+                        </p>
+
+                        <p>Unique Features of XML: </p>
+
+                        <p><strong>Sharing of data: </strong> <br> In the real world, computer systems and databases
+                            contain data in
+                            incompatible formats. XML data is stored in plain text format. This provides a software-
+                        </p>
+
+                        <p>and hardware-independent way of storing data. This makes it much easier to create data that
+                            can be shared
+                            by different applications. </p>
+
+                        <p><strong>Transporting data: </strong> <br> One of the most time-consuming challenges for
+                            developers is to
+                            exchange data between incompatible systems over the internet. Exchanging data as XML greatly
+                            reduces
+                            this complexity, since the data can be read by different incompatible applications. </p>
+
+                        <p><strong>Change of platform: </strong> <br> Upgrading to new systems (hardware or software
+                            platforms), is
+                            always
+                            time consuming. Large amounts of data must be converted and incompatible data is often lost.
+                            XML data is
+                            stored in text format. This makes it easier to expand or upgrade to new operating systems,
+                            new
+                            applications, or new browsers, without losing data. </p>
+
+                        <p><strong>Availability of data: </strong> <br> Different applications can access your data, not
+                            only in HTML
+                            pages, but also from XML data sources. With XML, your data can be available to all kinds of
+                            "reading
+                            machines" (handheld computers, voice machines, news feeds, etc), and make it more available
+                            for blind
+                            people, or people with other disabilities. </p>
+
+                        <p>Structure of XML: </p>
+
+                        <p>XML documents form a tree structure that starts at "the root" and branches to "the
+                            leaves".<strong>
+                            </strong> <br> An example of XML document is shown below. XML documents use a
+                            self-describing and simple
+                            syntax: </p>
+
+                        <pre><code>
+&lt;?XML version="1.0" encoding="iso-8859-1"?&gt;
+&lt;note&gt;
+    &lt;to&gt; Chythu &lt;/to&gt;
+    &lt;from&gt; Ravi &lt;/from&gt;
+    &lt;heading&gt;Reminder&lt;/heading&gt;
+    &lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+                        </code></pre>
+
+
+                        <p>The first line is the XML declaration. It defines the XML version (1.0) and the encoding used
+                            (ISO-8859-1
+                            = latin-1/west European character set). The next line describes the root element of the
+                            document (like
+                            saying: "This document is a note"): </p>
+
+                        <pre><code>
+&lt;note&gt;
+    The next 4 lines describe 4 child elements of the root (to, from, heading, and body):
+    &lt;to&gt;Tove&lt;/to&gt;
+    &lt;from&gt;Jani&lt;/from&gt;
+    &lt;heading&gt;Reminder&lt;/heading&gt;
+    &lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+    And finally, the last line defines the end of the root element:
+&lt;/note&gt;
+                        </code></pre>
+
+
+                        <p>You can assume, from this example, that the XML document contains a note to Tove from Jani.
+                            Don't you
+                            agree that XML is pretty self-descriptive? XML documents form a tree structure XML documents
+                            must
+                            contain a root element. This element is "the parent" of all other elements. The elements in
+                            an XML
+                            document form a document tree. The tree starts at the root and branches to the lowest level
+                            of the tree.
+                            All elements can have sub elements (child elements): </p>
+                        <pre><code>
+    &lt;root&gt;
+        &lt;child&gt;
+            &lt;subchild&gt;.....&lt;/subchild&gt;
+        &lt;/child&gt;
+    &lt;/root&gt;
+                        </code></pre>
+
+
+
+                        <p>The terms parent, child, and sibling are used to describe the relationships between elements.
+                            Parent
+                            elements have children. Children on the same level are called siblings (brothers or
+                            sisters). All
+                            elements can have text content and attributes (just like in html). <strong>Example:
+                            </strong> <br> </p>
+
+                        <pre><code>
+                        &lt;bookstore&gt;
+                            &lt;book category="cooking"&gt;
+                                &lt;title lang="en"&gt;Everyday Italian&lt;/title&gt;
+                                &lt;author&gt;giada de laurentiis&lt;/author&gt;
+                                &lt;year&gt;2005&lt;/year&gt;
+                                &lt;price&gt;30.00&lt;/price&gt;
+                            &lt;/book&gt;
+                            
+                            &lt;book category="children"&gt;
+                                &lt;title lang="en"&gt;harry potter&lt;/title&gt;
+                                &lt;author&gt;j k. rowling&lt;/author&gt;
+                                &lt;year&gt;2005&lt;/year&gt;
+                                &lt;price&gt;29.99&lt;/price&gt;
+                            &lt;/book&gt;
+                            
+                            &lt;book category="web"&gt;
+                                &lt;title lang="en"&gt;learning XML&lt;/title&gt;
+                                &lt;author&gt;erik t. ray&lt;/author&gt;
+                                &lt;year&gt;2003&lt;/year&gt;
+                                &lt;price&gt;39.95&lt;/price&gt;
+                            &lt;/book&gt;
+                        &lt;/bookstore&gt;
+                        </code></pre>
+
+
+                        <p>The root element in the example is &lt;bookstore&gt;. All &lt;book&gt; elements in the
+                            document are
+                            contained within &lt;bookstore&gt;. The &lt;book&gt; element has 4 children: &lt;title&gt;,
+                            &lt;author&gt;, &lt;year&gt;, and &lt;price&gt;. </p>
+
+                        <p><strong>XML syntax rules: </strong> <br> </p>
+
+                        <p>The syntax rules of XML are very simple and logical. The rules are easy to learn, and easy to
+                            use. All
+                            XML elements must have a closing tag. In HTML, Elements do not have to have a closing tag:
+                        </p>
+
+                        <pre><code>
+                        &lt;p&gt;this is a paragraph&lt;/p&gt;
+                        &lt;p&gt;this is another paragraph&lt;/p&gt;
+                        In XML, it is illegal to omit the closing tag. All elements must have a closing tag:
+                        &lt;p&gt;this is a paragraph&lt;/p&gt;
+                        &lt;p&gt;this is another paragraph&lt;/p&gt;
+                        </code></pre>
+
+
+                        <p><strong>Note: </strong> <br> You might have noticed from the previous example that the XML
+                            declaration did
+                            not
+                            have a closing tag. This is not an error. The declaration is not a part of the XML document
+                            itself, and
+                            it has no closing tag. </p>
+
+                        <p><strong>XML tags are case sensitive: </strong> <br> The tag &lt;letter&gt; is different from
+                            the tag
+                            &lt;LETTER&gt;. Opening and closing tags must be written with the same case: </p>
+
+                        <pre><code>
+                &lt;Message&gt;This is incorrect&lt;/MESSAGE&gt; 
+                &lt;Message&gt;This is correct&lt;/Message&gt; 
+            </code></pre>
+
+                        <p><strong>Note: </strong> <br> "Opening and closing tags" are often referred to as "start and
+                            end tags". Use
+                            whatever you prefer. It is exactly the same thing. </p>
+
+                        <p><strong>XML elements must be properly nested: </strong> <br> In html, you might see
+                            improperly nested
+                            elements:
+                            &lt;b&gt;&lt;i&gt;this text is bold and italic&lt;/b&gt;&lt;/i&gt; &lt;!--This is
+                            wrong--&gt; In XML,
+                            all elements must be properly nested within each other: </p>
+
+                        <pre><code>&lt;b&gt;&lt;i&gt;this text is bold and italic&lt;/i&gt;&lt;/b&gt;  </code></pre>
+
+                        <p>In the example above, "properly nested" simply means that since the &lt;i&gt; element is
+                            opened inside
+                            the &lt;b&gt; element, it must be closed inside the &lt;b&gt; element. </p>
+
+                        <p><strong>XML documents must have a root element: </strong> <br> XML documents must contain one
+                            element that is
+                            the parent of all other elements. This element is called the root element. &lt;root&gt; </p>
+
+                        <pre><code>
+                    &lt;child&gt; 
+        
+                 &lt;subchild&gt;.....&lt;/subchild&gt; 
+    
+                 &lt;/child&gt; 
+        
+                &lt;/root&gt; </code></pre>
+
+                        <p><strong>XML attribute values must be quoted: </strong><br>XML elements can have attributes in
+                            name/value
+                            pairs just like in html. In XML, the attribute values must always be quoted. Study the two
+                            XML documents
+                            below. The first one is incorrect, the second is correct: </p>
+
+                        <pre><code>
+                        &lt;note date=12/11/2007&gt; 
+                &lt;to&gt;tove&lt;/to&gt;
+                &lt;from&gt;jani&lt;/from&gt;
+                &lt;/note&gt; 
+                &lt;note date="12/11/2007"&gt; 
+                &lt;to&gt;tove&lt;/to&gt; 
+                &lt;from&gt;jani&lt;/from&gt; 
+                &lt;/note&gt; </code></pre>
+
+                        <p>The error in the first document is that the date attribute in the note element is not quoted.
+                            <strong>Entity References: </strong><br>Some characters have a special meaning in XML. If
+                            you place a
+                            character like "&lt;" inside an XML element, it will generate an error because the parser
+                            interprets it
+                            as the start of a new element. This will generate an XML error:
+                        </p>
+
+                        <p>&lt;message&gt;if salary &lt; 1000 then&lt;/message&gt; </p>
+
+                        <p>To avoid this error, replace the "&lt;" character with an entity reference: </p>
+
+                        <p>&lt;message&gt;if salary &amp;lt; 1000 then&lt;/message&gt; There are 5 predefined entity
+                            references in
+                            XML: </p>
+
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>&amp;lt; </p>
+                                    </td>
+                                    <td>
+                                        <p>&lt; </p>
+                                    </td>
+                                    <td>
+                                        <p>less than </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>&amp;gt; </p>
+                                    </td>
+                                    <td>
+                                        <p>&gt; </p>
+                                    </td>
+                                    <td>
+                                        <p>greater than </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>&amp;amp; </p>
+                                    </td>
+                                    <td>
+                                        <p>&amp; </p>
+                                    </td>
+                                    <td>
+                                        <p>ampersand </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>&amp;apos; </p>
+                                    </td>
+                                    <td>
+                                        <p>' </p>
+                                    </td>
+                                    <td>
+                                        <p>apostrophe </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>&amp;quot; </p>
+                                    </td>
+                                    <td>
+                                        <p>" </p>
+                                    </td>
+                                    <td>
+                                        <p>quotation mark </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>Note: only the characters "&lt;" and "&amp;" are strictly illegal in XML. the greater than
+                            character is
+                            legal, but it is a good habit to replace it. </p>
+
+                        <p><strong>Comments in XML: </strong><br>The syntax for writing comments in XML is similar to
+                            that of html. </p>
+
+                        <p>&lt;!-- this is a comment --&gt; white-space is preserved in XML </p>
+
+                        <p>HTML truncates multiple white-space characters to one single white-space: </p>
+
+                        <p><strong>HTML: </strong><br>hello tove </p>
+
+                        <p><strong>Output: </strong><br> hello tove </p>
+
+                        <p>With XML, the white-space in a document is not truncated. </p>
+
+                        <p>XML stores new line as lf in windows applications, a new line is normally stored as a pair of
+                            characters:
+                            carriage return (cr) and line feed (lf). In UNIX applications, a new line is normally stored
+                            as an lf
+                            character. Macintosh applications also use an lf to store a new line. XML stores a new line
+                            as lf. </p>
+
+                        <p>Basic Building Blocks of XML Documents: </p>
+
+                        <p>All XML documents are made up the following four building blocks: </p>
+                        <ul>
+                            <li>Elements/Tags</li>
+                            <li>Attributes </li>
+                            <li>Entities</li>
+                            <li>Character Data </li>
+                            <li>Parsed Character Data (PCDATA)</li>
+                            <li>Unparsed Character Data (CDATA)</li>
+                        </ul>
+
+
+                        <p><strong>i </strong><strong>) XML Elements/Tags: </strong><br></p>
+
+                        <p>An XML element is everything from (including) the element's start tag to (including) the
+                            element's end
+                            tag. An element can contain: other elements text, attributes or a mix of all of the above.
+
+
+                        <pre><code>
+&lt;bookstore&gt;
+    &lt;book category="children"&gt;
+        &lt;title&gt;harry potter&lt;/title&gt;
+        &lt;author&gt;j k. rowling&lt;/author&gt;
+        &lt;year&gt;2005&lt;/year&gt;
+        &lt;price&gt;29.99&lt;/price&gt;
+    &lt;/book&gt;
+    
+    &lt;book category="web"&gt;
+        &lt;title&gt;learning XML&lt;/title&gt;
+        &lt;author&gt;erik t. ray&lt;/author&gt;
+        &lt;year&gt;2003&lt;/year&gt;
+        &lt;price&gt;39.95&lt;/price&gt;
+    &lt;/book&gt;
+&lt;/bookstore&gt;
+                        </code></pre>
+
+                        <p>In the example above, &lt;bookstore&gt; and &lt;book&gt; have element contents, because they
+                            contain
+                            other elements. &lt;book&gt; also has an attribute (category="children"). &lt;title&gt;,
+                            &lt;author&gt;,
+                            &lt;year&gt;, and &lt;price&gt; have text content because they contain text. </p>
+
+                        <p><strong>XML Naming Rules: </strong><br></p>
+
+                        <p>XML elements must follow these naming rules: </p>
+
+                        <p>Names can contain letters, numbers, and other characters </p>
+
+                        <p>Names cannot start with a number or punctuation character </p>
+
+                        <p>Names cannot start with the letters XML (or XML, or XML, etc) </p>
+
+                        <p>Names cannot contain spaces </p>
+
+                        <p>Any name can be used, no words are reserved. </p>
+
+                        <p><strong>Best Naming Practices: </strong><br></p>
+
+                        <p>Make names descriptive. Names with an underscore separator are nice: &lt;first_name&gt;,
+                            &lt;last_name&gt;. </p>
+
+                        <p>Names should be short and simple, like this: &lt;book_title&gt; not like this:
+                            &lt;the_title_of_the_book&gt;. </p>
+
+                        <p>Avoid "-" characters. If you name something "first-name," some software may think you want to
+                            subtract
+                            name from first. </p>
+
+                        <p>Avoid "." characters. If you name something "first.name," some software may think that "name"
+                            is a
+                            property of the object "first." </p>
+
+                        <p>Avoid ":" characters. Colons are reserved to be used for something called namespaces (more
+                            later). </p>
+
+                        <p>XML documents often have a corresponding database. a good practice is to use the naming rules
+                            of your
+                            database for the elements in the XML documents. </p>
+
+                        <p>Non-english letters like éòá are perfectly legal in XML, but watch out for problems if your
+                            software
+                            vendor doesn't support them. </p>
+
+                        <p><strong> </strong><br></p>
+
+                        <p><strong>XML Elements are Extensible: </strong><br></p>
+
+                        <p>XML elements can be extended to carry more information. look at the following XML example:
+                        </p>
+
+                        <pre><code>
+                    &lt;note&gt; &lt;/p&gt;
                     
+                    &lt;p&gt;&lt;to&gt;Chythu&lt;/to&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;from&gt;Ravi&lt;/from&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;body&gt;Don't forget me this weekend!&lt;/body&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;/note&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;Let‟s imagine that we created an application that extracted the &lt;to&gt;, &lt;from&gt;, and
+                    &lt;body&gt; elements from the XML document to produce this output: Message to: Chythu from: Ravi &lt;/p&gt;
+                    
+                    &lt;p&gt;Don't forget me this weekend! &lt;/p&gt;
+                    
+                    &lt;p&gt;Imagine that the author of the XML document added some extra information to it: &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;note&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;date&gt;2008-01-10&lt;/date&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;to&gt;Chythu&lt;/to&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;from&gt;Ravi&lt;/from&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;heading&gt;reminder&lt;/heading&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;body&gt;don't forget me this weekend!&lt;/body&gt; &lt;/p&gt;
+                    
+                    &lt;p&gt;&lt;/note&gt; &lt;/p&gt;
+                    </code></pre>
+
+
+                        <p><strong>Should the application break or crash? </strong><br></p>
+
+                        <p>No, the application should still be able to find the &lt;to&gt;, &lt;from&gt;, and
+                            &lt;body&gt; elements
+                            in the XML document and produce the same output. One of the beauties of XML is that it can
+                            be extended
+                            without breaking applications. </p>
+
+                        <p><strong>ii) XML Attributes: </strong><br></p>
+
+                        <p>XML elements can have attributes, just like html. Attributes provide additional information
+                            about an
+                            element. In html, attributes provide additional information about elements: &lt;img
+                            src="computer.gif"&gt; </p>
+
+                        <p>&lt;a href="demo.asp"&gt; </p>
+
+                        <p>Attributes often provide information that is not a part of the data. In the example below,
+                            the file type
+                            is irrelevant to the data, but can be important to the software that wants to manipulate the
+                            element:
+                        </p>
+
+                        <p>&lt;file type="gif"&gt;computer.gif&lt;/file&gt; </p>
+
+                        <p><strong>XML attributes must be quoted: </strong><br>Attribute values must always be quoted.
+                            Either single or
+                            double quotes can be used. For a person's sex, the person element can be written like this:
+                        </p>
+
+                        <pre><code>
+                        &lt;person sex="female"&gt; &lt;/person&gt;
                         
-                         </pre>
-                        <!--footer on my code-->
-                        <footer class=" footer ">
-                            <div class="container ">
-                                <div class="row ">
-                                    <div class="footer-col ">
-                                        <h4>company</h4>
-                                        <ul>
-                                            <li>
-                                                <a href="index.html ">HOME</a></li>
-                                            <li><a href="aboutus.html " target="_blank ">About us</a></li>
-                                            <li><a href="# " target="_blank ">Blog</a></li>
-                                            <li><a href="privacy.html " target="_blank ">Privacy policy</a></li>
+                        &lt;person sex='female'&gt; &lt;/person&gt;
+                        
+                        &lt;gangster name='george "shotgun" ziegler'&gt; &lt;/gangster&gt;
+                        
+                        &lt;gangster name="george &amp;quot;shotgun&amp;quot; ziegler"&gt; &lt;/gangster&gt;
+                        
+                        &lt;person gender="male"&gt; &lt;/person&gt;
+                        
+                        &lt;firstname&gt;Ravi&lt;/firstname&gt;
+                        
+                        &lt;lastname&gt;Chythanya&lt;/lastname&gt;
+                        
+                        &lt;person&gt; &lt;/person&gt;
+                        
+                        &lt;gender&gt;male&lt;/gender&gt;
+                        
+                        &lt;firstname&gt;Ravi&lt;/firstname&gt;
+                        
+                        &lt;lastname&gt;Chythanya&lt;/lastname&gt;
+                        
+                        &lt;/person&gt;
+                        </code></pre>
 
-                                        </ul>
-                                    </div>
-                                    <div class="footer-col ">
-                                        <h4>get help</h4>
-                                        <ul>
-                                            <li><a href="Fqa.html ">FAQ</a></li>
+                        <p>In the first example gender is an attribute. In the next, gender is an element. Both examples
+                            provide the
+                            same information. There are no rules about when to use attributes or when to use elements.
+                            Attributes
+                            are handy in html. In XML my advice is to avoid them. Use elements instead. </p>
 
-                                        </ul>
-                                    </div>
-                                    <div class="footer-col ">
-                                        <h4>follow us</h4>
-                                        <div class="social-links ">
-                                            <a href="# "><i class="fab fa-facebook-f "></i></a>
-                                            <a href="# "><i class="fab fa-twitter "></i></a>
-                                            <a href="# "><i class="fab fa-instagram "></i></a>
-                                            <a href="# "><i class="fab fa-linkedin-in "></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
+                        <p><strong>My </strong><br><strong>favorite </strong><br><strong> way: </strong><br></p>
 
-        </body>
+                        <p>The following three XML documents contain exactly the same information: </p>
+
+                        <p>A date attribute is used in the first example: </p>
+
+                        <pre><code>
+                    &lt;note date="10/01/2008"&gt; &lt;/note&gt;
+                    
+                    &lt;note&gt; &lt;date&gt;10/01/2008&lt;/date&gt; &lt;/note&gt;
+                    
+                    &lt;note&gt; &lt;date&gt; 
+                        &lt;day&gt;10&lt;/day&gt; 
+                        &lt;month&gt;01&lt;/month&gt; 
+                        &lt;year&gt;2008&lt;/year&gt; 
+                    &lt;/date&gt; 
+                    &lt;/note&gt;
+                    </code></pre>
+
+                        <p><strong>Avoid XML attributes? </strong><br></p>
+
+                        <p>Some of the problems with using attributes are: </p>
+
+                        <p>Attributes cannot contain multiple values (elements can) </p>
+
+                        <p>Attributes cannot contain tree structures (elements can) </p>
+
+                        <p>Attributes are not easily expandable (for future changes) </p>
+
+                        <p>Attributes are difficult to read and maintain. use elements for data. use attributes for
+                            information that
+                            is not relevant to the data. </p>
+
+                        <p>Don't end up like this: </p>
+
+                        <p>&lt;note day="10" month="01" year="2008" to="tove" from="jani" heading="reminder" body="don't
+                            forget me
+                            this weekend!"&gt; &lt;/note&gt; </p>
+
+                        <p><strong>XML attributes for metadata: </strong><br></p>
+
+                        <p>Sometimes ID references are assigned to elements. These IDs can be used to identify XML
+                            elements in much
+                            the same way as the id attribute in html. This example demonstrates this: </p>
+
+                        <pre><code>
+                        &lt;messages&gt; 
+                            &lt;note&gt; 
+                                &lt;to&gt;tove&lt;/to&gt; 
+                                &lt;from&gt;jani&lt;/from&gt; 
+                                &lt;heading&gt;reminder&lt;/heading&gt; 
+                                &lt;body&gt;don't forget me this weekend!&lt;/body&gt; 
+                            &lt;/note&gt; 
+                            &lt;note&gt; 
+                                &lt;to&gt;jani&lt;/to&gt; 
+                                &lt;from&gt;tove&lt;/from&gt; 
+                                &lt;heading&gt;re: reminder&lt;/heading&gt; 
+                                &lt;body&gt;i will not&lt;/body&gt; 
+                            &lt;/note&gt; 
+                        &lt;/messages&gt; 
+                        </code></pre>
+
+
+                        <p>The ID attributes above are for identifying the different notes. It is not a part of the note
+                            itself.
+                            What I'm trying to say here is that metadata (data about data) should be stored as
+                            attributes, and the
+                            data itself should be stored as elements. </p>
+
+                        <p><strong>XML Entities: </strong><br></p>
+
+                        <p>An entity is the symbolic representation of some information. It references the data that
+                            look like an
+                            abbreviation or can be found at an external location. Entities reduce the redundant
+                            information and also
+                            allow for easier editing. The entities can be internal or external. For example, the entity
+                            <strong>„&amp;amp;‟ </strong><br> will replace as <strong>„&amp;‟ </strong><br>, where ever
+                            it is found in
+                            the XML
+                            document.
+                        </p>
+
+                        <p><strong>PCDATA: </strong><br></p>
+
+                        <p>PCDATA stands for Parsed Character Data. The text enclosed between starting and ending tag is
+                            known as
+                            Character Data. The parser parses the PCDATA and identifies the entities as well as markup.
+                            Markups
+                            include the tags inside the text and entities are expanded. In the case of Parsed Character
+                            Data, the
+                            symbols „&amp;‟, „&lt;‟, „&gt;‟ are represented using entities. <strong>v) CDATA:
+                            </strong><br></p>
+
+                        <p>CDATA stands for Character Data and it is not parsed by the parser. The tags inside the text
+                            are not
+                            considered as markup and the entities are not expanded. </p>
+
+                        <p><strong> </strong><br></p>
+
+                        <p><strong>Validation of XML: </strong><br></p>
+
+                        <p>There are two levels of correctness of an XML document: </p>
+
+                        <p>1) XML with correct syntax is <strong>Well Formed XML </strong><br>. 2) XML validated against
+                            a DTD is
+                            <strong>Valid XML </strong><br>.
+                        </p>
+
+                        <p><strong>A </strong><br><strong>Well Formed </strong><br><strong> XML </strong><br> document
+                            is a document
+                            that conforms
+                            to the XML syntax rules like: </p>
+
+                        <p>XML documents must have a root element. </p>
+
+                        <p>XML elements must have a closing tag. </p>
+
+                        <p>XML tags are case sensitive. </p>
+
+                        <p>XML elements must be properly nested. </p>
+
+                        <p>XML attribute values must be quoted <strong>Example: </strong><br></p>
+
+                        <p>&lt;?XML version="1.0" encoding="iso-8859-1"?&gt;<strong> </strong><br></p>
+
+                        <pre><code>
+                    &lt;note&gt; 
+                        &lt;to&gt;tove&lt;/to&gt; 
+                        &lt;from&gt;jani&lt;/from&gt; 
+                        &lt;heading&gt;reminder&lt;/heading&gt; 
+                        &lt;body&gt;don't forget me this weekend!&lt;/body&gt; 
+                    &lt;/note&gt;
+                    </code></pre>
+
+
+                        <p>A <strong>Valid XML </strong><br> document is a "well formed" XML document, which conforms to
+                            the rules of a
+                            document type definition (DTD). </p>
+
+                        <p>Document Type Definition (DTD): </p>
+
+                        <p>The purpose of a DTD is to define the structure of an XML document. It defines the structure
+                            with a list
+                            of legal elements: <strong>DTD Syntax: </strong><br></p>
+                        <pre><code>
+                        &lt;!DOCTYPE DOCUMENT [
+                            &lt;!ELEMENT ELEMENT_NAME1 (Attribute Names) Appearance of attributes&gt; 
+                            &lt;!ELEMENT ELEMENT_NAME2&gt; 
+                            &lt;!ELEMENT ELEMENT_NAME3&gt; 
+                            . 
+                            . 
+                            . 
+                            &lt;!ELEMENT ELEMENT_NAMEn&gt; 
+                            &lt;!ATTLIST Element_name Attribute_name Attribute_type Default_value&gt; 
+                        ]&gt;
+                        </code></pre>
+
+
+                        <p>A DTD can be declared inline inside an XML document, or as an external reference. </p>
+
+                        <p><strong>Internal DTD Declaration: </strong><br></p>
+
+                        <p>If the DTD is declared inside the XML file, it should be wrapped in DOCTYPE definition as in
+                            the
+                            following example: </p>
+
+                        <pre><code>
+                        &lt;!DOCTYPE note[
+                            &lt;!ELEMENT note (to, from, heading, body)&gt;
+                            &lt;!ELEMENT to (#PCDATA)&gt;
+                            &lt;!ELEMENT from (#PCDATA)&gt;
+                            &lt;!ELEMENT heading (#PCDATA)&gt;
+                            &lt;!ELEMENT body (#CDATA)&gt;
+                        ]&gt;
+                        &lt;note&gt;
+                            &lt;to&gt;Ravi&lt;/to&gt;
+                            &lt;from&gt;Chythanya&lt;/from&gt;
+                            &lt;heading&gt;Message&lt;/heading&gt;
+                            &lt;body&gt;Welcome to the XML with DTD&lt;/body&gt;
+                        &lt;/note&gt;
+                        </code></pre>
+
+
+                        <p>The DTD above is interpreted like this: </p>
+
+                        <p>!DOCTYPE note defines that the root element of this document is note. </p>
+
+                        <p>!ELEMENT note defines that the note element contains four elements "to, from, heading, body".
+                        </p>
+
+                        <p>!ELEMENT to defines that to element to be of the type #PCDATA. </p>
+
+                        <p>!ELEMENT from defines that from element to be of the type #PCDATA. </p>
+
+                        <p>!ELEMENT heading defines that heading element to be of the type #PCDATA.  !ELEMENT body
+                            defines that
+                            body element to be of the type #CDATA. </p>
+
+                        <p><strong>External DTD Declaration: </strong><br></p>
+
+                        <p>If the DTD is declared in an external file, it should be wrapped in a DOCTYPE definition with
+                            the
+                            following syntax: </p>
+
+                        <pre><code>
+                        &lt;!DOCTYPE DOCUMENT SYSTEM "File_Name.dtd"&gt; <strong>Example: emailDTD.xml: </strong>
+                        &lt;?xml version="1.0"?&gt;
+                        &lt;!DOCTYPE note SYSTEM "emailDTD.dtd"&gt;
+                        &lt;note&gt;
+                            &lt;to&gt;Ravi&lt;/to&gt;
+                            &lt;from&gt;Chythanya&lt;/from&gt;
+                            &lt;heading&gt;Message&lt;/heading&gt;
+                            &lt;body&gt;Welcome to the XML with DTD&lt;/body&gt;
+                        &lt;/note&gt;
+                        
+                        <strong>emailDTD.dtd: </strong>
+                        &lt;!ELEMENT note (to, from, heading, body)&gt;
+                        &lt;!ELEMENT to (#PCDATA)&gt;
+                        &lt;!ELEMENT from (#PCDATA)&gt;
+                        &lt;!ELEMENT heading (#PCDATA)&gt;
+                        &lt;!ELEMENT body (#CDATA)&gt;
+                        </code></pre>
+
+
+                        <p>XML Schema: </p>
+
+                        <p>W3C supports an XML-based alternative to DTD, called XML schema: </p>
+
+                        <p>The XML schema is used to represent the structure of XML document. The goal or purpose of XML
+                            schema is
+                            to define the building blocks of an XML document. These can be used as an alternative to XML
+                            DTD. The
+                            XML schema language is called as XML Schema Definition (XSD) language. The XML schema became
+                            the World
+                            Wide Web Consortium (W3C) recommendation in 2001. </p>
+
+                        <p>XML schema defines elements, attributes, elements having child elements, order of child
+                            elements. It also
+                            defines fixed and default values of elements and attributes. 3) XML schema also allows the
+                            developers to
+                            use data types. </p>
+
+                        <p>4) File extension of XML schema is ".xsd" i.e., Filename.xsd <strong>Ex: </strong><br> </p>
+
+                        <pre><textarea >
+                    <p><strong>StudentSchema.xsd:</strong></p>
+                    <?xml version="1.0"?>
+                    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                        <xs:element name="student">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string"/>
+                                    <xs:element name="address" type="xs:string"/>
+                                    <xs:element name="std" type="xs:string"/>
+                                    <xs:element name="marks" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:schema>
+                    
+                    <p><strong>XML Document (myschema.xml):</strong></p>
+                    
+                    <?xml version="1.0" encoding="iso-8859-1" ?>
+                    <student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentschema.xsd">
+                        <name>anand</name>
+                        <address>knr</address>
+                        <std>second</std>
+                        <marks>70percent</marks>
+                    </student>
+                    </textarea></pre>
+                        <p><strong>Data Types in XML: </strong><br></p>
+
+                        <p>Various data types are that can be used to specify the data types of an elements are: </p>
+                        <ol>
+                            <li>String </li>
+
+                            <li>Date </li>
+
+                            <li>Time </li>
+
+                            <li>Numeric </li>
+
+                            <li>Boolean </< /ol>
+
+                                <p><strong>1. String Data Type: </strong><br></p>
+
+                                <p>The string data type can be used to define the elements containing the characters
+                                    lines, tabs, white
+                                    spaces, or special characters. </p>
+
+                                <p><strong>Example: </strong><br></p>
+                                <pre><code>
+                <strong>XML Schema [stringType.xsd]: </strong><br>&lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; &lt;xs:element name= "StudentName"
+                    type="xs:string"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[stringTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;StudentName XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" 
+        
+                xsi:nonamespaceschemalocation = "stringType.xsd"&gt; Ravi Chythanya 
+        
+                &lt;/StudentName&gt; </code></pre>
+
+                                <p><strong>2. Date Data Type: </strong><br></p>
+
+                                <p>For specifying the date we use date data type. The format of date is yyyy-mm-dd,
+                                    where yyyy denotes the
+                                    Year, mm denotes the month and dd specifies the day. </p>
+
+                                <p><strong>Example: </strong><br></p>
+                                <pre><code>
+                <strong>XML Schema [dateType.xsd]: </strong><br>&lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                 &lt;xs:element name= "DOB" type="xs:date"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[dateTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;DOB XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" 
+        
+                xsi:nonamespaceschemalocation = "dateType.xsd"&gt; 1988-03-01 
+        
+                &lt;/DOB&gt; </code></pre>
+
+                                <p><strong>3. Time Data Type: </strong><br></p>
+
+                                <p>For specifying the time we use time data type. The format of date is hh:mm:ss, where
+                                    hh denotes the Hour,
+                                    mm denote the minutes and ss specify the seconds. </p>
+
+                                <p><strong>Example: </strong><br></p>
+                                <pre><code>
+                <strong>XML Schema [timeType.xsd]: </strong><br>
+        
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; &lt;xs:element name= "MyTime"
+                    type="xs:time"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[timeTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;MyTime XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "timeType.xsd"&gt; 01:57:03 
+        
+                &lt;/MyTime&gt; </code></pre>
+
+                                <p><strong>4. Numeric Data Type: </strong><br></p>
+
+                                <p>If we want to use numeric value for some element then we can use the data types as
+                                    either
+                                    <strong>"decimal" </strong><br>or <strong>"integer". Example: </strong><br>
+                                </p>
+
+                                <pre><code>  <strong>XML Schema [decimalType.xsd]: </strong><br>
+        
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; &lt;xs:element name= "Percentage"
+                    type="xs:decimal"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[decimalTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Percentage XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "decimalType.xsd"&gt; 99.99 
+        
+                &lt;/Percentage&gt; 
+        
+                <strong>XML Schema [integerType.xsd]: </strong><br>
+        
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                 &lt;xs:element name= "Age" type="xs:integer"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[integerTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Age XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "integerType.xsd"&gt; 30 
+        
+                &lt;/Age&gt; </code></pre>
+
+                                <p><strong>5. Boolean Data Type: </strong><br></p>
+
+                                <p>For specifying either <strong>true </strong><br>or <strong>false </strong><br>values
+                                    we must use the Boolean
+                                    data
+                                    type. </p>
+
+                                <p><strong>Example: </strong><br></p>
+                                <pre><code>
+                <strong>XML Schema [booleanType.xsd]: </strong><br></p>
+        
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                 &lt;xs:element name= "Flag" type="xs:boolean"&gt; &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[booleanTypeDemo.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Flag XMLns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "booleanType.xsd"&gt; 
+        
+                true 
+        
+                &lt;/Flag&gt;<strong> </strong><br></code></pre>
+
+                                <p><strong>Simple Types: </strong><br></p>
+
+                                <p>XML defines the simple type which contains only text and does not contain any other
+                                    element or
+                                    attributes. But the <strong>text </strong><br> appears for element comes along with
+                                    some
+                                    <strong>type </strong><br>. The syntax is:
+                                </p>
+
+                                <p>&lt;<strong>xs:element </strong><br><strong> name </strong><br>= "element_name"
+                                    <strong>type </strong><br>=
+                                    "data_type"&gt; Here the type can be any built in data type: </p>
+                                <ol>
+                                    <li>xs:string</li>
+                                    <li>xs:date</li>
+                                    <li>xs:time</li>
+                                    <li>xs:integer </li>
+                                    <li>xs:decimal </li>
+                                    <li>xs:Boolean</li>
+                                </ol>
+
+
+                                <p><strong>Restrictions on Simple Types: </strong><br></p>
+
+                                <p>For an XML document, it is possible to put certain restrictions on its contents.
+                                    These restrictions are
+                                    called as <strong>facets. </strong><br></p>
+                                <pre><code>
+                <strong>XML Schema [Month.xsd]: </strong><br>&lt;?xml version= "1.0" ?&gt;
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt;
+                 &lt;xs:element name= "Month"&gt;
+                 &lt;xs:simpleType&gt;
+                 &lt;xs:restriction base= "xs:integer"&gt;
+                  <strong>&lt; xs:minInclusive value=
+                        "1"&gt;      
+                &lt;<strong>xs:maxInclusive </strong>value= "12"&gt;
+                 &lt;/xs:restriction&gt; 
+                 &lt;/xs:simpleType&gt; 
+                 &lt;/xs:element&gt; 
+                &lt;/xs:schema&gt;
+                <strong>XML Document[MonthDemo.xml]: </strong><br>
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt;  
+                &lt;Age xmlns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "Month.xsd"&gt; 12 
+        
+                &lt;/Month&gt;</code></pre>
+
+                                <p>Various facets that can be applied are: </p>
+                                <ol>
+                                    <li>length – Specifies exact number of characters. </li>
+
+                                    <li>minLength – Specifies the minimum number of characters allowed. </li>
+
+                                    <li>maxLength – Specifies the minimum number of characters allowed. </li>
+
+                                    <li>minInclusive – Specifies lower bound for numeric values. </li>
+
+                                    <li>minExclusive – Specifies lower bound for numeric values. </li>
+
+                                    <li>maxInclusive – Specifies upper bound for numeric values. </li>
+
+                                    <li>maxExclusive – Specifies upper bound for numeric values. </li>
+
+                                    <li>enumeration – A list of acceptable values can be defined. </li>
+
+                                    <li>pattern – specifies exact sequence of characters that are acceptable. </li>
+
+                                    <li>totalDigits – Specifies the exact number of digits. </li>
+
+                                    <li>fractionDigits – Specifies maximum number of decimal places allowed. </li>
+
+                                    <li>whiteSpace – Specifies how to handle white spaces. The white spaces can be
+                                        spaces, tags, line feed, or
+                                        carriage return. </li>
+                                </ol>
+
+
+
+                                <p>Restrictions that can be applied on the data types are: </p>
+
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>Data Type</p>
+                                            </td>
+                                            <td>
+                                                <p>Validation 1</p>
+                                            </td>
+                                            <td>
+                                                <p>Validation 2</p>
+                                            </td>
+                                            <td>
+                                                <p>Validation 3</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Enumeration</p>
+                                            </td>
+                                            <td>
+                                                <p>Enumeration</p>
+                                            </td>
+                                            <td>
+                                                <p>Enumeration</p>
+                                            </td>
+                                            <td>
+                                                <p>Enumeration</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Length</p>
+                                            </td>
+                                            <td>
+                                                <p>Max Exclusive</p>
+                                            </td>
+                                            <td>
+                                                <p>Fraction Digits</p>
+                                            </td>
+                                            <td>
+                                                <p>Length</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Min Length</p>
+                                            </td>
+                                            <td>
+                                                <p>Max Inclusive</p>
+                                            </td>
+                                            <td>
+                                                <p>Max Exclusive</p>
+                                            </td>
+                                            <td>
+                                                <p>Max Length</p>
+                                            </td>
+                                        </tr>
+                                        <!-- Additional rows follow the same pattern -->
+                                    </tbody>
+                                </table>
+
+                                <p><strong>Complex Types: </strong><br></p>
+
+                                <p><strong>1)Elements: </strong><br></p>
+
+                                <p>Complex elements are the elements that contain some other elements or attributes.
+                                </p>
+
+                                <p>The complex types of elements are: </p>
+
+                                <p>i) Empty Elements <br>ii) Elements that contain text <br>iii) Elements that contain
+                                    other elements
+
+                                    <br>iv) Elements that contain other text as well other elements
+                                </p>
+
+                                <p><strong>i) Empty Elements: </strong><br></p>
+
+                                <p>Let us define the empty elements by the complexType. <strong>Example </strong>
+
+                                    <br> [Student.xsd]:
+                                </p>
+                                <pre><code>
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                &lt;xs:element name= "Student"&gt; 
+        
+                &lt;xs:complexType&gt; 
+        
+                 &lt;xs:attribute name= "HTNo" type= "xs:integer"&gt; 
+        
+                &lt;/xs:complexType&gt; 
+        
+                &lt;/xs:element&gt; 
+        
+                &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[Student.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Student xmlns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "Student.xsd" HTNo="1343"&gt; 
+        
+                &lt;/Student&gt; </code></pre>
+                                <p><strong></strong>ii) Elements that contain text only: </strong><br></p>
+
+                                <p>We have the elements that contain simple contents such as text and attributes. Hence
+                                    we must add the type
+                                    as <strong>simpleContent </strong><br> in the schema definition. This simpleContent
+                                    element must have either
+                                    extension or restriction. <strong>Example [Student.xsd]: </strong><br></p>
+                                <pre><code>
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                &lt;xs:element name= "Student"&gt; 
+        
+                &lt;xs:complexType&gt; 
+        
+                 &lt;xs:simpleContent&gt; 
+        
+                 &lt;xs:extension base= "xs:integer"&gt;  
+        
+                &lt;xs:attribute name= "HTNo" type= "xs:integer"&gt; 
+        
+                &lt;/xs:extension&gt; 
+        
+                &lt;/xs:simpleContent&gt; 
+        
+                &lt;/xs:complexType&gt; 
+        
+                &lt;/xs:element&gt; 
+        
+                &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[Student.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Student xmlns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "Student.xsd" HTNo="1343"&gt; 100 
+        
+                &lt;/Student&gt;</code></pre>
+                                <p><strong>iii) Elements that contain other elements only: </strong><br>
+                                </p>
+
+                                <strong>Example [Student.xsd]: </strong><br></p>
+                                <pre><code>
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                &lt;xs:element name= "Student"&gt; 
+        
+                &lt;xs:complexType&gt; 
+        
+                 &lt;xs:sequence&gt; 
+        
+                 &lt;xs:element name= "firstName" type= "xs:string"&gt; 
+        
+                 &lt;xs:element name= "lastName" type= "xs:string"&gt; 
+        
+                 &lt;/xs:sequence&gt; 
+        
+                &lt;/xs:complexType&gt; 
+        
+                &lt;/xs:element&gt; 
+        
+                &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[Student.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Student xmlns:xsi = "http://www.w3.org/2001/XMLschema-instance" xsi:nonamespaceschemalocation =
+                    "Student.xsd"&gt; 
+        
+                &lt;firstName&gt;Ravi&lt;/firstName&gt; 
+        
+                &lt;lastName&gt;Chythanya&lt;/lastName&gt; 
+        
+                &lt;/Student&gt; </code></pre><strong></code></pre>
+                                    iv) </strong> <strong>Elements that contain text as well as other elements:
+                                </strong><br></p>
+
+                                <p><strong>Example [Student.xsd]: </strong><br></p>
+                                <pre><code>
+        
+                &lt;?xml version= "1.0" ?&gt; 
+        
+                &lt;xs:schema xmlns:xs=" http://www.w3.org/2001/XMLschema"&gt; 
+        
+                &lt;xs:element name= "Student"&gt; 
+        
+                &lt;xs:complexType mixed= "true"&gt; 
+        
+                 &lt;xs:sequence&gt; 
+        
+                 &lt;xs:element name= "Name" type= "xs:string"&gt; 
+        
+                 &lt;xs:element name= "HTNo" type= "xs:integer"&gt; 
+        
+                 &lt;/xs:sequence&gt; 
+        
+                &lt;/xs:complexType&gt; 
+        
+                &lt;/xs:element&gt; 
+        
+                &lt;/xs:schema&gt; 
+        
+                <strong>XML Document[Student.xml]: </strong><br>
+        
+                &lt;?xml version="1.0" encoding="iso-8859-1" ?&gt; 
+        
+                &lt;Student xmlns:xsi = "http://www.w3.org/2001/XMLschema-instance" 
+        
+                xsi:nonamespaceschemalocation = "Student.xsd"&gt; 
+        
+                My Dear Student &lt;Name&gt;Ravi&lt;/Name&gt; 
+        
+                With Hall Ticket Number &lt;HTNo&gt;0536&lt;/HTNo&gt; 
+        
+                &lt;/Student&gt; <strong>2) </strong><br> <strong>Indicators: </strong><br></code></pre>
+
+                                <p>Indicators allow us to define the elements in the manner we want. Following are some
+                                    indicators that are
+                                    available in XML Schema. </p>
+
+                                <p>i) all <br>ii) choice <br> iii) sequence <br>iv) maxOccurs <br>v) minOccurs </p>
+                                </code></pre>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="display: flex; justify-content: space-between; margin: 10%;">
+        <button><a href="page2.html">&laquo; Previous</a></button>
+        <button><a href="page4.html">Next &raquo;</a></button>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Accumsan montes viverra</h3>
+                    <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer
+                        non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+                        accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum
+                        primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed
+                        feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                </section>
+                <section>
+                    <h4>Sem turpis amet semper</h4>
+                    <ul class="alt">
+                        <li><a href="#">Dolor pulvinar sed etiam.</a></li>
+                        <li><a href="#">Etiam vel lorem sed amet.</a></li>
+                        <li><a href="#">Felis enim feugiat viverra.</a></li>
+                        <li><a href="#">Dolor pulvinar magna etiam.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Magna sed ipsum</h4>
+                    <ul class="plain">
+                        <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                        <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright " class="copyright">
+        Design by <a href="https://templated.co/">TEMPLATED</a>.
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 
 </html>

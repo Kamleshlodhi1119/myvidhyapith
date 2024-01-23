@@ -1,3333 +1,2078 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>myvidhyapith</title>
-    <style>
-        pre,
-        li {
-            color: rgb(51, 51, 90);
-        }
-    </style>
-    <script src="Script.js">
-    </script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hack-With-Smile</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<header>
-    <h1 class="top-name">Myvidhyapith</h1>
-    <img class="image-profile"
-        src="https://github.com/Kamleshlodhi1119/myvidhyapith/blob/main/kamleshlodhi@1119.jpg?raw=true"
-        style="float:right;" />
-</header>
+<body class="is-preload">
 
-<body>
-    <div class="header">
-        <div id="sidebar">
-
-
-            <div class="toggle-btn" onclick="toggleS()">
-                <i id="btn" class="fas fa-bars fa-2x" onclick="times()"></i>
-            </div>
-            <ul>
-                <li><a href="login.html" target="_blank "><i class="fas fa-sign-in"> &raquo;LOGIN </i></a></li>
-                <li><a href="index.html"><i class="fas fa-home"> Home</i></a></li>
-                <li><a href="aboutus.html" target="_blank "><i class="fas fa-question-circle"> About us</i></a></li>
-                <li><a href="privacy.html" target="_blank "><i class=" fa-1x"></i><b>Privacy policy</b></a></li>
-                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237" target="_blank "><i
-                            class="fas fa-phone-square"> Contact us</i></a></li>
-                <li><a href="mailto:mrkamleshlodhi1119@gmail.com?subject=Your%20Subject&body=Your%20message%20here"
-                        target="_blank "><i class="fas fa-envelope"> Feedback us</i></a></li>
-                <li><a href="https://www.linkedin.com/in/kamlesh-lodhi-3b89a3237"><i class="fas fba-heart"> Follow
-                            Us</i></a></li>
-            </ul>
-        </div>
+	<!-- Header -->
+	<header id="header"><a class="logo" href="index.html">Hack-With-Smile</a>
+		<nav><a href="#menu">Menu</a>
+		</nav>
+	</header><!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="elements.html">Elements</a></li>
+			<li><a href="generic.html">Privacy policy</a></li>
+			<li><a href="AboutUS.html">About Us</a></li>
+			<li><a href="frequentlyASKquestion.html">frequently Ask Question</a></li>
+			<li><a href="login.html">Login/Sign-Up</a></li>
+		</ul>
+	</nav><!-- Banner -->
+<!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="generic.html">Generic</a></li>
+        </ul>
+    </nav><!-- Heading -->
+    <div id="heading">
+        <h1>Elements</h1>
     </div>
 
-    <div class="container12">
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="content">
 
-        <section>
+                <!-- Elements -->
+                <div class="row">
+                    <section>
 
 
          
-<h2>JAVASCRIPT OBJECTS INTRODUCTION: </h2>
-
-<p>JavaScript is an Object Oriented Programming (OOP) language. An OOP
-    language
-    allows you to define your
-    own objects and make your own variable types. </p>
-
-<p><strong>OBJECT ORIENTED PROGRAMMING: </strong><br></p>
-
-<p>JavaScript is an Object Oriented Programming (OOP) language. An OOP
-    language
-    allows you to define your
-    own objects and make your own variable types. However, creating your own
-    objects will be explained
-    later, in the Advanced JavaScript section. We will start by looking at
-    the
-    built-in JavaScript objects,
-    and how they are used. The next pages will explain each built-in
-    JavaScript
-    object in detail. Note that
-    an object is just a special kind of data. An object has properties and
-    methods. </p>
-
-<p><strong>Properties: </strong><br></p>
-
-<p>Properties are the values associated with an object. In the following
-    example
-    we are using the length
-    property of the String object to return the number of characters in a
-    string: </p>
-
-<p>&lt;script type="text/javascript"&gt; var txt="Hello World!";
-    document.write(txt.length); &lt;/script&gt;
-</p>
-
-<p><strong>The output of the code above will be: </strong><br> 12
-    <strong>Methods: </strong><br>
-</p>
-
-<p>Methods are the actions that can be performed on objects. In the
-    following
-    example we are using the
-    toUpperCase() method of the String object to display a text in uppercase
-    letters: </p>
-
-<p>&lt;script type="text/javascript"&gt; var str="Hello world!"; </p>
-
-<p>document.write(str.toUpperCase()); &lt;/script&gt; </p>
-
-<p><strong>The output of the code above will be: </strong><br>HELLO
-    WORLD!<strong> </strong><br></p>
-
-<p><strong>STRING OBJECT: </strong><br></p>
-
-<p>The String object is used to manipulate a stored piece of text. </p>
-
-<p><strong>Examples of use: </strong><br> </p>
-
-<p>The following example uses the length property of the String object to
-    find
-    the length of a string: var
-    txt="Hello world!"; document.write(txt.length); </p>
-
-<p><strong> </strong><br></p>
-
-<p><strong> </strong><br></p>
-
-<p><strong>The code above will result in the following output:
-    </strong><br>12
-</p>
-
-<p>The following example uses the toUpperCase() method of the String object
-    to
-    convert a string to uppercase
-    letters: var txt="Hello world!"; document.write(txt.toUpperCase()); </p>
-
-<p><strong>The code above will result in the following output:
-    </strong><br>HELLO WORLD! </p>
-
-<p><strong>String Object Examples: </strong><br></p>
-
-<p><strong>Return The Length of </strong><br><strong>A </strong><br><strong>
-        String </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var txt = "Hello World!";
-    document.write(txt.length); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br>12 </p>
-
-<p><strong>Style Strings </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var txt = "Hello World!";
-    document.write("&lt;p&gt;Big: " +
-    txt.big() + "&lt;/p&gt;"); document.write("&lt;p&gt;Small: " +
-    txt.small() +
-    "&lt;/p&gt;");
-    document.write("&lt;p&gt;Bold: " + txt.bold() + "&lt;/p&gt;");
-    document.write("&lt;p&gt;Italic: " +
-    txt.italics() + "&lt;/p&gt;"); document.write("&lt;p&gt;Fixed: " +
-    txt.fixed() + "&lt;/p&gt;");
-    document.write("&lt;p&gt;Strike: " + txt.strike() + "&lt;/p&gt;");
-    document.write("&lt;p&gt;Fontcolor: "
-    + txt.fontcolor("green") + "&lt;/p&gt;");
-    document.write("&lt;p&gt;Fontsize:
-    " + txt.fontsize(6) +
-    "&lt;/p&gt;"); document.write("&lt;p&gt;Subscript: " + txt.sub() +
-    "&lt;/p&gt;");
-    document.write("&lt;p&gt;Superscript: " + txt.sup() + "&lt;/p&gt;");
-</p>
-
-<p>document.write("&lt;p&gt;Link: " + txt.link("http://www.w3schools.com") +
-    "&lt;/p&gt;");
-    document.write("&lt;p&gt;Blink: " + txt.blink() + " (does not work in
-    IE,
-    Chrome, or
-    Safari)&lt;/p&gt;"); </p>
-
-<p>&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br></p>
-
-<p>Big: Hello World! </p>
-
-<p>Small: Hello World! </p>
-
-<p>Bold: <strong>Hello World! </strong><br> </p>
-
-<p>Italic: <em>Hello World!</em> </p>
-
-<p>Fixed: Hello World! Strike: Hello World! </p>
-
-<p>Fontcolor: Hello World! </p>
-
-<p>Fontsize: Hello World! </p>
-
-<p>Subscript: <sub>Hello World!</sub> </p>
-
-<p>Superscript: <sup>Hello World!</sup> </p>
-
-<p>Link: Hello World! </p>
-
-<p>Blink: Hello World! (does not work in IE, Chrome, or Safari) </p>
-
-<p><strong>3. </strong><br> <strong>Return the Position of the First
-        Occurrence
-        of
-    </strong><br><strong>A </strong><br><strong> Text in A String -
-    </strong><br><strong>indexof </strong><br><strong>(): </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var str="Hello world!";
-    document.write(str.indexOf("d") + "&lt;br
-    /&gt;"); document.write(str.indexOf("WORLD") + "&lt;br /&gt;");
-    document.write(str.indexOf("world"));
-</p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>&nbsp;<strong>Output: </strong><br>10 &nbsp;-1 &nbsp;6 </p>
-
-<p><strong>4. </strong><br> <strong>Search for A Text in A String and Return
-        the
-        Text If Found -
-        Match(): </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var str="Hello world!";
-    document.write(str.match("world") + "&lt;br
-    /&gt;"); document.write(str.match("World") + "&lt;br /&gt;");
-    document.write(str.match("worlld") +
-    "&lt;br /&gt;"); document.write(str.match("world!")); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; &lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br>world null null world! </p>
-
-<p><strong>Replace Characters in A String - Replace() </strong><br> : </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var str="Visit Microsoft!"; </p>
-
-<p>document.write(str.replace("Microsoft","W3Schools")); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br>Visit W3Schools! </p>
-
-<p><strong>Convert a String to Lowercase Letters: </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var str="Hello World!"; </p>
-
-<p>document.write(str.toLowerCase()); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p> &lt;/body&gt; &lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br>hello world! </p>
-
-<p><strong>JAVASCRIPT DATE OBJECT </strong><br></p>
-
-<p> </p>
-
-<p>The Date object is used to work with dates and times. </p>
-
-<p> <strong>Create a Date Object </strong><br></p>
-
-<p>The Date object is used to work with dates and times. Date objects are
-    created with the Date()
-    constructor. There are four ways of instantiating a date: </p>
-
-<p>New Date() // current date and time </p>
-
-<p>new Date(milliseconds) //milliseconds since 1970/01/01 new
-    Date(dateString)
-</p>
-
-<p>new Date(year, month, day, hours, minutes, seconds, milliseconds) </p>
-
-<p>Most parameters above are optional. Not specifying causes 0 to be passed
-    in.
-    Once a Date object is
-    created, a number of methods allow you to operate on it. Most methods
-    allow
-    you to get and set the year,
-    month, day, hour, minute, second, and milliseconds of the object, using
-    either local time or UTC
-    (universal, or GMT) time. All dates are calculated in milliseconds from
-    01
-    January, 1970 00:00:00
-    Universal Time (UTC) with a day containing 86,400,000 milliseconds. Some
-    examples of instantiating a
-    date: </p>
-
-<p>today = new Date() </p>
-
-<p>d1 = new Date("October 13, 1975 11:13:00") d2 = new Date(79,5,24) d3 =
-    new
-    Date(79,5,24,11,33,0) </p>
-
-<p><strong>Set Dates </strong><br></p>
-
-<p>We can easily manipulate the date by using the methods available for the
-    Date
-    object. In the example
-    below we set a Date object to a specific date (14th January 2010): </p>
-
-<p>var myDate=new Date(); myDate.setFullYear(2010,0,14); </p>
-
-<p>And in the following example we set a Date object to be 5 days into the
-    future: </p>
-
-<p>var myDate=new Date(); myDate.setDate(myDate.getDate()+5); </p>
-
-<p><strong>Note: </strong><br> If adding five days to a date shifts the
-    month or
-    year, the changes are handled
-    automatically by the Date object itself! </p>
-
-<p><strong>Compare Two Dates </strong><br></p>
-
-<p>The Date object is also used to compare two dates. The following example
-    compares today's date with the
-    14th January 2010: </p>
-
-<p>var myDate=new Date(); myDate.setFullYear(2010,0,14); var today = new
-    Date();
-</p>
-
-<p> </p>
-
-<p>if (myDate&gt;today) </p>
-
-<p> { </p>
-
-<p> alert("Today is before 14th January 2010"); </p>
-
-<p> } else </p>
-
-<p> { </p>
-
-<p> alert("Today is after 14th January 2010"); </p>
-
-<p> } </p>
-
-<p><strong>DATE OBJECT EXAMPLES: </strong><br> </p>
-
-<p><strong>Use Date() to Return Today's Date </strong><br><strong>And
-    </strong><br><strong> Time </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var d=new Date(); document.write(d); &lt;/script&gt; </p>
-
-<p>&nbsp;&lt;/body&gt; &nbsp; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> Wed Jan 12 2011 14:38:08 GMT+0530 (India
-    Standard Time)<strong> </strong><br></p>
-
-<p><strong>Use </strong><br><strong>getTime </strong><br><strong>() to
-        Calculate
-        the Years Since 1970 </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var d=new Date(); </p>
-
-<p>document.write(d.getTime() + " milliseconds since 1970/01/01");
-    &lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> 1294823298285 milliseconds since 1970/01/01
-</p>
-
-<p><strong>Use </strong><br><strong>setFullYear </strong><br><strong>() to
-        Set a
-        Specific Date </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var d = new Date(); </p>
-
-<p>d.setFullYear(1992,10,3); document.write(d); </p>
-
-<p>&lt;/script&gt; &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> Tue Nov 03 1992 14:40:15 GMT+0530 (India
-    Standard Time) </p>
-
-<p><strong>Use </strong><br><strong>toUTCString </strong><br><strong>() to
-        Convert Today's Date (according to UTC) to
-        A String </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var d=new Date();
-    document.write("Original form: ");
-    document.write(d + "&lt;br /&gt;"); </p>
-
-<p>document.write("To string (universal time): "); </p>
-
-<p>document.write(d.toUTCString()); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; &lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> </p>
-
-<p><strong>Original form: </strong><br> Wed Jan 12 2011 14:38:17 GMT+0530
-    (India
-    Standard </p>
-
-<p>Time) </p>
-
-<p><strong>To string (universal time): </strong><br> Wed, 12 Jan 2011
-    09:08:17
-    GMT </p>
-
-<p><strong>5. </strong><br> <strong>Use </strong><br><strong>getDay
-    </strong><br><strong>() and An Array to Write a
-        Weekday, and Not Just </strong><br><strong>A </strong><br><strong>
-        Number </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&nbsp;&lt;body&gt; &nbsp; </p>
-
-<p>&lt;script type="text/javascript"&gt; var d=new Date(); var weekday=new
-    Array(7); weekday[0]="Sunday";
-    weekday[1]="Monday"; weekday[2]="Tuesday"; weekday[3]="Wednesday";
-    weekday[4]="Thursday";
-    weekday[5]="Friday"; weekday[6]="Saturday"; </p>
-
-<p>document.write("Today is " + weekday[d.getDay()]); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> Today is Wednesday<strong> </strong><br>
-</p>
-
-<p><strong>6. </strong><br> <strong>Display a Clock </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function startTime() </p>
-
-<p>{ </p>
-
-<p>var today=new Date(); var h=today.getHours(); var m=today.getMinutes();
-    var
-    s=today.getSeconds(); // add
-    a zero in front of numbers&lt;10 </p>
-
-<p>m=checkTime(m); s=checkTime(s); </p>
-
-<p>document.getElementById('txt').innerHTML=h+":"+m+":"+s; </p>
-
-<p>t=setTimeout('startTime()',500); </p>
-
-<p>} </p>
-
-<p>function checkTime(i) </p>
-
-<p>{ if (i&lt;10) { i="0" + i; } return i; } </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body onload="startTime()"&gt; </p>
-
-<p>&lt;div&gt;&lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Output: </strong><br> 14:42:13<strong> </strong><br> </p>
-
-<h2><strong> JAVASCRIPT ARRAY OBJECT</strong><br></h2>
-
-<p>The Array object is used to store multiple values in a single variable.
-    An
-    array is a special variable,
-    which can hold more than one value, at a time. If you have a list of
-    items
-    (a list of car names, for
-    example), storing the cars in single variables could look like this:
-</p>
-
-<p>cars1="Saab"; cars2="Volvo"; cars3="BMW"; </p>
-
-<p>However, what if you want to loop through the cars and find a specific
-    one?
-    And what if you had not 3
-    cars, but 300? </p>
-
-<p>The best solution here is to use an array! An array can hold all your
-    variable values under a single
-    name. And you can access the values by referring to the array name. Each
-    element in the array has its
-    own ID so that it can be easily accessed. </p>
-
-<p> <strong>Create an Array </strong><br></p>
-
-<p>An array can be defined in three ways. The following code creates an
-    Array
-    object called myCars: </p>
-
-<p><strong>1 </strong><br><strong><sup>st</sup> </strong><br><strong>
-        Method:
-    </strong><br></p>
-
-<p>var myCars=new Array(); // regular array (add an optional integer
-    myCars[0]="Saab"; // argument to
-    control array's size) myCars[1]="Volvo"; myCars[2]="BMW";
-    <strong>2 </strong><br><strong><sup>nd</sup> </strong><br><strong>
-        Method:
-    </strong><br>var myCars=new
-    Array("Saab","Volvo","BMW"); // condensed array <strong>3
-    </strong><br><strong><sup>rd</sup> </strong><br><strong>
-        Method: </strong><br> var myCars=["Saab","Volvo","BMW"]; // literal
-    array
-</p>
-
-<p><strong>Note: </strong><br> If you specify numbers or true/false values
-    inside the array then the variable
-    type will be Number or Boolean, instead of String. </p>
-
-<p><strong>Access an Array </strong><br></p>
-
-<p>You can refer to a particular element in an array by referring to the
-    name of
-    the array and the index
-    number. The index number starts at 0. The following code line: </p>
-
-<p>document.write(myCars[0]); </p>
-
-<p>will result in the following output: </p>
-
-<p>Saab </p>
-
-<p><strong> </strong><br></p>
-
-<p><strong> </strong><br></p>
-
-<p><strong>Modify Values in an Array </strong><br></p>
-
-<p>To modify a value in an existing array, just add a new value to the array
-    with a specified index number:
-    myCars[0]="Opel"; Now, the following code line:
-    document.write(myCars[0]);
-</p>
-
-<p>will result in the following output: Opel </p>
-
-<p><strong> </strong><br></p>
-
-<p><strong>Array Object Examples: </strong><br></p>
-
-<p><strong>Program for array concatenation </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var parents = ["Jani", "Tove"]; var
-    children = ["Cecilie", "Lone"];
-    var family = parents.concat(children); document.write(family); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array concatenation with multiple arrays.
-    </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var parents = ["Jani", "Tove"];
-</p>
-
-<p>var brothers = ["Stale", "Kai Jim", "Borge"]; var children = ["Cecilie",
-    "Lone"]; var family =
-    parents.concat(brothers, children); </p>
-
-<p>document.write(family); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p> &lt;/html&gt; </p>
-
-<p><strong>Program for array join operation. </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.write(fruits.join() + "&lt;br /&gt;");
-    document.write(fruits.join("+") + "&lt;br /&gt;");
-    document.write(fruits.join(" and ")); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; &lt;/html&gt; </p>
-
-<p><strong>Program for array pop. </strong><br> &lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.write(fruits.pop() + "&lt;br /&gt;");
-    document.write(fruits + "&lt;br /&gt;"); document.write(fruits.pop() +
-    "&lt;br /&gt;");
-    document.write(fruits); </p>
-
-<p>&lt;/script&gt; &lt;/body&gt; </p>
-
-<p> &lt;/html&gt; </p>
-
-<p><strong>Program for array push. </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; var fruits = ["Banana", "Orange",
-    "Apple", "Mango"];
-    document.write(fruits.push("Kiwi") + "&lt;br /&gt;");
-    document.write(fruits.push("Lemon","Pineapple") +
-    "&lt;br /&gt;"); document.write(fruits); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array reverse. </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.write(fruits.reverse()); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array shift. </strong><br> &lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"]; </p>
-
-<p>document.write(fruits.shift() + "&lt;br /&gt;"); document.write(fruits +
-    "&lt;br /&gt;");
-    document.write(fruits.shift() + "&lt;br /&gt;"); document.write(fruits);
-</p>
-
-<p>&lt;/script&gt; &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array slice. </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.write(fruits.slice(0,1) + "&lt;br /&gt;");
-    document.write(fruits.slice(1) + "&lt;br /&gt;");
-    document.write(fruits.slice(-2) + "&lt;br /&gt;");
-    document.write(fruits); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array sort(). </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"]; </p>
-
-<p>document.write(fruits.sort()); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Program for array </strong><br><strong>toString
-    </strong><br><strong>(). </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.write(fruits.toString()); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>JAVASCRIPT MATH OBJECT </p>
-
-<p>The Math object allows you to perform mathematical tasks. The Math object
-    includes several mathematical
-    constants and methods. <strong>Syntax for using properties/methods of
-        Math:
-    </strong><br></p>
-
-<p>var pi_value=Math.PI; var sqrt_value=Math.sqrt(16);<strong> </strong><br>
-</p>
-
-<p><strong>Note: </strong><br> Math is not a constructor. All properties and
-    methods of Math can be called by
-    using Math as an object without creating it. </p>
-
-
-<p><strong>Mathematical Constants: </strong><br></p>
-
-<p>JavaScript provides eight mathematical constants that can be accessed
-    from
-    the Math object. These are: E,
-    PI, square root of 2, square root of 1/2, natural log of 2, natural log
-    of
-    10, base-2 log of E, and
-    base-10 log of E. You may reference these constants from your JavaScript
-    like this: </p>
-
-<p>Math.E </p>
-
-<p>Math.PI </p>
-
-<p>Math.SQRT2 </p>
-
-<p>Math.SQRT1_2 </p>
-
-<p>Math.LN2 </p>
-
-<p>Math.LN10 </p>
-
-<p>Math.LOG2E Math.LOG10E <strong>Mathematical Methods: </strong><br></p>
-
-<p>In addition to the mathematical constants that can be accessed from the
-    Math
-    object there are also
-    several methods available. The following example uses the round() method
-    of
-    the Math object to round a
-    number to the nearest integer: document.write(Math.round(4.7));
-    <strong>Output: </strong><br>5<strong>
-    </strong><br>
-</p>
-
-<p>The following example uses the random() method of the Math object to
-    return a
-    random number between 0 and
-    1: document.write(Math.random()); </p>
-
-<p><strong>Output: </strong><br> 0.9306157949324372 </p>
-
-<p>The following example uses the floor() and random() methods of the Math
-    object to return a random number
-    between 0 and 10: document.write(Math.floor(Math.random()*11)); </p>
-
-<p><strong>Output: </strong><br> 6 </p>
-
-<p><strong>MATH OBJECT EXAMPLES </strong><br></p>
-
-<p><strong>1. </strong><br> <strong>Use round() to Round a Number:
-    </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; document.write(Math.round(0.60) +
-    "&lt;br /&gt;");
-    document.write(Math.round(0.50) + "&lt;br /&gt;");
-    document.write(Math.round(0.49) + "&lt;br /&gt;");
-    document.write(Math.round(-4.40) + "&lt;br /&gt;");
-    document.write(Math.round(-4.60)); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Use random() to Return a Random Number Between 0 and 1
-    </strong><br>:
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>//return a random number between 0 and 1 document.write(Math.random() +
-    "&lt;br /&gt;"); //return a
-    random integer between 0 and 10
-    document.write(Math.floor(Math.random()*11)); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>Use max() to return the Number </strong><br><strong>With
-    </strong><br><strong> the Highest Value of Two
-        Specified Numbers: </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; document.write(Math.max(5,10) +
-    "&lt;br
-    /&gt;");
-    document.write(Math.max(0,150,30,20,38) + "&lt;br /&gt;");
-    document.write(Math.max(-5,10) + "&lt;br
-    /&gt;"); document.write(Math.max(-5,-10) + "&lt;br /&gt;");
-    document.write(Math.max(1.5,2.5)); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt;<strong> </strong><br></p>
-
-<p><strong>4. </strong><br> <strong>Use min() to Return the Number
-    </strong><br><strong>With </strong><br><strong> the
-        Lowest Value of Two Specified Numbers: </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; document.write(Math.min(5,10) +
-    "&lt;br
-    /&gt;");
-    document.write(Math.min(0,150,30,20,38) + "&lt;br /&gt;");
-    document.write(Math.min(-5,10) + "&lt;br
-    /&gt;"); document.write(Math.min(-5,-10) + "&lt;br /&gt;");
-    document.write(Math.min(1.5,2.5)); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt;<strong> </strong><br></p>
-
-<p><strong>5. </strong><br> <strong>Convert Celsius to Fahrenheit:
-    </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function convert(degree) </p>
-
-<p>{ </p>
-
-<p>if (degree=="C") </p>
-
-<p> { </p>
-
-<p> F=document.getElementById("c").value * 9 / 5 + 32;
-    document.getElementById("f").value=Math.round(F);
-</p>
-
-<p> } </p>
-
-<p>&nbsp;else &nbsp; </p>
-
-<p> { </p>
-
-<p> C=(document.getElementById("f").value -32) * 5 / 9;
-    document.getElementById("c").value=Math.round(C);
-</p>
-
-<p> } </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;p&gt;&lt;/p&gt;&lt;b&gt;Insert a number into one of the input fields
-    below:&lt;/b&gt;&lt;/p&gt; </p>
-
-<p>&lt;form&gt; </p>
-
-<p>&nbsp;&lt;input &nbsp;id="c" &nbsp;name="c"
-    &nbsp;onkeyup="convert('C')"&gt;
-    &nbsp;degrees </p>
-
-<p>Celsius&lt;br /&gt; equals&lt;br /&gt; </p>
-
-<p>&nbsp;&lt;input &nbsp;id="f" &nbsp;name="f"
-    &nbsp;onkeyup="convert('F')"&gt;
-    &nbsp;degrees </p>
-
-<p>Fahrenheit </p>
-
-<p>&lt;/form&gt; </p>
-
-<p>&lt;p&gt;Note that the &lt;b&gt;Math.round()&lt;/b&gt; method is used, so
-    that the result will be
-    returned as an integer.&lt;/p&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>JAVASCRIPT BOOLEAN OBJECT: </strong><br></p>
-
-<p>The Boolean object is used to convert a non-Boolean value to a Boolean
-    value
-    (true or false). </p>
-
-<p><strong>Boolean Object Methods </strong><br></p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>Method </strong><br></p>
-            </td>
-            <td>
-                <p><strong>Description </strong><br></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>toString() </p>
-            </td>
-            <td>
-                <p>Converts a Boolean value to a string, and returns the
-                    result
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>valueOf() </p>
-            </td>
-            <td>
-                <p>Returns the primitive value of a Boolean object </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong>JAVASCRIPT WINDOW OBJECT: </strong><br></p>
-
-<p>The window object represents an open window in a browser. </p>
-
-<p><strong>Note: </strong><br> There is no public standard that applies to
-    the
-    Window object, but all major
-    browsers support it. </p>
-
-<p><strong> </strong><br></p>
-
-<p><strong>Window Object Properties: </strong><br></p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>Property </strong><br></p>
-            </td>
-            <td>
-                <p><strong>Description </strong><br></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>closed </p>
-            </td>
-            <td>
-                <p>Returns a Boolean value indicating whether a window has
-                    been
-                    closed or not </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>defaultStatus </p>
-            </td>
-            <td>
-                <p>Sets or returns the default text in the statusbar of a
-                    window
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>document </p>
-            </td>
-            <td>
-                <p>Returns the Document object for the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>frames </p>
-            </td>
-            <td>
-                <p>Returns an array of all the frames (including iframes) in
-                    the
-                    current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>history </p>
-            </td>
-            <td>
-                <p>Returns the History object for the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>innerHeight </p>
-            </td>
-            <td>
-                <p>Sets or returns the the inner height of a window's
-                    content
-                    area </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>innerWidth </p>
-            </td>
-            <td>
-                <p>Sets or returns the the inner width of a window's content
-                    area </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>length </p>
-            </td>
-            <td>
-                <p>Returns the number of frames (including iframes) in a
-                    window
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>location </p>
-            </td>
-            <td>
-                <p>Returns the Location object for the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>name </p>
-            </td>
-            <td>
-                <p>Sets or returns the name of a window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>navigator </p>
-            </td>
-            <td>
-                <p>Returns the Navigator object for the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>opener </p>
-            </td>
-            <td>
-                <p>Returns a reference to the window that created the window
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>outerHeight </p>
-            </td>
-            <td>
-                <p>Sets or returns the outer height of a window, including
-                    toolbars/scrollbars </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>outerWidth </p>
-            </td>
-            <td>
-                <p>Sets or returns the outer width of a window, including
-                    toolbars/scrollbars </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>pageXOffset </p>
-            </td>
-            <td>
-                <p>Returns the pixels the current document has been scrolled
-                    (horizontally) from the upper
-                    left corner of the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>pageYOffset </p>
-            </td>
-            <td>
-                <p>Returns the pixels the current document has been scrolled
-                    (vertically) from the upper
-                    left corner of the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>parent </p>
-            </td>
-            <td>
-                <p>Returns the parent window of the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>screen </p>
-            </td>
-            <td>
-                <p>Returns the Screen object for the window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>screenLeft </p>
-            </td>
-            <td>
-                <p>Returns the x coordinate of the window relative to the
-                    screen
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>screenTop </p>
-            </td>
-            <td>
-                <p>Returns the y coordinate of the window relative to the
-                    screen
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>screenX </p>
-            </td>
-            <td>
-                <p>Returns the x coordinate of the window relative to the
-                    screen
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>screenY </p>
-            </td>
-            <td>
-                <p>Returns the y coordinate of the window relative to the
-                    screen
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>self </p>
-            </td>
-            <td>
-                <p>Returns the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>status </p>
-            </td>
-            <td>
-                <p>Sets the text in the statusbar of a window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>top </p>
-            </td>
-            <td>
-                <p>Returns the topmost browser window </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong>Window Object Methods: </strong><br></p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>Method </strong><br></p>
-            </td>
-            <td>
-                <p><strong>Description </strong><br></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>alert() </p>
-            </td>
-            <td>
-                <p>Displays an alert box with a message and an OK button
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>blur() </p>
-            </td>
-            <td>
-                <p>Removes focus from the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>close() </p>
-            </td>
-            <td>
-                <p>Closes the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>confirm() </p>
-            </td>
-            <td>
-                <p>Displays a dialog box with a message and an OK and a
-                    Cancel
-                    button </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>createPopup() </p>
-            </td>
-            <td>
-                <p>Creates a pop-up window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>focus() </p>
-            </td>
-            <td>
-                <p>Sets focus to the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>open() </p>
-            </td>
-            <td>
-                <p>Opens a new browser window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>print() </p>
-            </td>
-            <td>
-                <p>Prints the content of the current window </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>prompt() </p>
-            </td>
-            <td>
-                <p>Displays a dialog box that prompts the visitor for input
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>resizeBy() </p>
-            </td>
-            <td>
-                <p>Resizes the window by the specified pixels </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>resizeTo() </p>
-            </td>
-            <td>
-                <p>Resizes the window to the specified width and height </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong>Window Object Examples </strong><br></p>
-
-<p><strong>1. </strong><br> <strong>Display an alert box: </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function show_alert() </p>
-
-<p>{ </p>
-
-<p>alert("Hello! I am an alert box!"); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;input type="button" onclick="show_alert()" value="Show alert box"
-    /&gt;
-</p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>2. </strong><br> <strong>Display a prompt box: </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function show_prompt() </p>
-
-<p>{ </p>
-
-<p>var name=prompt("Please enter your name","Harry Potter"); if (name!=null
-    &amp;&amp; name!="") </p>
-
-<p> { </p>
-
-<p> document.write("Hello " + name + "! How are you today?"); </p>
-
-<p> } </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;input type="button" onclick="show_prompt()" value="Show prompt box"
-    /&gt;
-    &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>3. </strong><br> <strong>Display a confirm box, and alert what
-        the
-        visitor clicked: </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-
-<p>&lt;script type="text/javascript"&gt; function show_confirm() </p>
-
-<p>{ </p>
-
-<p>var r=confirm("Press a button!"); </p>
-
-<p>if (r==true) </p>
-
-<p> { </p>
-
-<p> alert("You pressed OK!"); </p>
-
-<p> } else </p>
-
-<p> { </p>
-
-<p> alert("You pressed Cancel!"); </p>
-
-<p> } </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;input type="button" onclick="show_confirm()" value="Show a confirm
-    box"
-    /&gt; &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>4. </strong><br> <strong>Create a pop-up window Open a new window
-        when clicking on a button: </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function open_win() </p>
-
-<p>{ </p>
-
-<p>window.open("http://kishor.ucoz.com"); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;form&gt; </p>
-
-<p>&lt;input type=button value="Open Window" onclick="open_win()"&gt; </p>
-
-<p>&lt;/form&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>5. </strong><br> <strong>Open a new window and control its
-        appearance: </strong><br> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function open_win() </p>
-
-<p>{ </p>
-
-<p>window.open("http://www.w3schools.com","_blank","toolbar=yes,
-    location=yes,
-    directories=no, status=no,
-    menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400,
-    height=400"); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;form&gt; </p>
-
-<p>&lt;input type="button" value="Open Window" onclick="open_win()"&gt; </p>
-
-<p>&lt;/form&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>6. </strong><br> <strong>Open multiple new windows: </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function open_win() </p>
-
-<p>{ </p>
-
-<p>window.open("http://www.microsoft.com/");
-    window.open("http://kishor.ucoz.com"); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;form&gt; </p>
-
-<p>&lt;input type=button value="Open Windows" onclick="open_win()"&gt; </p>
-
-<p>&lt;/form&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>7. </strong><br> <strong>Close the new window: </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function openWin() </p>
-
-<p>{ </p>
-
-<p>myWindow=window.open("","","width=200,height=100");
-    myWindow.document.write("&lt;p&gt;This is
-    'myWindow'&lt;/p&gt;"); </p>
-
-<p>} </p>
-
-<p>function closeWin() </p>
-
-<p>{ </p>
-
-<p>myWindow.close(); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; &lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;input type="button" value="Open 'myWindow'" onclick="openWin()" /&gt;
-</p>
-
-<p>&lt;input type="button" value="Close 'myWindow'"
-    onclick="closeWin()"/&gt;
-</p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>8. </strong><br> <strong>Print the current page: </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function printpage() </p>
-
-<p>{ </p>
-
-<p>window.print(); </p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;input type="button" value="Print this page" onclick="printpage()"
-    /&gt;
-</p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; <strong>9. </strong><br> <strong>A simple timing:
-    </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; function timeText() </p>
-
-<p>{ </p>
-
-<p>var t1=setTimeout("document.getElementById('txt').value='2
-    seconds!'",2000);
-</p>
-
-<p>var t2=setTimeout("document.getElementById('txt').value='4
-    seconds!'",4000);
-</p>
-
-<p>var t3=setTimeout("document.getElementById('txt').value='6
-    seconds!'",6000);
-</p>
-
-<p>} </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;form&gt; </p>
-
-<p>&lt;input type="button" value="Display timed text!"
-    onclick="timeText()"/&gt;
-</p>
-
-<p>&lt;input type="text" /&gt; </p>
-
-<p>&lt;/form&gt; </p>
-
-<p>&lt;p&gt;Click the button above. The input field will tell you when two,
-    four, and six seconds have
-    passed…..&lt;/p&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p> &nbsp; </p>
-
-<p>JQUERY INTRODUCTION: jQuery is a fast and concise JavaScript Library
-    created
-    by John Resig in 2006 with a
-    nice motto: <strong>Write less, do more </strong><br>. jQuery simplifies
-    HTML document traversing, event
-    handling, animating, and Ajax interactions for rapid web development.
-    jQuery
-    is a JavaScript toolkit
-    designed to simplify various tasks by writing less code. Here is the
-    list of
-    important core features
-    supported by jQuery: </p>
-
-<p><strong>DOM manipulation: </strong><br>The jQuery made it easy to select
-    DOM
-    elements, negotiate them<strong>
-    </strong><br>and modifying their content by using cross-browser open
-    source
-    selector engine called
-    <strong>Sizzle </strong><br>.
-</p>
-
-<p><strong>Event handling: </strong><br>The jQuery offers an elegant way to
-    capture a wide variety of
-    events,<strong> </strong><br>such as a user clicking on a link, without
-    the
-    need to clutter the HTML code
-    itself with event handlers. </p>
-
-<p><strong>AJAX Support: </strong><br>The jQuery helps you a lot to develop
-    a
-    responsive and
-    feature-rich<strong> </strong><br>site using AJAX technology. </p>
-
-<p><strong>Animations: </strong><br>The jQuery comes with plenty of built-in
-    animation effects which you
-    can<strong> </strong><br>use in your websites. </p>
-
-<p><strong>Lightweight: </strong><br>The jQuery is very lightweight library
-    -
-    about 19KB in size (Minified
-    and<strong> </strong><br>gzipped). </p>
-
-<p><strong>Cross Browser Support: </strong><br>The jQuery has cross-browser
-    support, and works well in<strong>
-    </strong><br>IE </p>
-
-<p>6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+ </p>
-
-<p><strong>Latest Technology: </strong><br>The jQuery supports CSS3
-    selectors
-    and basic XPath syntax. </p>
-
-<p>Installation of jQuery: </p>
-
-<p>There are two ways to use jQuery. </p>
-
-<p><strong>Local Installation − </strong><br>You can download jQuery library
-    on
-    your local machine and<strong>
-    </strong><br>include it in your HTML code. </p>
-
-<p><strong>CDN Based Version − </strong><br>You can include jQuery library
-    into
-    your HTML code directly<strong>
-    </strong><br>from Content Delivery Network (CDN). </p>
-
-<p><strong>Local Installation: </strong><br></p>
-
-<p>Go to the https://jquery.com/download/ to download the latest version
-    available. </p>
-
-<p>Now, insert downloaded jquery-2.1.3.min.js file in a directory of your
-    website, e.g. </p>
-
-<p>C:/your-website-directory/jquery/jquery-2.1.3.min.js. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>Now, you can include jQuery library in your HTML file as follows: </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="/jquery/jquery2.1.3.min.js"&gt;&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>$(document).ready(function()</p>
-
-<p>{ </p>
-
-<p>document.write("Hello, World!"); </p>
-
-<p>}); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;h1&gt;Hello&lt;/h1&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result – </p>
-
-<p>Hello, World! </p>
-
-<p><strong>CDN Based Version: </strong><br></p>
-
-<p>You can include jQuery library into your HTML code directly from Content
-    Delivery Network (CDN). Google
-    and Microsoft provides content deliver for the latest version. We are
-    using
-    Google CDN version of the
-    library. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>Now, you can include jQuery library in your HTML file as follows: </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript" src= </p>
-
-<p>"http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
-</p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript"&gt; </p>
-
-<p>$(document).ready(function({ document.write("Hello, World!"); </p>
-
-<p>}); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;h1&gt;Hello&lt;/h1&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result – </p>
-
-<p>Hello, World! </p>
-
-<p><strong>Calling jQuery Library Functions: </strong><br></p>
-
-<p>If you want to an event work on your page, you should call it inside the
-    $(document).ready() function.
-    Everything inside it will load as soon as the DOM is loaded and before
-    the
-    page contents are loaded.
-</p>
-
-<p>To do this, we register a ready event for the document as follows: </p>
-
-<p>$(document).ready(function() { </p>
-
-<p>//write the stuff when DOM is ready </p>
-
-<p>}); </p>
-
-<p> </p>
-
-<p>To call upon any jQuery library function, use HTML script tags as shown
-    below: </p>
-
-<p> </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript" src="/jquery/jquery </p>
-
-<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
-
-<p>$(document).ready(function({ </p>
-
-<p>$("div").click(function() { Alert("Hello world!"); </p>
-
-<p>}); </p>
-
-<p>}); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;divfont-family: Consolas;">newdiv"&gt; </p>
-
-<p>Click on this to see a dialogue box. </p>
-
-<p> &nbsp;&lt;/div&gt; </p>
-
-<p> &lt;/body&gt; </p>
-
-<p> &lt;/html&gt; </p>
-
-<p><strong>Creating and Executing Custom Scripts: </strong><br></p>
-
-<p>It is better to write our custom code in custom JavaScript file:
-    <strong>custom.js </strong><br>, as follows:
-</p>
-
-<p>/* Filename: custom.js */ </p>
-
-<p>$(document).ready(function() { </p>
-
-<p>$("div").click(function() { alert("Hello world!"); </p>
-
-<p>}); </p>
-
-<p>}); </p>
-
-<p>Now we can include custom.js file in our HTML file as follows: </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The jQuery Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript" src="/jquery/jquery-</p>
-
-<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="/jquery/custom.js"&gt;&lt;/script&gt;
-</p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;divfont-family: Consolas;">newdiv"&gt; </p>
-
-<p>Click on this to see a dialogue box. </p>
-
-<p>&lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>Click on this to see a dialogue box. </p>
-
-<p> </p>
-
-<p> </p>
-
-<p>jQuery Selectors: </p>
-
-<p>The jQuery library binds the power of Cascading Style Sheets (CSS)
-    selectors
-    to let us quickly and easily
-    access elements or groups of elements in the Document Object Model
-    (DOM).
-</p>
-
-<p>A jQuery Selector is a function which makes use of expressions to find
-    out
-    matching elements from a DOM
-    based on the given criteria. </p>
-
-<p><strong>The $() Factory Function: </strong><br></p>
-
-<p>All type of selectors available in jQuery, always start with the dollar
-    sign
-    and parentheses: $(). The
-    factory function $() makes use of the following three building blocks
-    while
-    selecting elements in a
-    given document: </p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p>Selector </p>
-            </td>
-            <td>
-                <p>Description </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Tag Name </p>
-            </td>
-            <td>
-                <p>Represents a tag name available in the DOM. For example
-                    $('p') selects all paragraphs
-                    &lt;p&gt; in the document. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Tag ID </p>
-            </td>
-            <td>
-                <p>Represents a tag available with the given ID in the DOM.
-                    For
-                    example $('#some- id')
-                    selects the single element in the document that has an
-                    ID of
-                    some-id. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Tag Class </p>
-            </td>
-            <td>
-                <p>Represents a tag available with the given class in the
-                    DOM.
-                    For example $('.some-class')
-                    selects all elements in the document that have a class
-                    of
-                    some- class. </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p>All the above items can be used either on their own or in combination
-    with
-    other selectors. All the
-    jQuery selectors are based on the same principle except some tweaking.
-</p>
-
-<p><strong>NOTE: </strong><br> The factory function $() is a synonym of
-    jQuery()
-    function. So in case you are
-    using any other JavaScript library where $ sign is conflicting with
-    something else then you can replace
-    $ sign by jQuery name and you can use function jQuery() instead of $().
-</p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>Following is a simple example which makes use of Tag Selector. This would
-    select all the elements with a
-    tag name <strong>p </strong><br>. </p>
-
-<p>&lt;html&gt; </p>
-
-<p> </p>
-
-<p>&lt;head&gt; </p>
-
-<p> </p>
-
-<p>&lt;title&gt;the title&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript" src="/jquery/jquery-</p>
-
-<p>1.3.2.min.js"&gt;&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
-
-<p>$(document).ready(function() { var pars = $("p"); for( i=0;
-    i&lt;pars.length;
-    i++ ){ alert("Found
-    paragraph: " + pars[i].innerHTML); } </p>
-
-<p>}); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;pfont-family: Consolas;">myclass"&gt;This is a paragraph.&lt;/p&gt;
-</p>
-
-<p>&lt;pfont-family: Consolas;">myid"&gt;This is second paragraph.&lt;/p&gt;
-</p>
-
-<p>&lt;p&gt;This is third paragraph.&lt;/p&gt; </p>
-
-<p>&lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p> </p>
-
-<p><strong>Using of Selectors: </strong><br></p>
-
-<p>The selectors are very useful and would be required at every step while
-    using
-    jQuery. They get the exact
-    element that you want from your HTML document. </p>
-
-<p>Following table lists down few basic selectors and explains them with
-    examples. </p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p>Selector </p>
-            </td>
-            <td>
-                <p>Description </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Name </p>
-            </td>
-            <td>
-                <p>Selects all elements which match with the given element
-                    <strong>Name </strong><br>.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>#ID </p>
-            </td>
-            <td>
-                <p>Selects a single element which matches with the given
-                    <strong>ID </strong><br>.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>.Class </p>
-            </td>
-            <td>
-                <p>Selects all elements which matches with the given
-                    <strong>Class </strong><br>.
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Universal (*) </p>
-            </td>
-            <td>
-                <p>Selects all elements available in a DOM. </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Multiple Elements E, F,G </p>
-            </td>
-            <td>
-                <p>Selects the combined results of all the specified
-                    selectors
-                    <strong>E, F </strong><br> or
-                    <strong>G </strong><br>.
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong>jQuery – Element Name Selector: </strong><br></p>
-
-<p>The element selector selects all the elements that have a tag name of T.
-</p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>Here is the simple syntax to use this selector − </p>
-
-<p>$('tagname') </p>
-
-<p><strong>Parameters: </strong><br></p>
-
-<p>Here is the description of all the parameters used by this selector –
-</p>
-
-<p><strong>tagname </strong><br> − Any standard HTML tag name like div, p,
-    em,
-    img, li etc. </p>
-
-<p><strong>Returns: </strong><br></p>
-
-<p>Like any other jQuery selector, this selector also returns an array
-    filled
-    with the found elements.
-    <strong>Example: </strong><br>
-</p>
-
-<p>$('p') − Selects all elements with a tag name of p in the document. 
-    $('div') − Selects all elements
-    with a tag name of div in the document. </p>
-
-<p>Following example would select all the divisions and will apply yellow
-    color
-    to their background
-    &lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquer</p>
-
-<p>y.min.js"&gt; </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
-
-<p>$(document).ready(function() { </p>
-
-<p>/* This would select all the divisions */ </p>
-
-<p>$("div").css("background-color", "yellow"); }); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; </p>
-
-<p>&lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>This is first division of the DOM. </p>
-
-<p> </p>
-
-<p>This is second division of the DOM. </p>
-
-<p> </p>
-
-<p>This is third division of the DOM <strong>jQuery – Element ID Selector:
-    </strong><br></p>
-
-<p><strong>Description: </strong><br></p>
-
-<p>The element ID selector selects a single element with the given id
-    attribute.
-</p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>Here is the simple syntax to use this selector − </p>
-
-<p><strong>Parameters: </strong><br></p>
-
-<p>Here is the description of all the parameters used by this selector –
-</p>
-
-<p>Elementid: This would be an element ID. If the id contains any special
-    characters like periods or colons
-    you have to escape those characters with backslashes. </p>
-
-<p><strong>Returns: </strong><br></p>
-
-<p>Like any other jQuery selector, this selector also returns an array
-    filled
-    with the found element. </p>
-
-<p> </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>$('#myid') − Selects a single element with the given id myid. 
-    $('div#yourid') − Selects a single
-    division with the given id yourid. </p>
-
-<p>Following example would select second division and will apply yellow
-    color to
-    its background as below:
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-</p>
-
-<p>&gt; </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;script type="text/javascript" language="javascript"&gt; </p>
-
-<p>$(document).ready(function() { </p>
-
-<p>/* This would select second division only*/ </p>
-
-<p>$("#div2").css("background-color", "yellow"); }); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; </p>
-
-<p>&lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; </p>
-
-<p> &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is third division of the DOM.&lt;/p&gt; </p>
-
-<p> &lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>This is first division of the DOM. </p>
-
-<p>This is second division of the DOM. This is third division of the DOM.
-    <strong>jQuery - Element Class
-        Selector: </strong><br>
-</p>
-
-<p><strong>Description: </strong><br></p>
-
-<p>The element class selector selects all the elements which match with the
-    given class of the elements.
-</p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>Here is the simple syntax to use this selector: </p>
-
-<p>$('.classid') </p>
-
-<p><strong>Parameters: </strong><br></p>
-
-<p>Here is the description of all the parameters used by this selector – 
-    classid − This is class ID
-    available in the document. </p>
-
-<p><strong>Returns: </strong><br></p>
-
-<p>Like any other jQuery selector, this selector also returns an array
-    filled
-    with the found elements. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>$('.big') − Selects all the elements with the given class ID big. </p>
-
-<p>$('p.small') − Selects all the paragraphs with the given class ID small.
-    
-    $('.big.small') − Selects all
-    the elements with a class of big and small. </p>
-
-<p>Following example would select all divisions with class .big and will
-    apply
-    yellow color to its
-    background. </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-    &gt; </p>
-
-<p>&lt;/script&gt; &lt;script type="text/javascript"
-    language="javascript"&gt;
-</p>
-
-<p>$(document).ready(function() { </p>
-
-<p>/* This would select second division only*/ </p>
-
-<p>$(".big").css("background-color", "yellow"); }); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p> &lt;div&gt; </p>
-
-<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt;
-    &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>This is first division of the DOM. </p>
-
-<p>This is second division of the DOM. This is third division of the DOM
-    <strong>jQuery - Universal
-        Selector: </strong><br>
-</p>
-
-<p><strong>Description: </strong><br></p>
-
-<p>The universal selector selects all the elements available in the
-    document.
-</p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>Here is the simple syntax to use this selector − </p>
-
-<p>$('*') <strong>Parameters: </strong><br></p>
-
-<p>Here is the description of all the parameters used by this selector  * −
-    A
-    symbolic star. </p>
-
-<p><strong>Returns: </strong><br></p>
-
-<p>Like any other jQuery selector, this selector also returns an array
-    filled
-    with the found elements. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p> $('*') selects all the elements available in the document. </p>
-
-<p>Following example would select all the elements and will apply yellow
-    color
-    to their background. Try to
-    understand that this selector will select every element including head,
-    body
-    etc. </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-</p>
-
-<p>&gt; </p>
-
-<p>&lt;/script&gt; &lt;script type="text/javascript"
-    language="javascript"&gt;
-</p>
-
-<p>$(document).ready(function() { </p>
-
-<p>/* This would select all the elements */ </p>
-
-<p>$("*").css("background-color", "yellow"); }); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is second division of the DOM.&lt;/p&gt; </p>
-
-<p>&lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt;
-    &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>This is first division of the DOM. </p>
-
-<p> </p>
-
-<p>This is second division of the DOM. </p>
-
-<p> </p>
-
-<p>This is third division of the DOM </p>
-
-<p> &nbsp; </p>
-
-<p><strong>jQuery – Multiple Elements Selector: </strong><br></p>
-
-<p>Description: </p>
-
-<p>This Multiple Elements selector selects the combined results of all the
-    specified selectors E, F or G.
-    You can specify any number of selectors to combine into a single result.
-    Here order of the DOM elements
-    in the jQuery object aren't necessarily identical. </p>
-
-<p>Syntax: </p>
-
-<p>Here is the simple syntax to use this selector − </p>
-
-<p>$('E, F, G,....') </p>
-
-<p>Parameters: </p>
-
-<p>Here is the description of all the parameters used by this selector –
-</p>
-
-<p>E − Any valid selector </p>
-
-<p>F − Any valid selector </p>
-
-<p>G − Any valid selector </p>
-
-<p>Returns: </p>
-
-<p>Like any other jQuery selector, this selector also returns an array
-    filled
-    with the found elements. </p>
-
-<p>Example: </p>
-
-<p>$('div, p') − selects all the elements matched by div or p. </p>
-
-<p>$('p strong, .myclass') − selects all elements matched by strong that are
-    descendants of an element
-    matched by p as well as all elements that have a class of myclass. </p>
-
-<p>$('p strong, #myid') − selects a single element matched by strong that is
-    descendant of an element
-    matched by p as well as element whose id is myid. </p>
-
-<p>Following example would select elements with class ID big and element
-    with ID
-    div3 and will apply yellow
-    color to its background – </p>
-
-<p>&lt;html&gt; </p>
-
-<p>&lt;head&gt; </p>
-
-<p>&lt;title&gt;The Selecter Example&lt;/title&gt; </p>
-
-<p>&lt;script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-    &gt; </p>
-
-<p>&lt;/script&gt; &lt;script type="text/javascript"
-    language="javascript"&gt;
-</p>
-
-<p>$(document).ready(function() { </p>
-
-<p>$(".big, #div3").css("background-color", "yellow"); }); </p>
-
-<p>&lt;/script&gt; </p>
-
-<p>&lt;/head&gt; </p>
-
-<p>&lt;body&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is first division of the DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p> &lt;div&gt; </p>
-
-<p>&lt;p&gt;This is second division of the </p>
-
-<p>DOM.&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;div&gt; </p>
-
-<p>&lt;p&gt;This is third division of the DOM&lt;/p&gt; &lt;/div&gt; </p>
-
-<p>&lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce the following result: </p>
-
-<p>This is first division of the DOM. </p>
-
-<p>This is second division of the DOM. This is third division of the DOM
-    <strong>jQuery Selector Examples:
-    </strong><br>
-</p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>Syntax </strong><br></p>
-            </td>
-            <td>
-                <p><strong>Description </strong><br></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$(this) </p>
-            </td>
-            <td>
-                <p>Selects the current HTML element </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("p.intro") </p>
-            </td>
-            <td>
-                <p>Selects all &lt;p&gt; elements with </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("p:first") </p>
-            </td>
-            <td>
-                <p>Selects the first &lt;p&gt; element </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("ul li:first") </p>
-            </td>
-            <td>
-                <p>Selects the first &lt;li&gt; element of the first
-                    &lt;ul&gt;
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("ul li:first-child") </p>
-            </td>
-            <td>
-                <p>Selects the first &lt;li&gt; element of every &lt;ul&gt;
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("[href]") </p>
-            </td>
-            <td>
-                <p>Selects all elements with an href attribute </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("a[target='_blank']") </p>
-            </td>
-            <td>
-                <p>Selects all &lt;a&gt; elements with a target attribute
-                    value
-                    equal to "_blank" </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("a[target!='_blank']") </p>
-            </td>
-            <td>
-                <p>Selects all &lt;a&gt; elements with a target attribute
-                    value
-                    NOT equal to "_blank" </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$(":button") </p>
-            </td>
-            <td>
-                <p>Selects all &lt;button&gt; elements and &lt;input&gt;
-                    elements of type="button" </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("tr:even") </p>
-            </td>
-            <td>
-                <p>Selects all even &lt;tr&gt; elements </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>$("tr:odd") </p>
-            </td>
-            <td>
-                <p>Selects all odd &lt;tr&gt; elements </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong>jQuery DOM: </strong><br></p>
-
-<p>JQuery provides methods to manipulate DOM in efficient way. You do not
-    need
-    to write big code to modify
-    the value of any element's attribute or to extract HTML code from a
-    paragraph or division. </p>
-
-<p>JQuery provides methods such as .attr(), .html(), and .val() which act as
-    getters, retrieving information
-    from DOM elements for later use. </p>
-
-<p><strong>Content Manipulation: </strong><br></p>
-
-<p>The <strong>html( ) </strong><br> method gets the html contents
-    (innerHTML)
-    of the first matched element. Here
-    is the syntax for the method − <em>selector</em>.html( )
-    <strong>Example:
-    </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p> &lt;head&gt; </p>
-
-<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
-    "text/javascript" src = </p>
-
-<p>"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;
-    &lt;/script&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
-
-<p> $(document).ready(function() { </p>
-
-<p> $("div").click(function () { var content = $(this).html();
-    $("#result").text( content ); </p>
-
-<p> }); </p>
-
-<p> }); </p>
-
-<p> &lt;/script&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;style&gt; </p>
-
-<p> #division{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
-    &lt;/style&gt; </p>
-
-<p> &lt;/head&gt; </p>
-
-<p> &nbsp; </p>
-
-<p> &lt;body&gt; </p>
-
-<p> &lt;p&gt;Click on the square below:&lt;/p&gt; </p>
-
-<p> &lt;span id = "result"&gt; &lt;/span&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;div id = "division" style = "background-color:blue;"&gt; </p>
-
-<p> This is Blue Square!! </p>
-
-<p> &lt;/div&gt; </p>
-
-<p> &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p><strong>text( </strong><br><strong>val </strong><br><strong>):
-    </strong><br>
-</p>
-
-<p>The <strong>text( </strong><br><strong>val </strong><br><strong> )
-    </strong><br> method sets the combined text contents
-    of all matched elements. </p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>selector.text( val ) <strong>Example: </strong><br></p>
-
-<p>&lt;html&gt; </p>
-
-<p> &lt;head&gt; </p>
-
-<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
-    "text/javascript" src = </p>
-
-<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
-</p>
-
-<p> &lt;/script&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
-
-<p> $(document).ready(function() { </p>
-
-<p> $("div").click(function () { </p>
-
-<p> $(this).text( "&lt;h1&gt;Click another square&lt;/h1&gt;"); </p>
-
-<p> }); </p>
-
-<p> }); </p>
-
-<p> &lt;/script&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;style&gt; </p>
-
-<p> .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
-    &lt;/style&gt; </p>
-
-<p> &lt;/head&gt; </p>
-
-<p> &nbsp; </p>
-
-<p> &lt;body&gt; </p>
-
-<p> &lt;p&gt;Click on any square below to see the result:&lt;/p&gt; </p>
-
-<p> &nbsp; &nbsp; </p>
-
-<p> &lt;div class = "div" style = "background-color:blue;"&gt;&lt;/div&gt;
-</p>
-
-<p> &lt;div class = "div" style = "background-color:green;"&gt;&lt;/div&gt;
-</p>
-
-<p> &lt;div class = "div" style = "background-color:red;"&gt;&lt;/div&gt;
-</p>
-
-<p> &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p> </p>
-
-<p><strong>jQuery Events: </strong><br></p>
-
-<p>jQuery is tailor-made to respond to events in an HTML page. All the
-    different
-    visitors' actions that a
-    web page can respond to are called events. An event represents the
-    precise
-    moment when something
-    happens. </p>
-
-<p><strong>Examples: </strong><br></p>
-
-<p>moving a mouse over an element </p>
-
-<p>selecting a radio button </p>
-
-<p>clicking on an element </p>
-
-<p>Here are some common DOM events: </p>
-
-<table>
-    <colgroup>
-        <col>
-        <col>
-        <col>
-        <col>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>Mouse Events </strong><br> </p>
-            </td>
-            <td>
-                <p><strong>Keyboard Events </strong><br> </p>
-            </td>
-            <td>
-                <p><strong>Form Events </strong><br> </p>
-            </td>
-            <td>
-                <p><strong>Document/Window Events </strong><br> </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Click </p>
-            </td>
-            <td>
-                <p>keypress </p>
-            </td>
-            <td>
-                <p>submit </p>
-            </td>
-            <td>
-                <p>load </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>dblclick </p>
-            </td>
-            <td>
-                <p>keydown </p>
-            </td>
-            <td>
-                <p>change </p>
-            </td>
-            <td>
-                <p>resize </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>mouseenter </p>
-            </td>
-            <td>
-                <p>keyup </p>
-            </td>
-            <td>
-                <p>focus </p>
-            </td>
-            <td>
-                <p>scroll </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>mouseleave </p>
-            </td>
-            <td>
-                <p> </p>
-            </td>
-            <td>
-                <p>blur </p>
-            </td>
-            <td>
-                <p>unload </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p><strong> </strong><br></p>
-
-<p><strong> </strong><br></p>
-
-<p><strong>Syntax: </strong><br></p>
-
-<p>In jQuery, most DOM events have an equivalent jQuery method. To assign a
-    click event to all paragraphs on
-    a page, you can do this: </p>
-
-<p>$(selector).click(); </p>
-
-<p>Sometime you need to define what should happen when the event fires, then
-    you
-    must pass a function to the
-    event: </p>
-
-<p>$(selector).click(function(){ // action goes here!! }); </p>
-
-<p><strong>Commonly used jQuery Events: $(document).ready(): </strong><br>
-</p>
-
-<p>The <sub>$(document).ready()</sub> method allows us to execute a function
-    when the document is fully
-    loaded. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>$(document).ready(function(){ alert("Hello World!"); </p>
-
-<p>}); </p>
-
-<p><strong>click(): </strong><br></p>
-
-<p>The click() method attaches an event handler function to an HTML element.
-    The
-    function is executed when
-    the user clicks on the HTML element. </p>
-
-<p><strong>Example: </strong><br></p>
-
-<p>$("p").click(function(){ </p>
-
-<p> $(this).hide(); </p>
-
-<p>}); </p>
-
-<p><strong>jQuery Attributes: </strong><br></p>
-
-<p>Some of the most basic components we can manipulate when it comes to DOM
-    elements are the properties and
-    attributes assigned to those elements. </p>
-
-<p>Most of these attributes are available through JavaScript as DOM node
-    properties. Some of the more common
-    properties are −  &nbsp;className </p>
-
-<p>tagName </p>
-
-<p>id </p>
-
-<p>href </p>
-
-<p>title </p>
-
-<p>rel </p>
-
-<p>src </p>
-
-<p>Consider the following HTML markup for an image element – </p>
-
-<p>&lt;img id = "imageid" src = "image.gif" alt = "Image" class = "myclass"
-    title = "This is an image"/&gt;
-</p>
-
-<p>In this element's markup, the tag name is img, and the markup for id,
-    src,
-    alt, class, and title
-    represents the element's attributes, each of which consists of a name
-    and a
-    value. jQuery gives us the
-    means to easily manipulate an element's attributes and gives us access
-    to
-    the element so that we can
-    also change its properties. </p>
-
-<p><strong>Get Attribute Value: </strong><br></p>
-
-<p>The <strong>attr </strong><br><strong>() </strong><br> method can be used
-    to
-    either fetch the value of an attribute
-    from the first element in the matched set or set attribute values onto
-    all
-    matched elements.
-    <strong>Example: </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p> &lt;head&gt; </p>
-
-<p> &lt;title&gt;The jQuery Example&lt;/title&gt; &lt;script type =
-    "text/javascript" src = </p>
-
-<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
-</p>
-
-<p> &lt;/script&gt; &nbsp; </p>
-
-<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
-
-<p> $(document).ready(function() { var title = $("em").attr("title"); </p>
-
-<p> $("#divid").text(title); </p>
-
-<p> }); </p>
-
-<p> &lt;/script&gt; </p>
-
-<p> &lt;/head&gt; </p>
-
-<p> &lt;body&gt; </p>
-
-<p> &lt;div&gt; </p>
-
-<p> &lt;em title = "Bold and Brave"&gt;This is first paragraph.&lt;/em&gt;
-</p>
-
-<p> &lt;p id = "myid"&gt;This is second paragraph.&lt;/p&gt; </p>
-
-<p> &lt;div id = "divid"&gt;&lt;/div&gt; </p>
-
-<p> &lt;/div&gt; </p>
-
-<p> &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
-
-<p>This will produce following result – <em>This is first paragraph.</em>
-</p>
-
-<p>This is second paragraph. Bold and Brave </p>
-
-<p><strong>Set Attribute Value: </strong><br></p>
-
-<p>The <strong>attr </strong><br><strong>(name, value) </strong><br> method
-    can
-    be used to set the named attribute
-    onto all elements in the wrapped set using the passed value.
-    <strong>Example: </strong><br>
-</p>
-
-<p>&lt;html&gt; </p>
-
-<p> &lt;head&gt; </p>
-
-<p> &lt;title&gt;The jQuery Example&lt;/title&gt; </p>
-
-<p> &lt;base href="https://www.tutorialspoint.com" /&gt; </p>
-
-<p> &lt;script type = "text/javascript" src = </p>
-
-<p>"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"&gt;
-</p>
-
-<p> &lt;/script&gt; &nbsp; </p>
-
-<p> &lt;script type = "text/javascript" language = "javascript"&gt; </p>
-
-<p> $(document).ready(function() { </p>
-
-<p> $("#myimg").attr("src", "/jquery/images/jquery.jpg"); </p>
-
-<p> }); </p>
-
-<p> &lt;/script&gt; </p>
-
-<p> &lt;/head&gt; &nbsp; </p>
-
-<p> &lt;body&gt; </p>
-
-<p> &lt;div&gt; </p>
-
-<p> &lt;img id = "myimg" src = "/images/jquery.jpg" alt = "Sample image"
-    /&gt;
-</p>
-
-<p> &lt;/div&gt; </p>
-
-<p> &lt;/body&gt; </p>
-
-<p>&lt;/html&gt; </p>
- 
-</div>
-
-<pre>
-
-
-</pre>
-<div class="button-container">
-<a href="page5.html" class="previous-button">&laquo; Previous</a>
-<a href="page7.html" class="next-button ">Next &raquo;</a>
-</div>
-
-<pre>
-
-
-
-</pre>
-<!--footer on my code-->
-<footer class=" footer ">
-<div class="container ">
-<div class="row ">
-<div class="footer-col ">
-<h4>company</h4>
-<ul>
-<li>
-<a href="index.html ">HOME</a>
-</li>
-<li><a href="aboutus.html " target="_blank ">About us</a></li>
-<li><a href="# " target="_blank ">Blog</a></li>
-<li><a href="privacy.html " target="_blank ">Privacy policy</a>
-</li>
-
-</ul>
-</div>
-<div class="footer-col ">
-<h4>get help</h4>
-<ul>
-<li><a href="Fqa.html ">FAQ</a></li>
-
-</ul>
-</div>
-<div class="footer-col ">
-<h4>follow us</h4>
-<div class="social-links ">
-<a href="# "><i class="fab fa-facebook-f "></i></a>
-<a href="# "><i class="fab fa-twitter "></i></a>
-<a href="# "><i class="fab fa-instagram "></i></a>
-<a href="# "><i class="fab fa-linkedin-in "></i></a>
-</div>
-</div>
-</div>
-</div>
-</footer>
-
+                        <h2>AJAX AND ANGULAR JS </h2>
+                        
+                        <p><b>INTRODUCTION TO AJAX: </b></p>
+                        
+                        <p>AJAX stands for <strong>A </strong><br>synchronous <strong>Ja
+                            </strong><br>vaScript and <strong>X </strong><br>ML. AJAX
+                            is a new technique for creating better, faster, and more interactive web
+                            applications with the help of
+                            XML, HTML, CSS, and Java Script. </p>
+                        
+                        <p>Ajax uses XHTML for content, CSS for presentation, along with Document
+                            Object
+                            Model and JavaScript for
+                            dynamic content display. </p>
+                        
+                        <p>Conventional web applications transmit information to and from the sever
+                            using synchronous requests. It
+                            means you fill out a form, hit submit, and get directed to a new page
+                            with
+                            new information from the
+                            server. </p>
+                        
+                        <p>With AJAX, when you hit submit, JavaScript will make a request to the
+                            server,
+                            interpret the results, and
+                            update the current screen. In the purest sense, the user would never
+                            know
+                            that anything was even
+                            transmitted to the server. </p>
+                        
+                        <p>XML is commonly used as the format for receiving server data, although
+                            any
+                            format, including plain text,
+                            can be used. </p>
+                        
+                        <p>AJAX is a web browser technology independent of web server software. </p>
+                        
+                        <p>A user can continue to use the application while the client program
+                            requests
+                            information from the server
+                            in the background. </p>
+                        
+                        <p>Intuitive and natural user interaction. Clicking is not required, mouse
+                            movement is a sufficient event
+                            trigger. </p>
+                        
+                        <p>Data-driven as opposed to page-driven. </p>
+                        
+                        <p>AJAX is based on the following open standards − </p>
+                        
+                        <p>Browser-based presentation using HTML and Cascading Style Sheets (CSS).
+                        </p>
+                        
+                        <p>Data is stored in XML format and fetched from the server. </p>
+                        
+                        <p>Behind-the-scenes data fetches using XMLHttpRequest objects in the
+                            browser. 
+                            &nbsp;JavaScript to make
+                            everything happen. </p>
+                        
+                        <p>AJAX cannot work independently. It is used in combination with other
+                            technologies to create interactive
+                            webpages. </p>
+                        
+                        <p><strong>JavaScript: </strong><br></p>
+                        
+                        <p>Loosely typed scripting language. </p>
+                        
+                        <p>JavaScript function is called when an event occurs in a page. 
+                            &nbsp;Glue
+                            for the whole AJAX operation.
+                        </p>
+                        
+                        <p><strong>DOM: </strong><br></p>
+                        
+                        <p>API for accessing and manipulating structured documents. 
+                            &nbsp;Represents
+                            the structure of XML and HTML
+                            documents. </p>
+                        
+                        <p><strong>CSS: </strong><br></p>
+                        
+                        <p>Allows for a clear separation of the presentation style from the content
+                            and
+                            may be changed
+                            programmatically by JavaScript <strong>XMLHttpRequest
+                            </strong><br><strong>:
+                            </strong><br></p>
+                        
+                        <p>JavaScript object that performs asynchronous interaction with the server.
+                        </p>
+                        
+                        <p> </p>
+                        
+                        <p>AJAX Browser Support: </p>
+                        
+                        <p>All the available browsers cannot support AJAX. Here is a list of major
+                            browsers that support AJAX. </p>
+                        
+                        <p>Mozilla Firefox 1.0 and above. </p>
+                        
+                        <p>Netscape version 7.1 and above. </p>
+                        
+                        <p>Apple Safari 1.2 and above. </p>
+                        
+                        <p>Microsoft Internet Explorer 5 and above. </p>
+                        
+                        <p>Konqueror. </p>
+                        
+                        <p>Opera 7.6 and above. </p>
+                        
+                        <p>When you write your next application, do consider the browsers that do
+                            not
+                            support AJAX. </p>
+                        
+                        <p><strong>NOTE </strong><br> − When we say that a browser does not support
+                            AJAX, it simply means that the
+                            browser does not support the creation of Javascript object –
+                            XMLHttpRequest
+                            object. </p>
+                        
+                        <p><strong>Writing Browser Specific Code: </strong><br></p>
+                        
+                        <p>The simplest way to make your source code compatible with a browser is to
+                            use
+                            <em>try…catch</em> blocks
+                            in your JavaScript.
+                        </p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;script language = "javascript" type = "text/javascript"&gt; </p>
+                        
+                        <p> &lt;!– </p>
+                        
+                        <p> //Browser Support Code function ajaxFunction() { var ajaxRequest; // The
+                            variable that makes Ajax
+                            possible! </p>
+                        
+                        <p> </p>
+                        
+                        <p> Try { </p>
+                        
+                        <p> // Opera 8.0+, Firefox, Safari </p>
+                        
+                        <p> ajaxRequest = new XMLHttpRequest(); </p>
+                        
+                        <p> } catch (e) { </p>
+                        
+                        <p> </p>
+                        
+                        <p> // Internet Explorer Browsers try { </p>
+                        
+                        <p> ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+                        
+                        <p> } catch (e) { </p>
+                        
+                        <p> try { </p>
+                        
+                        <p> ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+                        
+                        <p> } catch (e) { </p>
+                        
+                        <p> </p>
+                        
+                        <p> // Something went wrong alert("Your browser broke!"); </p>
+                        
+                        <p> return false; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> &lt;/script&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;form name = „myForm‟&gt; </p>
+                        
+                        <p> Name: &lt;input type = „text‟ name = „username‟ /&gt; &lt;br /&gt; </p>
+                        
+                        <p> Time: &lt;input type = „text‟ name = „time‟ /&gt; </p>
+                        
+                        <p> &lt;/form&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;/body&gt; </p>
+                        
+                        <p>&lt;/html&gt; </p>
+                        
+                        <p>In the above JavaScript code, we try three times to make our
+                            XMLHttpRequest
+                            object. Our first attempt –
+                        </p>
+                        
+                        <p>ajaxRequest = new XMLHttpRequest(); </p>
+                        
+                        <p>It is for Opera 8.0+, Firefox, and Safari browsers. If it fails, we try
+                            two
+                            more times to make the
+                            correct object for an Internet Explorer browser with – </p>
+                        
+                        <p>ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+                        
+                        <p>ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+                        
+                        <p>If it doesn‟t work, then we can use a very outdated browser that doesn‟t
+                            support XMLHttpRequest, which
+                            also means it doesn‟t support AJAX. </p>
+                        
+                        <p>Most likely though, our variable ajaxRequest will now be set to whatever
+                            <em>XMLHttpRequest</em> standard
+                            the browser uses and we can start sending data to the server.
+                        </p>
+                        
+                        <p><strong>AJAX Working Flow: </strong><br></p>
+                        
+                        <p>The following steps are included when you run an AJAX Program: </p>
+                        
+                        <p><strong>Step-1: </strong><br>A client event occurs. </p>
+                        
+                        <p><strong>Step-2: </strong><br> An XMLHttpRequest object is created. </p>
+                        
+                        <p><strong>Step-3: </strong><br> The XMLHttpRequest object is configured.
+                        </p>
+                        
+                        <p><strong>Step-4: </strong><br>The XMLHttpRequest object makes an
+                            asynchronous
+                            request to the Webserver. </p>
+                        
+                        <p><strong>Step-5: </strong><br>The Webserver returns the result containing
+                            XML
+                            document. </p>
+                        
+                        <p><strong>Step-6: </strong><br>The XMLHttpRequest object calls the
+                            callback()
+                            function and processes the
+                            result. <strong>Step-7: </strong><br> The HTML DOM is updated. </p>
+                        
+                        <div><img src="#"></div>
+                        
+                        <p>Let us look at these steps one by one. </p>
+                        
+                        <p><strong>Step-1: A Client Event Occurs </strong><br></p>
+                        
+                        <p>A JavaScript function is called as the result of an event. </p>
+                        
+                        <p>Example − <em>validateUserId</em><em>()</em> JavaScript function is
+                            mapped as
+                            an event handler to an
+                            <em>onkeyup</em> event on input form field whose id is set to
+                            <em>"</em><em>userid</em><em>"</em>
+                        </p>
+                        
+                        <p>&lt;input type = "text" size = "20" id = "userid" name = "id" onkeyup =
+                        </p>
+                        
+                        <p>"validateUserId();"&gt;. </p>
+                        
+                        <p><strong>Step-2: The </strong><br><strong>XMLHttpRequest
+                            </strong><br><strong>
+                                Object is Created </strong><br>var
+                            ajaxRequest; // The variable that makes Ajax possible! function
+                            ajaxFunction() { </p>
+                        
+                        <p> try { </p>
+                        
+                        <p> // Opera 8.0+, Firefox, Safari </p>
+                        
+                        <p> ajaxRequest = new XMLHttpRequest(); </p>
+                        
+                        <p> } catch (e) { </p>
+                        
+                        <p> </p>
+                        
+                        <p> // Internet Explorer Browsers try { </p>
+                        
+                        <p> ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP"); </p>
+                        
+                        <p> } catch (e) { try { </p>
+                        
+                        <p> ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+                        
+                        <p> } catch (e) { </p>
+                        
+                        <p> // Something went wrong alert("Your browser broke!"); </p>
+                        
+                        <p> return false; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } } </p>
+                        
+                        <p><strong>Configuration of the </strong><br><strong>XMLHttpRequest
+                            </strong><br><strong> Object: </strong><br></p>
+                        
+                        <p>In this step, we will write a function that will be triggered by the
+                            client
+                            event and a callback function
+                            processRequest() will be registered. function validateUserId() {
+                            ajaxFunction(); </p>
+                        
+                        <p> // Here processRequest() is the callback function.
+                            ajaxRequest.onreadystatechange = processRequest; if
+                            (!target) target = document.getElementById("userid"); var url =
+                            "validate?id=" + escape(target.value);
+                            ajaxRequest.open("GET", url, true); ajaxRequest.send(null); } </p>
+                        
+                        <p><strong>Making Asynchronous Request to the Webserver: </strong><br></p>
+                        
+                        <p>Source code is available in the above piece of code. Code written in bold
+                            typeface is responsible to make
+                            a request to the webserver. This is all being done using the
+                            XMLHttpRequest
+                            object <em>ajaxRequest</em>.
+                        </p>
+                        
+                        <p>function validateUserId() { ajaxFunction(); </p>
+                        
+                        <p> // Here processRequest() is the callback function.
+                            ajaxRequest.onreadystatechange = processRequest;
+                            <strong>if (!target) target =
+                            </strong><br><strong>document.getElementById </strong><br><strong>("
+                            </strong><br><strong>userid </strong><br><strong>");
+                                var </strong><br><strong>url </strong><br><strong> = "
+                            </strong><br><strong>validate?id </strong><br><strong> = " +
+                                escape( </strong><br><strong>target.value </strong><br><strong>);
+                            </strong><br>
+                        </p>
+                        
+                        <p><strong> </strong><br><strong>ajaxRequest.open
+                            </strong><br><strong>("GET",
+                            </strong><br><strong>url </strong><br><strong>,
+                                true); </strong><br><strong>ajaxRequest.send
+                            </strong><br><strong>(null); </strong><br> } </p>
+                        
+                        <p>Assume you enter Zara in the userid box, then in the above request, the
+                            URL
+                            is set to "validate?id =
+                            Zara". </p>
+                        
+                        <p><strong>Webserver Returns the Result Containing XML Document:
+                            </strong><br>
+                        </p>
+                        
+                        <p>You can implement your server-side script in any language; however its
+                            logic
+                            should be as follows. </p>
+                        
+                        <p>Get a request from the client. </p>
+                        
+                        <p>Parse the input from the client. </p>
+                        
+                        <p>Do required processing. </p>
+                        
+                        <p>Send the output to the client. </p>
+                        
+                        <p>If we assume that you are going to write a servlet, then here is the
+                            piece of
+                            code. public void
+                            doGet(HttpServletRequest request, </p>
+                        
+                        <p> HttpServletResponse response) throws IOException, ServletException {
+                            String
+                            targetId =
+                            request.getParameter("id"); </p>
+                        
+                        <p> if ((targetId != null) &amp;&amp;
+                            !accounts.containsKey(targetId.trim())) {
+                            response.setContentType("text/xml"); response.setHeader("Cache-Control",
+                            "no-cache");
+                            response.getWriter().write("&lt;valid&gt;true&lt;/valid&gt;"); </p>
+                        
+                        <p> } else { </p>
+                        
+                        <p> response.setContentType("text/xml"); response.setHeader("Cache-Control",
+                            "no-cache");
+                            response.getWriter().write("&lt;valid&gt;false&lt;/valid&gt;"); </p>
+                        
+                        <p> } } </p>
+                        
+                        <p><strong>Callback Function </strong><br><strong>processRequest
+                            </strong><br><strong>() is Called: </strong><br></p>
+                        
+                        <p>The XMLHttpRequest object was configured to call the processRequest()
+                            function when there is a state
+                            change to the <em>readyState</em> of the <em>XMLHttpRequest</em> object.
+                            Now
+                            this function will receive
+                            the result from the server and will do the required processing. As in
+                            the
+                            following example, it sets a
+                            variable message on true or false based on the returned value from the
+                            Webserver. </p>
+                        
+                        <p> function processRequest() { if (req.readyState == 4) { if (req.status ==
+                            200) { var message = ...; </p>
+                        
+                        <p>... </p>
+                        
+                        <p>} </p>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p><strong>Updating the HTML DOM: </strong><br></p>
+                        
+                        <p>This is the final step and in this step, your HTML page will be updated.
+                            It
+                            happens in the following way
+                            − </p>
+                        
+                        <p>JavaScript gets a reference to any element in a page using DOM API. </p>
+                        
+                        <p>The recommended way to gain a reference to an element is to call.
+                            document.getElementById("userIdMessage"), // where "userIdMessage" is
+                            the ID
+                            attribute </p>
+                        
+                        <p>// of an element appearing in the HTML document </p>
+                        
+                        <p>JavaScript may now be used to modify the element's attributes; modify the
+                            element's style properties; or
+                            add, remove, or modify the child elements. Here is an example −
+                            &lt;script
+                            type = "text/javascript"&gt;
+                        </p>
+                        
+                        <p> &lt;!-- </p>
+                        
+                        <p> function setMessageUsingDOM(message) { </p>
+                        
+                        <p> var userMessageElement = document.getElementById("userIdMessage"); var
+                            messageText; if (message ==
+                            "false") { userMessageElement.style.color = "red"; messageText =
+                            "Invalid
+                            User Id"; </p>
+                        
+                        <p> } else { </p>
+                        
+                        <p> userMessageElement.style.color = "green"; messageText = "Valid User Id";
+                        </p>
+                        
+                        <p> } </p>
+                        
+                        <p> var messageBody = document.createTextNode(messageText); </p>
+                        
+                        <p> // if the messageBody element has been created simple // replace it
+                            otherwise append the new element if
+                            (userMessageElement.childNodes[0]) { </p>
+                        
+                        <p> userMessageElement.replaceChild(messageBody,
+                            userMessageElement.childNodes[0]); </p>
+                        
+                        <p> } else { </p>
+                        
+                        <p> userMessageElement.appendChild(messageBody); </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> --&gt; </p>
+                        
+                        <p>&lt;/script&gt; </p>
+                        
+                        <p>&lt;body&gt; </p>
+                        
+                        <p> &lt;div id = "userIdMessage"&gt;&lt;div&gt; </p>
+                        
+                        <p>&lt;/body&gt; </p>
+                        
+                        <p>If you have understood the above-mentioned seven steps, then you are
+                            almost
+                            done with AJAX. </p>
+                        
+                        <p><strong>Creating an </strong><br><strong>XMLHttpRequest
+                            </strong><br><strong>
+                                Object: </strong><br></p>
+                        
+                        <p>The XMLHttpRequest object is the key to AJAX. It has been available ever
+                            since Internet Explorer 5.5 was
+                            released in July 2000, but was not fully discovered until AJAX and Web
+                            2.0
+                            in 2005 became popular. </p>
+                        
+                        <p>XMLHttpRequest (XHR) is an API that can be used by JavaScript, JScript,
+                            VBScript, and other web browser
+                            scripting languages to transfer and manipulate XML data to and from a
+                            webserver using HTTP, establishing
+                            an independent connection channel between a webpage's Client-Side and
+                            Server-Side. </p>
+                        
+                        <p>The data returned from XMLHttpRequest calls will often be provided by
+                            back-end databases. Besides XML,
+                            XMLHttpRequest can be used to fetch data in other formats, e.g. JSON or
+                            even
+                            plain text. </p>
+                        
+                        <p>You already have seen a couple of examples on how to create an
+                            XMLHttpRequest
+                            object. Listed below are
+                            some of the methods and properties that you have to get familiar with.
+                        </p>
+                        
+                        <p><strong>XMLHttpRequest </strong><br><strong> Methods </strong><br></p>
+                        
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><strong>Method Name </strong><br></p>
+                                    </td>
+                                    <td>
+                                        <p><strong>Description </strong><br></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>abort( ) </p>
+                                    </td>
+                                    <td>
+                                        <p>Cancels the current request. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>getAllResponseHeaders() </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the complete set of HTTP headers as a string.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>getResponseHeader( headerName ) </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the value of the specified HTTP header. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>open( method, URL ) open( method, URL, async ) open(
+                                            method,
+                                            URL, async, userName ) open(
+                                            method, URL, async, userName, password ) </p>
+                                    </td>
+                                    <td>
+                                        <p>Specifies the method, URL, and other optional attributes
+                                            of a
+                                            request. </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p>The method parameter can have a value of "GET", "POST", or "HEAD". Other
+                            HTTP
+                            methods such as "PUT" and
+                            "DELETE" (primarily used in REST applications) may be possible. </p>
+                        
+                        <p>The "async" parameter specifies whether the request should be handled
+                            asynchronously or not. "true" means
+                            that the script processing carries on after the send() method without
+                            waiting for a response, and
+                            "false" means that the script waits for a response before continuing
+                            script
+                            processing. </p>
+                        
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><strong>Method Name </strong><br></p>
+                                    </td>
+                                    <td>
+                                        <p><strong>Description </strong><br></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>send(content) </p>
+                                    </td>
+                                    <td>
+                                        <p>Sends the request. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>setRequestHeader( label, value ) </p>
+                                    </td>
+                                    <td>
+                                        <p>Adds a label/value pair to the HTTP header to be sent.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p><strong>XMLHttpRequest </strong><br><strong> Properties: </strong><br>
+                        </p>
+                        
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><strong>Property Name </strong><br></p>
+                                    </td>
+                                    <td>
+                                        <p><strong>Description </strong><br></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>onreadystatechange </p>
+                                    </td>
+                                    <td>
+                                        <p>An event handler for an event that fires at every state
+                                            change. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>readyState </p>
+                                    </td>
+                                    <td>
+                                        <p>The readyState property defines the current state of the
+                                            XMLHttpRequest object. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>responseText </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the response as a string. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>responseXML </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the response as XML. This property returns an XML
+                                            document object, which can be
+                                            examined and parsed using the W3C </p>
+                        
+                                        <p>DOM node tree methods and properties. </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>status </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the status as a number (e.g., 404 for "Not Found"
+                                            and
+                                            200 for "OK"). </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>statusText </p>
+                                    </td>
+                                    <td>
+                                        <p>Returns the status as a string (e.g., "Not Found" or
+                                            "OK").
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p> </p>
+                        
+                        <p> </p>
+                        
+                        <p> </p>
+                        
+                        <p>The following table provides a list of the possible values for the
+                            readyState
+                            property − </p>
+                        
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><strong>State </strong><br></p>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <p><strong>Description </strong><br></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>0 </p>
+                                    </td>
+                                    <td>
+                                        <p>The request is not initialized. </p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1 </p>
+                                    </td>
+                                    <td>
+                                        <p>The request has been set up. </p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>2 </p>
+                                    </td>
+                                    <td>
+                                        <p>The request has been sent. </p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>3 </p>
+                                    </td>
+                                    <td>
+                                        <p>The request is in process. </p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>4 </p>
+                                    </td>
+                                    <td>
+                                        <p>The request is completed. </p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p><strong>readyState </strong><br><strong> = 0: </strong><br> After you
+                            have
+                            created the XMLHttpRequest object, but
+                            before you have called the open() method. </p>
+                        
+                        <p><strong>readyState </strong><br><strong> = 1: </strong><br> After you
+                            have
+                            called the open() method, but before you
+                            have called send(). </p>
+                        
+                        <p><strong>readyState </strong><br><strong> = 2: </strong><br> After you
+                            have
+                            called send(). </p>
+                        
+                        <p><strong>readyState </strong><br><strong> = 3: </strong><br> After the
+                            browser
+                            has established a communication with
+                            the server, but before the server has completed the response. </p>
+                        
+                        <p><strong>readyState </strong><br><strong> = 4: </strong><br> After the
+                            request
+                            has been completed, and the response
+                            data has been completely received from the server. </p>
+                        
+                        <p><strong>Handling XML Data with AJAX: </strong><br></p>
+                        
+                        <p>The following example shows how we handle the XML data with the help of
+                            the
+                            AJAX. </p>
+                        
+                        <p>AJAXHtml.HTML: </p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p>&lt;head&gt; </p>
+                        
+                        <p>&lt;title&gt;Handling XML Data with AJAX&lt;/title&gt; </p>
+                        
+                        <p>&lt;style&gt; table,th,td { </p>
+                        
+                        <p> &nbsp; &nbsp;border : 1px solid black; </p>
+                        
+                        <p> &nbsp; &nbsp;border-collapse: collapse; </p>
+                        
+                        <p>} </p>
+                        
+                        <p>th,td { </p>
+                        
+                        <p> &nbsp; &nbsp;padding: 5px; </p>
+                        
+                        <p>} </p>
+                        
+                        <p>&lt;/style&gt; </p>
+                        
+                        <p>&lt;/head&gt; </p>
+                        
+                        <p>&lt;body&gt; </p>
+                        
+                        <p>&lt;h1&gt;The XMLHttpRequest Object&lt;/h1&gt; </p>
+                        
+                        <p>&lt;button type="button" onclick="loadDoc()"&gt;Get my CD
+                            collection&lt;/button&gt; </p>
+                        
+                        <p>&lt;br&gt;&lt;br&gt; </p>
+                        
+                        <p>&lt;table&gt; </p>
+                        
+                        <p>&lt;/table&gt; </p>
+                        
+                        <p>&lt;script&gt; function loadDoc() { </p>
+                        
+                        <p> var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function()
+                            { if
+                            (this.readyState == 4
+                            &amp;&amp; this.status == 200) { myFunction(this); </p>
+                        
+                        <p> } </p>
+                        
+                        <p> }; </p>
+                        
+                        <p> xhttp.open("GET", "cd_catalog.xml", true); xhttp.send(); </p>
+                        
+                        <p>} </p>
+                        
+                        <p>function myFunction(xml) { </p>
+                        
+                        <p> var i; </p>
+                        
+                        <p> var xmlDoc = xml.responseXML; var
+                            table="&lt;tr&gt;&lt;th&gt;Artist&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;";
+                            var x =
+                            xmlDoc.getElementsByTagName("CD"); </p>
+                        
+                        <p> for (i = 0; i &lt;x.length; i++) { table += "&lt;tr&gt;&lt;td&gt;" +
+                        </p>
+                        
+                        <p> x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + </p>
+                        
+                        <p> "&lt;/td&gt;&lt;td&gt;" + </p>
+                        
+                        <p> x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + </p>
+                        
+                        <p> "&lt;/td&gt;&lt;/tr&gt;"; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> document.getElementById("demo").innerHTML = table; } </p>
+                        
+                        <p>&lt;/script&gt; </p>
+                        
+                        <p>&lt;/body&gt; &lt;/html&gt; cd_catalog.xml: </p>
+                        
+                        <p>&lt;CATALOG&gt; </p>
+                        
+                        <p>&lt;CD&gt; </p>
+                        
+                        <p>&lt;TITLE&gt;EMPIRE BURLESQUE&lt;/TITLE&gt; </p>
+                        
+                        <p>&lt;ARTIST&gt;BOB DYLAN&lt;/ARTIST&gt; </p>
+                        
+                        <p>&lt;COUNTRY&gt;USA&lt;/COUNTRY&gt; </p>
+                        
+                        <p>&lt;COMPANY&gt;COLUMBIA&lt;/COMPANY&gt; </p>
+                        
+                        <p>&lt;PRICE&gt;10.90&lt;/PRICE&gt; </p>
+                        
+                        <p>&lt;YEAR&gt;1985&lt;/YEAR&gt; </p>
+                        
+                        <p>&lt;/CD&gt; </p>
+                        
+                        <p>&lt;CD&gt; </p>
+                        
+                        <p>&lt;TITLE&gt;HIDE YOUR HEART&lt;/TITLE&gt; </p>
+                        
+                        <p>&lt;ARTIST&gt;BONNIE TYLER&lt;/ARTIST&gt; </p>
+                        
+                        <p>&lt;COUNTRY&gt;UK&lt;/COUNTRY&gt; </p>
+                        
+                        <p>&lt;COMPANY&gt;CBS RECORDS&lt;/COMPANY&gt; </p>
+                        
+                        <p>&lt;PRICE&gt;9.90&lt;/PRICE&gt; </p>
+                        
+                        <p>&lt;YEAR&gt;1988&lt;/YEAR&gt; </p>
+                        
+                        <p>&lt;/CD&gt; </p>
+                        
+                        <p>&lt;CD&gt; </p>
+                        
+                        <p>&lt;TITLE&gt;GREATEST HITS&lt;/TITLE&gt; </p>
+                        
+                        <p>&lt;ARTIST&gt;DOLLY PARTON&lt;/ARTIST&gt; </p>
+                        
+                        <p>&lt;COUNTRY&gt;USA&lt;/COUNTRY&gt; </p>
+                        
+                        <p>&lt;COMPANY&gt;RCA&lt;/COMPANY&gt; </p>
+                        
+                        <p>&lt;PRICE&gt;9.90&lt;/PRICE&gt; </p>
+                        
+                        <p>&lt;YEAR&gt;1982&lt;/YEAR&gt; </p>
+                        
+                        <p>&lt;/CD&gt; </p>
+                        
+                        <p>&lt;CD&gt; </p>
+                        
+                        <p>&lt;TITLE&gt;STILL GOT THE BLUES&lt;/TITLE&gt; </p>
+                        
+                        <p>&lt;ARTIST&gt;GARY MOORE&lt;/ARTIST&gt; </p>
+                        
+                        <p>&lt;COUNTRY&gt;UK&lt;/COUNTRY&gt; </p>
+                        
+                        <p>&lt;COMPANY&gt;VIRGIN RECORDS&lt;/COMPANY&gt; </p>
+                        
+                        <p>&lt;PRICE&gt;10.20&lt;/PRICE&gt; </p>
+                        
+                        <p>&lt;YEAR&gt;1990&lt;/YEAR&gt; </p>
+                        
+                        <p>&lt;/CD&gt; </p>
+                        
+                        <p>&lt;/CATALOG&gt; </p>
+                        
+                        <p>When a user clicks on the "Get CD info" button above, the loadDoc()
+                            function
+                            is executed. The loadDoc()
+                            function creates an XMLHttpRequest object, adds the function to be
+                            executed
+                            when the server response is
+                            ready, and sends the request off to the server. When the server response
+                            is
+                            ready, an HTML table is
+                            built, nodes (elements) are extracted from the XML file, and it finally
+                            updates the element "demo" with
+                            the HTML table filled with XML data. </p>
+                        
+                        <p><strong>Handling JSON with AJAX: </strong><br></p>
+                        
+                        <p>According to the AJAX model, web applications can send and retrieve data
+                            from
+                            a server asynchronously
+                            without interfering with the display and the behavior of the existing
+                            page.
+                            Many developers use JSON to
+                            pass AJAX updates between the client and the server. Websites updating
+                            live
+                            sports scores can be
+                            considered as an example of AJAX. If these scores have to be updated on
+                            the
+                            website, then they must be
+                            stored on the server so that the webpage can retrieve the score when it
+                            is
+                            required. This is where we
+                            can make use of JSON formatted data. </p>
+                        
+                        <p>Any data that is updated using AJAX can be stored using the JSON format
+                            on
+                            the web server. AJAX is used
+                            so that javascript can retrieve these JSON files when necessary, parse
+                            them,
+                            and perform one of the
+                            following operations − </p>
+                        
+                        <p>Store the parsed values in the variables for further processing before
+                            displaying them on the webpage.
+                        </p>
+                        
+                        <p>It directly assigns the data to the DOM elements in the webpage, so that
+                            they
+                            are displayed on the
+                            website. </p>
+                        
+                        <p><strong>Example </strong><br></p>
+                        
+                        <p>The following code shows JSON with AJAX. Save it as <strong>ajax.html
+                            </strong><br> file. Here the loading
+                            function loadJSON() is used asynchronously to upload JSON data. </p>
+                        
+                        <p><strong>Ajax.html: </strong><br></p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> &lt;head&gt; </p>
+                        
+                        <p> &lt;meta content = "text/html; charset = ISO-8859-1" http-equiv =
+                            "content-type"&gt; </p>
+                        
+                        <p> &lt;script type = "application/javascript"&gt; function loadJSON(){ </p>
+                        
+                        <p> var data_file = "http://www.tutorialspoint.com/json/data.json"; var
+                            http_request = new XMLHttpRequest();
+                            try{ </p>
+                        
+                        <p> // Opera 8.0+, Firefox, Chrome, Safari </p>
+                        
+                        <p> http_request = new XMLHttpRequest(); </p>
+                        
+                        <p> }catch (e){ </p>
+                        
+                        <p> // Internet Explorer Browsers try{ </p>
+                        
+                        <p> http_request = new ActiveXObject("Msxml2.XMLHTTP"); &nbsp; &nbsp; </p>
+                        
+                        <p> }catch (e) { &nbsp; </p>
+                        
+                        <p> try{ </p>
+                        
+                        <p> http_request = new ActiveXObject("Microsoft.XMLHTTP"); </p>
+                        
+                        <p> }catch (e){ </p>
+                        
+                        <p> // Something went wrong alert("Your browser broke!"); </p>
+                        
+                        <p> return false; </p>
+                        
+                        <p> } &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } </p>
+                        
+                        <p> http_request.onreadystatechange = function(){ if
+                            (http_request.readyState ==
+                            4 ){ </p>
+                        
+                        <p> // Javascript function JSON.parse to parse JSON data var jsonObj =
+                            JSON.parse(http_request.responseText); // jsonObj variable now contains
+                            the
+                            data structure and can // be
+                            accessed as jsonObj.name and jsonObj.country. </p>
+                        
+                        <p> document.getElementById("Name").innerHTML = jsonObj.name;
+                            document.getElementById("Country").innerHTML =
+                            jsonObj.country; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> } &nbsp; &nbsp; </p>
+                        
+                        <p> http_request.open("GET", data_file, true); </p>
+                        
+                        <p> http_request.send(); </p>
+                        
+                        <p> } </p>
+                        
+                        <p> &lt;/script&gt; </p>
+                        
+                        <p> &lt;title&gt;tutorialspoint.com JSON&lt;/title&gt; </p>
+                        
+                        <p> &lt;/head&gt; </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;h1&gt;Cricketer Details&lt;/h1&gt; </p>
+                        
+                        <p> &lt;table class = "src"&gt; </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p>&lt;th&gt;Name&lt;/th&gt; </p>
+                        
+                        <p>&lt;th&gt;Country&lt;/th&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p>&lt;td&gt; </p>
+                        
+                        <p> &lt;div id = "Name"&gt;Sachin&lt;/div&gt; </p>
+                        
+                        <p>&lt;/td&gt; </p>
+                        
+                        <p> &lt;td&gt; </p>
+                        
+                        <p>&lt;div id = "Country"&gt;India&lt;/div&gt; </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> &lt;/table&gt; </p>
+                        
+                        <p> &lt;div class = "central"&gt; </p>
+                        
+                        <p> &lt;button type = "button" onclick = "loadJSON()"&gt;Update Details
+                            &lt;/button&gt; </p>
+                        
+                        <p> &lt;/div&gt; &nbsp; </p>
+                        
+                        <p> &lt;/body&gt; &nbsp; &nbsp; </p>
+                        
+                        <p>&lt;/html&gt; </p>
+                        
+                        <p>Given below is the input file <strong>data.json </strong><br>, having
+                            data in
+                            JSON format which will be
+                            uploaded asynchronously when we click the <strong>Update Detail
+                            </strong><br> button.
+                            <strong>data.json </strong><br><strong>: </strong><br>
+                        </p>
+                        
+                        <p>{"name": "Brett", "country": "Australia"} </p>
+                        
+                        <p>Introduction to Angular JS: </p>
+                        
+                        <p>Angular JS is an open source web application framework. It was originally
+                            developed in 2009 by Misko
+                            Hevery and Adam Abrons. It is now maintained by Google. Its latest
+                            version
+                            is 1.4.3. Definition of
+                            Angular JS as put by its official documentation is as follows − </p>
+                        
+                        <p>Angular JS is a structural framework for dynamic web apps. It lets you
+                            use
+                            HTML as your template language
+                            and lets you extend HTML's syntax to express your application's
+                            components
+                            clearly and succinctly.
+                            Angular's data binding and dependency injection eliminate much of the
+                            code
+                            you currently have to write.
+                            And it all happens within the browser, making it an ideal partner with
+                            any
+                            server technology. </p>
+                        
+                        <p>Angular JS is a powerful JavaScript based development framework to create
+                            RICH Internet Application
+                            (RIA). </p>
+                        
+                        <p>Angular JS provides developers options to write client side application
+                            (using JavaScript) in a clean MVC
+                            (Model View Controller) way. </p>
+                        
+                        <p>Application written in Angular JS is cross-browser compliant. Angular JS
+                            automatically handles JavaScript
+                            code suitable for each browser. </p>
+                        
+                        <p>Angular JS is open source, completely free, and used by thousands of
+                            developers around the world. It is
+                            licensed under the Apache License version 2.0. </p>
+                        
+                        <p>Following are most important core features of Angular JS − </p>
+                        
+                        <p><strong>Data-binding </strong><br> − It is the automatic synchronization
+                            of
+                            data between model and view
+                            components. </p>
+                        
+                        <p><strong>Scope </strong><br> − These are objects that refer to the model.
+                            They
+                            act as glue between controller
+                            and view. </p>
+                        
+                        <p><strong>Controller </strong><br> − These are JavaScript functions that
+                            are
+                            bound to a particular scope. </p>
+                        
+                        <p><strong>Services </strong><br> – Angular JS come with several built-in
+                            services for example $https: to make
+                            XMLHttpRequests. These are singleton objects which are instantiated only
+                            once in app. 
+                            <strong>Filters </strong><br> − These select a subset of items from an
+                            array
+                            and returns a new array.
+                        </p>
+                        
+                        <p><strong>Directives </strong><br> − Directives are markers on DOM elements
+                            (such as elements, attributes, CSS,
+                            and more). These can be used to create custom HTML tags that serve as
+                            new,
+                            custom widgets. Angular JS
+                            has built-in directives (ngBind, ngModel...) </p>
+                        
+                        <p><strong>Templates </strong><br> − These are the rendered view with
+                            information from the controller and model.
+                            These can be a single file (like index.html) or multiple views in one
+                            page
+                            using "partials". 
+                            <strong>Routing </strong><br> − It is concept of switching views.
+                        </p>
+                        
+                        <p><strong>Model View Whatever </strong><br> − MVC is a design pattern for
+                            dividing an application into different
+                            parts (called Model, View and Controller), each with distinct
+                            responsibilities. AngularJS does not
+                            implement MVC in the traditional sense, but rather something closer </p>
+                        
+                        <p>to MVVM (Model-View-ViewModel). The Angular JS team refers it humorously
+                            as
+                            Model View Whatever. </p>
+                        
+                        <p><strong>Deep Linking </strong><br> − Deep linking allows you to encode
+                            the
+                            state of application in the URL so
+                            that it can be bookmarked. The application can then be restored from the
+                            URL
+                            to the same state. </p>
+                        
+                        <p><strong>Dependency Injection </strong><br> − AngularJS has a built-in
+                            dependency injection subsystem that
+                            helps the developer by making the application easier to develop,
+                            understand,
+                            and test. </p>
+                        
+                        <p><strong>Advantages of Angular JS: </strong><br></p>
+                        
+                        <p>Angular JS provides capability to create Single Page Application in a
+                            very
+                            clean and maintainable way.
+                        </p>
+                        
+                        <p>Angular JS provides data binding capability to HTML thus giving user a
+                            rich
+                            and responsive experience
+                        </p>
+                        
+                        <p>Angular JS code is unit testable. </p>
+                        
+                        <p>Angular JS uses dependency injection and make use of separation of
+                            concerns.
+                        </p>
+                        
+                        <p>Angular JS provides reusable components. </p>
+                        
+                        <p>With Angular JS, developer can write less code and get more
+                            functionality.
+                        </p>
+                        
+                        <p>In Angular JS, views are pure html pages, and controllers written in
+                            JavaScript do the business
+                            processing. </p>
+                        
+                        <p>On top of everything, Angular JS applications can run on all major
+                            browsers
+                            and smart phones including
+                            Android and iOS based phones/tablets. </p>
+                        
+                        <p><strong>Disadvantages of Angular JS: </strong><br></p>
+                        
+                        <p>Though Angular JS comes with lots of plus points but same time we should
+                            consider the following points −
+                        </p>
+                        
+                        <p><strong>Not Secure </strong><br> − Being JavaScript only framework,
+                            application written in AngularJS are not
+                            safe. Server side authentication and authorization is must to keep an
+                            application secure.  <strong>Not
+                                degradable </strong><br> − If your application user disables
+                            JavaScript
+                            then user will just see the basic
+                            page and nothing more. </p>
+                        
+                        <p><strong>The Angular JS Components: </strong><br></p>
+                        
+                        <p>The Angular JS framework can be divided into following three major parts
+                            − 
+                            &nbsp;<strong>ng-app </strong><br> − This directive defines and links an
+                            AngularJS application to HTML. </p>
+                        
+                        <p><strong>ng-model </strong><br> − This directive binds the values of
+                            AngularJS
+                            application data to HTML input
+                            controls. </p>
+                        
+                        <p><strong>ng-bind </strong><br> − This directive binds the AngularJS
+                            Application data to HTML tags. </p>
+                        
+                        <p><strong>Angular JS Expressions to Bind Data to HTML: </strong><br></p>
+                        
+                        <p>Expressions are used to bind application data to html. Expressions are
+                            written inside double braces like
+                            {{ expression}}. Angular JS application expressions are pure JavaScript
+                            expressions and outputs the data
+                            where they are used. </p>
+                        
+                        <p><strong>Using numbers: </strong><br></p>
+                        
+                        <p>&lt;p&gt;Expense on Books : {{cost * quantity}} Rs&lt;/p&gt; </p>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p><strong>Using strings: </strong><br></p>
+                        
+                        <p>&lt;p&gt;Hello {{student.firstname + " " + student.lastname}}!&lt;/p&gt;
+                        </p>
+                        
+                        <p><strong>Using object: </strong><br></p>
+                        
+                        <p>&lt;p&gt;Roll No: {{student.rollno}}&lt;/p&gt; </p>
+                        
+                        <p><strong>Using array </strong><br></p>
+                        
+                        <p>&lt;p&gt;Marks(Math): {{marks[3]}}&lt;/p&gt; </p>
+                        
+                        <p><strong>Example: </strong><br></p>
+                        
+                        <p>Following example will showcase all the above mentioned expressions.
+                            testAngularJS.html<strong> </strong><br>
+                        </p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> &lt;head&gt; </p>
+                        
+                        <p> &lt;title&gt;AngularJS Expressions&lt;/title&gt; </p>
+                        
+                        <p> &lt;/head&gt; </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;h1&gt;Sample Application&lt;/h1&gt; </p>
+                        
+                        <p> &lt;div ng-app = "" ng-init = "quantity = 1;cost = 30; student = </p>
+                        
+                        <p>{firstname:'Mahesh',lastname:'Parashar',rollno:101};marks = </p>
+                        
+                        <p>[80,90,75,73,60]"&gt; </p>
+                        
+                        <p> &lt;p&gt;Hello {{student.firstname + " " + student.lastname}}!&lt;/p&gt;
+                        </p>
+                        
+                        <p> &lt;p&gt;Expense on Books : {{cost * quantity}} Rs&lt;/p&gt; </p>
+                        
+                        <p> &lt;p&gt;Roll No: {{student.rollno}}&lt;/p&gt; </p>
+                        
+                        <p> &lt;p&gt;Marks(Math): {{marks[3]}}&lt;/p&gt; </p>
+                        
+                        <p> &lt;/div&gt; </p>
+                        
+                        <p> &lt;script src = </p>
+                        
+                        <p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js
+                        </p>
+                        
+                        <p>"&gt;&lt;/script&gt; </p>
+                        
+                        <p> &lt;/body&gt; &lt;/html&gt; </p>
+                        
+                        <p><strong>Angular JS Directives to Bind Data to HTML: </strong><br></p>
+                        
+                        <p>AngularJS directives are used to extend HTML. These are special
+                            attributes
+                            starting with ng- prefix.
+                            We're going to discuss following directives − </p>
+                        
+                        <p><strong>ng-app </strong><br> − This directive starts an AngularJS
+                            Application. </p>
+                        
+                        <p><strong>ng- </strong><br><strong>init </strong><br> − This directive
+                            initializes application data. </p>
+                        
+                        <p><strong>ng-model </strong><br> − This directive binds the values of
+                            AngularJS
+                            application data to HTML input
+                            controls. </p>
+                        
+                        <p><strong>ng-repeat </strong><br> − This directive repeats html elements
+                            for
+                            each item in a collection. </p>
+                        
+                        <p><strong>ng-app directive: </strong><br>ng-app directive starts an
+                            AngularJS
+                            Application. It defines the root
+                            element. It automatically initializes or bootstraps the application when
+                            web
+                            page containing AngularJS
+                            Application is loaded. It is also used to load various AngularJS modules
+                            in
+                            AngularJS Application. In
+                            following example, we've defined a default AngularJS application using
+                            ng-app attribute of a div
+                            element. </p>
+                        
+                        <p>&lt;div ng-app = ""&gt; </p>
+                        
+                        <p> ... </p>
+                        
+                        <p>&lt;/div&gt; </p>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p><strong> </strong><br></p>
+                        
+                        <p><strong>ng- </strong><br><strong>init </strong><br><strong> directive:
+                            </strong><br> ng-init directive initializes an
+                            AngularJS Application data. It is used to put values to the variables to
+                            be
+                            used in the application. In
+                            following example, we'll initialize an array of countries. We're using
+                            JSON
+                            syntax to define array of
+                            countries. </p>
+                        
+                        <p>&lt;div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United
+                        </p>
+                        
+                        <p>States'}, {locale:'en-GB',name:'United Kingdom'},
+                            {locale:'enFR',name:'France'}]"&gt; </p>
+                        
+                        <p> ... &lt;/div&gt; <strong>ng-model directive: </strong><br> </p>
+                        
+                        <p>This directive binds the values of AngularJS application data to HTML
+                            input
+                            controls. In following
+                            example, we've defined a model named "name". </p>
+                        
+                        <p>&lt;div ng-app = ""&gt; </p>
+                        
+                        <p> ... </p>
+                        
+                        <p> &lt;p&gt;Enter your Name: &lt;input type = "text" ng-model =
+                            "name"&gt;&lt;/p&gt; </p>
+                        
+                        <p>&lt;/div&gt; </p>
+                        
+                        <p><strong>ng-repeat directive: </strong><br>ng-repeat directive repeats
+                            html
+                            elements for each item in a
+                            collection. In following example, we've iterated over array of
+                            countries.
+                        </p>
+                        
+                        <p>&lt;div ng-app = ""&gt; </p>
+                        
+                        <p> ... </p>
+                        
+                        <p> &lt;p&gt;List of Countries with locale:&lt;/p&gt; </p>
+                        
+                        <p> &lt;ol&gt; </p>
+                        
+                        <p> &lt;li ng-repeat = "country in countries"&gt; </p>
+                        
+                        <p> {{ 'Country: ' + country.name + ', Locale: ' + country.locale }} </p>
+                        
+                        <p> &lt;/li&gt; </p>
+                        
+                        <p> &lt;/ol&gt; &lt;/div&gt; </p>
+                        
+                        <p><strong>Example: </strong><br></p>
+                        
+                        <p>Following example will showcase all the above mentioned directives.
+                            testAngularJS.html:<strong> </strong><br>
+                        </p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> &lt;head&gt; </p>
+                        
+                        <p> &lt;title&gt;AngularJS Directives&lt;/title&gt; </p>
+                        
+                        <p> &lt;/head&gt; </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;h1&gt;Sample Application&lt;/h1&gt; </p>
+                        
+                        <p> &lt;div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United
+                        </p>
+                        
+                        <p>States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-</p>
+                        
+                        <p>FR',name:'France'}]"&gt; </p>
+                        
+                        <p> &lt;p&gt;Enter your Name: &lt;input type = "text" ng-model =
+                            "name"&gt;&lt;/p&gt; </p>
+                        
+                        <p> &lt;p&gt;Hello &lt;span ng-bind = "name"&gt;&lt;/span&gt;!&lt;/p&gt;
+                        </p>
+                        
+                        <p> &lt;p&gt;List of Countries with local: &lt;/p&gt; </p>
+                        
+                        <p> &lt;ol&gt; </p>
+                        
+                        <p> &lt;li ng-repeat = "country in countries"&gt; </p>
+                        
+                        <p> {{ 'Country: ' + country.name + ', Locale: ' + country.locale }} </p>
+                        
+                        <p> &lt;/li&gt; </p>
+                        
+                        <p> &lt;/ol&gt; </p>
+                        
+                        <p> &lt;/div&gt; </p>
+                        
+                        <p>&lt;script src = </p>
+                        
+                        <p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"
+                            &gt;&lt;/script&gt; </p>
+                        
+                        <p> &lt;/body&gt; &lt;/html&gt; </p>
+                        
+                        <p><strong>Angular JS Controllers: </strong><br></p>
+                        
+                        <p>AngularJS application mainly relies on controllers to control the flow of
+                            data in the application. A
+                            controller is defined using ng-controller directive. A controller is a
+                            JavaScript object containing
+                            attributes/properties and functions. Each controller accepts $scope as a
+                            parameter which refers to the
+                            application/module that controller is to control. </p>
+                        
+                        <p>&lt;div ng-app = "" ng-controller = "studentController"&gt; </p>
+                        
+                        <p> ... </p>
+                        
+                        <p>&lt;/div&gt; </p>
+                        
+                        <p>Here we've declared a controller <strong>studentController </strong><br>
+                            using ng-controller directive. As a
+                            next step we'll define the studentController as follows − </p>
+                        
+                        <p>&lt;script&gt; </p>
+                        
+                        <p> function studentController($scope) { </p>
+                        
+                        <p> $scope.student = { firstName: "Mahesh", lastName: "Parashar", fullName:
+                            function() { var studentObject;
+                            studentObject = $scope.student; </p>
+                        
+                        <p> return studentObject.firstName + " " + studentObject.lastName; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> }; </p>
+                        
+                        <p> } </p>
+                        
+                        <p>&lt;/script&gt; </p>
+                        
+                        <p>studentController defined as a JavaScript object with $scope as argument.
+                        </p>
+                        
+                        <p>$scope refers to application which is to use the studentController
+                            object.
+                        </p>
+                        
+                        <p>$scope.student is property of studentController object. </p>
+                        
+                        <p>firstName and lastName are two properties of $scope.student object. We've
+                            passed the default values to
+                            them. </p>
+                        
+                        <p>fullName is the function of $scope.student object whose task is to return
+                            the
+                            combined name. </p>
+                        
+                        <p>In fullName function we're getting the student object and then return the
+                            combined name. </p>
+                        
+                        <p>As a note, we can also define the controller object in separate JS file
+                            and
+                            refer that file in the html
+                            page. </p>
+                        
+                        <p>Now we can use studentController's student property using ng-model or
+                            using
+                            expressions as follows. </p>
+                        
+                        <p>Enter first name: &lt;input type = "text" ng-model =
+                            "student.firstName"&gt;&lt;br&gt; Enter last name:
+                            &lt;input type = "text" ng-model = "student.lastName"&gt;&lt;br&gt; </p>
+                        
+                        <p>&lt;br&gt; </p>
+                        
+                        <p>You are entering: {{student.fullName()}} </p>
+                        
+                        <p>We've bounded student.firstName and student.lastname to two input boxes.
+                        </p>
+                        
+                        <p>We've bounded student.fullName() to HTML. </p>
+                        
+                        <p>Now whenever you type anything in first name and last name input boxes,
+                            you
+                            can see the full name getting
+                            updated automatically. <strong>Example: </strong><br></p>
+                        
+                        <p>Following example will showcase use of controller.
+                            testAngularJS.html:<strong> </strong><br></p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;head&gt; </p>
+                        
+                        <p> &lt;title&gt;Angular JS Controller&lt;/title&gt; </p>
+                        
+                        <p> &lt;script src = </p>
+                        
+                        <p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/scr
+                            ipt&gt; </p>
+                        
+                        <p> &lt;/head&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;h2&gt;AngularJS Sample Application&lt;/h2&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;div ng-app = "mainApp" ng-controller = "studentController"&gt; </p>
+                        
+                        <p> Enter first name: &lt;input type = "text" ng-model = </p>
+                        
+                        <p>"student.firstName"&gt;&lt;br&gt;&lt;br&gt; </p>
+                        
+                        <p> Enter last name: &lt;input type = "text" ng-model = </p>
+                        
+                        <p>"student.lastName"&gt;&lt;br&gt; </p>
+                        
+                        <p> &lt;br&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> You are entering: {{student.fullName()}} </p>
+                        
+                        <p> &lt;/div&gt; </p>
+                        
+                        <p> &lt;script&gt; </p>
+                        
+                        <p> var mainApp = angular.module("mainApp", []); </p>
+                        
+                        <p> </p>
+                        
+                        <p> mainApp.controller('studentController', function($scope) { </p>
+                        
+                        <p> $scope.student = { firstName: "Mahesh", lastName: "Parashar", </p>
+                        
+                        <p> </p>
+                        
+                        <p> fullName: function() { var studentObject; studentObject =
+                            $scope.student;
+                            return studentObject.firstName
+                            + " " + studentObject.lastName; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> }; </p>
+                        
+                        <p> }); </p>
+                        
+                        <p> &lt;/script&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;/body&gt; </p>
+                        
+                        <p>&lt;/html&gt; </p>
+                        
+                        <p><strong>Angular JS Forms: </strong><br></p>
+                        
+                        <p>AngularJS enriches form filling and validation. We can use ng-click to
+                            handle
+                            AngularJS click on button
+                            and use $dirty and $invalid flags to do the validations in seemless way.
+                            Use
+                            novalidate with a form
+                            declaration to disable any browser specific validation. Forms controls
+                            makes
+                            heavy use of Angular
+                            events. Let's have a quick look on events first. </p>
+                        
+                        <p><strong>Events: </strong><br></p>
+                        
+                        <p>AngularJS provides multiple events which can be associated with the HTML
+                            controls. For example ng-click
+                            is normally associated with button. Following are supported events in
+                            Angular JS. </p>
+                        
+                        <p>ng-click </p>
+                        
+                        <p>ng-dbl-click </p>
+                        
+                        <p>ng-mousedown </p>
+                        
+                        <p>ng-mouseup </p>
+                        
+                        <p>ng-mouseenter </p>
+                        
+                        <p>ng-mouseleave </p>
+                        
+                        <p>ng-mousemove </p>
+                        
+                        <p>ng-mouseover </p>
+                        
+                        <p>ng-keydown </p>
+                        
+                        <p>ng-keyup </p>
+                        
+                        <p>ng-keypress  &nbsp;ng-change </p>
+                        
+                        <p><strong>ng-click: </strong><br></p>
+                        
+                        <p>Reset data of a form using on-click directive of a button.<strong>
+                            </strong><br></p>
+                        
+                        <p>&lt;input name = "firstname" type = "text" ng-model = "firstName"
+                            required&gt; </p>
+                        
+                        <p>&lt;input name = "lastname" type = "text" ng-model = "lastName"
+                            required&gt;
+                        </p>
+                        
+                        <p>&lt;input name = "email" type = "email" ng-model = "email" required&gt;
+                        </p>
+                        
+                        <p>&lt;button ng-click = "reset()"&gt;Reset&lt;/button&gt; </p>
+                        
+                        <p>&lt;script&gt; </p>
+                        
+                        <p> function studentController($scope) { </p>
+                        
+                        <p> $scope.reset = function(){ </p>
+                        
+                        <p> $scope.firstName = "Mahesh"; </p>
+                        
+                        <p> $scope.lastName = "Parashar"; </p>
+                        
+                        <p> $scope.email = "MaheshParashar@tutorialspoint.com"; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> $scope.reset(); </p>
+                        
+                        <p> } </p>
+                        
+                        <p>&lt;/script&gt; </p>
+                        
+                        <p><strong>Validate data: </strong><br></p>
+                        
+                        <p>Following can be used to track error. </p>
+                        
+                        <p><strong>$dirty </strong><br> − states that value has been changed. </p>
+                        
+                        <p><strong>$invalid </strong><br> − states that value entered is invalid. 
+                            &nbsp;<strong>$error </strong><br> −
+                            states the exact error. <strong>Example: </strong><br></p>
+                        
+                        <p>Following example will showcase all the above mentioned directives.
+                            testAngularJS.html:<strong> </strong><br>
+                        </p>
+                        
+                        <p>&lt;html&gt; </p>
+                        
+                        <p> &lt;head&gt; </p>
+                        
+                        <p> &lt;title&gt;Angular JS Forms&lt;/title&gt; </p>
+                        
+                        <p> &lt;script src = </p>
+                        
+                        <p>"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/scr
+                            ipt&gt; &lt;style&gt;
+                            table, th , td { </p>
+                        
+                        <p> border: 1px solid grey; border-collapse: collapse; padding: 5px; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> table tr:nth-child(odd) { background-color: #f2f2f2; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> table tr:nth-child(even) { background-color: #ffffff; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> &lt;/style&gt; </p>
+                        
+                        <p> &lt;/head&gt; </p>
+                        
+                        <p> &lt;body&gt; </p>
+                        
+                        <p> &lt;h2&gt;AngularJS Sample Application&lt;/h2&gt; </p>
+                        
+                        <p> &nbsp;&lt;div ng-app = "mainApp" ng-controller = "studentController"&gt;
+                        </p>
+                        
+                        <p> &lt;form name = "studentForm" novalidate&gt; </p>
+                        
+                        <p> &lt;table border = "0"&gt; </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p> &lt;td&gt;Enter first name:&lt;/td&gt; </p>
+                        
+                        <p>&lt;td&gt;&lt;input name = "firstname" type = "text" ng-model = </p>
+                        
+                        <p>"firstName" required&gt; </p>
+                        
+                        <p> &lt;span style = "color:red" ng-show = </p>
+                        
+                        <p>"studentForm.firstname.$dirty &amp;&amp;
+                            studentForm.firstname.$invalid"&gt;
+                        </p>
+                        
+                        <p> &lt;span ng-show = </p>
+                        
+                        <p>"studentForm.firstname.$error.required"&gt;First Name is
+                            required.&lt;/span&gt; </p>
+                        
+                        <p> &lt;/span&gt; </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p> &lt;td&gt;Enter last name: &lt;/td&gt; </p>
+                        
+                        <p> &lt;td&gt;&lt;input name = "lastname" type = "text" ng-model = </p>
+                        
+                        <p>"lastName" required&gt; </p>
+                        
+                        <p> &lt;span style = "color:red" ng-show = </p>
+                        
+                        <p>"studentForm.lastname.$dirty &amp;&amp;
+                            studentForm.lastname.$invalid"&gt;
+                        </p>
+                        
+                        <p> &lt;span ng-show = </p>
+                        
+                        <p>"studentForm.lastname.$error.required"&gt;Last Name is
+                            required.&lt;/span&gt;
+                        </p>
+                        
+                        <p> &lt;/span&gt; </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p> &lt;td&gt;Email: &lt;/td&gt;&lt;td&gt;&lt;input name = "email" type =
+                            "email" ng-model = "email" length
+                            = "100" required&gt; </p>
+                        
+                        <p> &lt;span style = "color:red" ng-show = </p>
+                        
+                        <p>"studentForm.email.$dirty &amp;&amp; studentForm.email.$invalid"&gt; </p>
+                        
+                        <p> &lt;span ng-show = </p>
+                        
+                        <p>"studentForm.email.$error.required"&gt;Email is required.&lt;/span&gt;
+                        </p>
+                        
+                        <p> &lt;span ng-show = </p>
+                        
+                        <p>"studentForm.email.$error.email"&gt;Invalid email address.&lt;/span&gt;
+                        </p>
+                        
+                        <p> &lt;/span&gt; </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;tr&gt; </p>
+                        
+                        <p> &lt;td&gt; </p>
+                        
+                        <p> &lt;button ng-click = "reset()"&gt;Reset&lt;/button&gt; </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;td&gt; </p>
+                        
+                        <p> &lt;button ng-disabled = "studentForm.firstname.$dirty &amp;&amp;
+                            studentForm.firstname.$invalid ||
+                            studentForm.lastname.$dirty &amp;&amp; </p>
+                        
+                        <p> studentForm.lastname.$invalid || studentForm.email.$dirty &amp;&amp;
+                        </p>
+                        
+                        <p> studentForm.email.$invalid" ngclick="submit()"&gt;Submit&lt;/button&gt;
+                        </p>
+                        
+                        <p> &lt;/td&gt; </p>
+                        
+                        <p> &lt;/tr&gt; </p>
+                        
+                        <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                        
+                        <p> &lt;/table&gt; </p>
+                        
+                        <p> &lt;/form&gt; </p>
+                        
+                        <p> &lt;/div&gt; </p>
+                        
+                        <p> &lt;script&gt; </p>
+                        
+                        <p> var mainApp = angular.module("mainApp", []); </p>
+                        
+                        <p> </p>
+                        
+                        <p> mainApp.controller('studentController', function($scope) { </p>
+                        
+                        <p> $scope.reset = function(){ </p>
+                        
+                        <p> $scope.firstName = "Mahesh"; </p>
+                        
+                        <p> $scope.lastName = "Parashar"; </p>
+                        
+                        <p> $scope.email = "MaheshParashar@tutorialspoint.com"; </p>
+                        
+                        <p> } </p>
+                        
+                        <p> </p>
+                        
+                        <p> $scope.reset(); </p>
+                        
+                        <p> }); </p>
+                        
+                        <p> &lt;/script&gt; </p>
+                        
+                        <p> </p>
+                        
+                        <p> &lt;/body&gt; </p>
+                        
+                        <p>&lt;/html&gt; </p>
+                        
+                        </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="display: flex; justify-content: space-between; margin: 10%;">
+        <button><a href="page5.html">&laquo; Previous</a></button>
+        <button><a href="page7.html">Next &raquo;</a></button>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Accumsan montes viverra</h3>
+                    <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer
+                        non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+                        accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum
+                        primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed
+                        feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
+                </section>
+                <section>
+                    <h4>Sem turpis amet semper</h4>
+                    <ul class="alt">
+                        <li><a href="#">Dolor pulvinar sed etiam.</a></li>
+                        <li><a href="#">Etiam vel lorem sed amet.</a></li>
+                        <li><a href="#">Felis enim feugiat viverra.</a></li>
+                        <li><a href="#">Dolor pulvinar magna etiam.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Magna sed ipsum</h4>
+                    <ul class="plain">
+                        <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                        <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright " class="copyright">
+        Design by <a href="https://templated.co/">TEMPLATED</a>.
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
