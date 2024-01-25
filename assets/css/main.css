@@ -387,7 +387,26 @@ button,
       button.primary:hover:active,
       .button.primary:hover:active {
         background-color: #b71824; }
+/*code section*/
+code {
+  background-color: #dee2e6 ;
 
+
+}
+
+/* Styles for Android devices */
+@media only screen and (max-width: 767px) {
+  code {
+      max-width: 100%; /* Adjust the value as needed for your design */
+  }
+}
+
+/* Styles for PCs */
+@media only screen and (min-width: 768px) {
+  code {
+      max-width: 450px;
+  }
+}
 /* Form */
 form {
   margin: 0 0 2rem 0; }
