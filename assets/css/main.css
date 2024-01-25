@@ -39,7 +39,7 @@ body {
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
+code, del, dfn, em, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -53,6 +53,25 @@ section, summary, time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for devices with a max-width of 600px (typical for mobile phones) */
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query for devices with a min-width of 601px (typical for PCs) */
+@media only screen and (min-width: 601px) {
+    img {
+        max-width: none; /* Original size on larger screens */
+    }
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
